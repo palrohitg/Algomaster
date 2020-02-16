@@ -1,5 +1,8 @@
 /*
 	1. Decimal number to binary number
+	2. find the unique number part 2 by hackerblogs
+	   Solution : using the XOR opertor and find the set bit pos in the arrays and make the list
+	3. Fast Exponential/Power using bitwise
 */ 
 
 #include <iostream>
@@ -15,6 +18,12 @@ int decimalToBinary( int n) {
 		n = (n >> 1);
 	}
 	return ans;
+}
+
+int fastPower() {
+
+	
+	return 0;
 }
 
 int main(int argc, char const *argv[])

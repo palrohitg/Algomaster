@@ -28,6 +28,12 @@ int increaseSequence(int n) {
 }
 // Mutliply Operation without using the * operator
 
+// Convert string to integer using recursion :
+/*
+    "1234556" ==> 123445544
+
+*/
+
 int multiply(int a, int b){
 	if(b==1){
 		return a;

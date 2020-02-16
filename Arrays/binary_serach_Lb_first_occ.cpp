@@ -59,11 +59,11 @@ int main(int argc, char const *argv[])
 
 */
 
-/*#include <iostream>
+#include <iostream>
 using namespace std;
 
 // findind out the square of a perfect number using the binary search
-int squareRoot(int no, int p) {
+float squareRoot(int no, int p) {
 	int s=0, e=no, mid;
 	float ans=0;
 	while(s<=e) {
@@ -104,7 +104,7 @@ int main()
 	cout << squareRoot(10,3);
 	
 	return 0;
-}*/
+}
 
 /*
  	Some interview question asked related to application of binary search Algorithm
