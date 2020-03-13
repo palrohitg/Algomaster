@@ -1,0 +1,66 @@
+/*
+	Bitonic Arrays are those who First increasing then Decreasing 
+
+	Problem State : 
+	   1. Elements like 12 ,4, 78, 90, 45, 23  return 5 (4,78,90,45,23) 
+	   2. Decreasing like 40, 30, 30 ,10  retunr 4 (40,30,20,10)
+	   3. Increasing like 30,40,50   return 3 (30,40,50)
+	   4. Single Elements is also Bitonic Subarrays
+
+	 Solution :
+	   1. Make an array INC[] to count the increaseing Elements
+	   2. Make an array DEC[] to count the descreasing Elements 
+	   3. Calculte the arrays to Find out the MAX length 
+
+*/
+
+#include <iostream>
+using namespace std;
+
+void maxBitonicLength(int arr[], int n) {
+	int inc[n]={1}, dec[n]={1};
+	// Make increasing array 
+	for(int i=0; i<n; i++) {
+		if(arr[i] < arr[i+1]) {
+			inc[i+1] = inc[i]+1;
+		}
+	}
+
+	// Make decreasing arrays
+	// for(int i=n-1; i>=0; i--) {
+	// 	if(arr[i] < arr[i-1]) {`
+	`
+	// 		dec[i-1] = dec[i]+1;
+	// 	}
+	// }
+
+	// Printing the arrays 
+	for(int i=0; i<n; i++) {
+		cout << inc[i] << " ";
+	}
+	cout << endl;
+    
+    for(int i=0; i<n; i++) {
+		cout << dec[i] << " ";
+	}
+	cout << endl;
+     
+     // calcualte the index value to find out the maxlength
+	
+}
+
+
+int main() {
+	int t,n,count=0;
+	cin >> t;
+	int arr[1000];
+	while(count < t) {
+		cin >> n;
+		for(int i=0; i<n; i++) {
+			cin >> arr[i];
+		}
+		count++;
+		maxBitonicLength(arr,n);
+	}
+	return 0;
+}
