@@ -14,6 +14,15 @@ int main() {
 	auto it = find(arr,arr+size,key);  // start from the o untill end like range() in python and return the index
      
     // when the arrays is sorted then binary_search()  return True and False
+	/*
+       two things  :
+        1. lower bound
+        2. upper bound
+
+        Note : Generally used when to calculate the Frequency of the arrays elements
+        
+	*/
+
 
 	int index = it - arr;
 	cout << index << endl;

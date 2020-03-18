@@ -17,8 +17,16 @@
 #include <iostream>
 using namespace std;
 
-void maxBitonicLength(int arr[], int n) {
-	int inc[n]={1}, dec[n]={1};
+int maxBitonicLength(int arr[], int n) {
+	int inc[n], dec[n];
+    int val=1;
+    // Initialize all the value to one
+
+    for(int i=0; i<n; i++) {
+    	inc[i]=val;
+    	dec[i]=val;
+    }
+
 	// Make increasing array 
 	for(int i=0; i<n; i++) {
 		if(arr[i] < arr[i+1]) {
@@ -26,16 +34,15 @@ void maxBitonicLength(int arr[], int n) {
 		}
 	}
 
-	// Make decreasing arrays
-	// for(int i=n-1; i>=0; i--) {
-	// 	if(arr[i] < arr[i-1]) {`
-	`
-	// 		dec[i-1] = dec[i]+1;
-	// 	}
-	// }
+	// Make decreasing arrays/*
+	for(int i=n-1; i>=0; i--) {
+		if(arr[i] < arr[i-1]) {
+			dec[i-1] = dec[i]+1;
+ 		}
+	 }
 
 	// Printing the arrays 
-	for(int i=0; i<n; i++) {
+	/*for(int i=0; i<n; i++) {
 		cout << inc[i] << " ";
 	}
 	cout << endl;
@@ -44,11 +51,20 @@ void maxBitonicLength(int arr[], int n) {
 		cout << dec[i] << " ";
 	}
 	cout << endl;
-     
-     // calcualte the index value to find out the maxlength
+*/
+    // calcualte the index value to find out the maxlength
+    int maximum=1;
+    int max[n];
+    for (int i = 0; i < n; i++)
+    {
+    	max[i] = inc[i] + dec[i] - 1;
+    	if(max[i] > maximum) {
+    		maximum = max[i];
+    	}
+    }
 	
+   return maximum;
 }
-
 
 int main() {
 	int t,n,count=0;
@@ -60,7 +76,7 @@ int main() {
 			cin >> arr[i];
 		}
 		count++;
-		maxBitonicLength(arr,n);
+		cout << maxBitonicLength(arr,n) << endl;
 	}
 	return 0;
 }

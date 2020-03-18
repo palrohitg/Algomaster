@@ -2,10 +2,11 @@
 using namespace std;
 
 int main(int argc, char const *argv[])
-{
-	cout << "hello new terminals" << '\n';
-	int n;
-	cin >>n;
-	cout << n << '\n';
+{  
+   int n=7;
+   int inc[n-1] ={1};
+   for(int i=0; i<n; i++) {
+   	cout << inc[i] << " ";
+   }
 	return 0;
 }
