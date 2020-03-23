@@ -34,7 +34,15 @@ int maxBitonicLength(int arr[], int n) {
 		}
 	}
 
-	// Make decreasing arrays/*
+	/*for(int i=1; i<n; i++) {   // Reverse order main check karna
+		// if(arr[i] < arr[i+1]) {
+        if(arr[i-1] <= arr[i]) {
+			inc[i] = inc[i-1]+1;
+		}
+	}*/
+
+
+    //	Make decreasing arrays
 	for(int i=n-1; i>=0; i--) {
 		if(arr[i] < arr[i-1]) {
 			dec[i-1] = dec[i]+1;
@@ -42,17 +50,17 @@ int maxBitonicLength(int arr[], int n) {
 	 }
 
 	// Printing the arrays 
-	/*for(int i=0; i<n; i++) {
-		cout << inc[i] << " ";
-	}
-	cout << endl;
+	// for(int i=0; i<n; i++) {
+	// 	cout << inc[i] << " ";
+	// }
+	// cout << endl;
     
-    for(int i=0; i<n; i++) {
-		cout << dec[i] << " ";
-	}
-	cout << endl;
-*/
-    // calcualte the index value to find out the maxlength
+ //    for(int i=0; i<n; i++) {
+	// 	cout << dec[i] << " ";
+	// }
+	// cout << endl;
+
+    //calcualte the index value to find out the maxlength
     int maximum=1;
     int max[n];
     for (int i = 0; i < n; i++)
@@ -69,8 +77,8 @@ int maxBitonicLength(int arr[], int n) {
 int main() {
 	int t,n,count=0;
 	cin >> t;
-	int arr[1000];
-	while(count < t) {
+	int arr[1000000];
+	while((count < t) & (count <=100)) {
 		cin >> n;
 		for(int i=0; i<n; i++) {
 			cin >> arr[i];
