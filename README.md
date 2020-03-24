@@ -1,1 +1,4 @@
-# Challenges of ALGO++ , I am Accepting this Challenges to learn and implement Algoo for Next 50 Days
+## **I am Undertaking the 50 Days of code challenges**
+
+**` Day 1 : 24 March`**
+ * Implementing the string,Arrays 
