@@ -2,7 +2,7 @@
 
 using namespace std;
 /*
- And also if X/Y should be greatest
+   Given two number
 */
 int greatest(int x,int y) {
     return x/y;

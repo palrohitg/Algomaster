@@ -7,40 +7,40 @@ void spiralPrint(int a[][10], int m, int n) {
 	int count = 0;
 	int row_end = m;
 	int col_end = n;
-
+    int total_element = m*n;
     // m--> rows, n-->columns
-    while(count < row_end*col_end) {
+    while(count < total_element) {
         // first complete columns
-    	if()
-        for(int i=row_start; i<row_end; i++) {
-            cout << a[i][col_start] << ", ";
-			count++;
-        }
-        cout << "count" << count;
-        col_start = col_start + 1;
+    	if(count < total_element) {
+        	for(int i=row_start; i<row_end; i++) {
+            	cout << a[i][col_start] << ", ";
+				count++;
+        	}
+    	}
+        col_start++;
         
         // last complete row with one index
-		
-        for(int i=col_start; i<col_end; i++) {
-            cout << a[row_end-1][i] << ", ";
-			count++;
-        }
-         cout << "count" << count;
-		row_end = row_end - 1;
-		
-		for(int i=row_end-1; i>=row_start; i--){
+		if(count < total_element) {
+        	for(int i=col_start; i<col_end; i++) {
+            	cout << a[row_end-1][i] << ", ";
+				count++;
+        	}
+    	}
+		row_end--;
+		if(count < total_element) {
+			for(int i=row_end-1; i>=row_start; i--){
                 cout << a[i][col_end-1] << ", ";
 				count++;
-        }
-         cout << "count" << count;
-		col_end = col_end - 1;
-		
-        for(int i=col_end-1; i>=col_start; i--) {
-            cout << a[row_start][i] << ", ";
-			count++;
-        }
-         cout << "count" << count;
-		row_start = row_start+1;  
+        	}
+    	}
+		col_end--;
+		if(count < total_element) {
+        	for(int i=col_end-1; i>=col_start; i--) {
+            	cout << a[row_start][i] << ", ";
+				count++;
+        	}
+    	}
+		row_start++;  
     }
     cout << "END";
 }
