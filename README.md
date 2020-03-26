@@ -6,3 +6,15 @@
  1. Implementing the string,Arrays 
  ```
 
+**` Day 2 : 25 March`**
+ 
+ ```
+ 1. Solving 2D arrays problems 
+ ```
+ **` Day 3 : 26 March`**
+ 
+ ```
+ 1. Learning about Bit Manipulation and Number theory
+
+ * Thought : How easy the bitwise operator done their and coder work easy and efficient 
+ ```
