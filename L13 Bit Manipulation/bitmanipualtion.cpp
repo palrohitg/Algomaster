@@ -29,6 +29,15 @@ int clearBit(int n, int i) {
 	return n & mask;
 }
 
+// find out the number of set bit in the Integer in Binary form
+int setBit(int n) {
+ int set = 0;
+  while(n>0) {
+  	n = n & (n-1);
+  	set++;
+  }	
+  return set;
+}
 int updateBit(int n, int i, int v) {
 	int mask = ~(1<<i);
 	int cleared_bit_number = n&mask;
@@ -41,7 +50,7 @@ int clearedLastBit(int n, int i) {
 	return n & mask;
 }
 
-int clearedFromTtoJ(int n, int j) {
+int clearedFromTtoJ(int n, int i,int j) {
 	int ones = (~0);
 	int a = ones << (j+1);
 	int b = (1<<i)-1;
@@ -52,11 +61,11 @@ int clearedFromTtoJ(int n, int j) {
 
 int main() {
      
-     cout << isodd(3) << endl;
-    //exeexit cout << getbit(5,1) << endl;
+     /*cout << isodd(3) << endl;
      cout << clearBit(10,3) << endl;
-     cout << clearedLastBit(15,2) << endl;
-
+     cout << clearedLastBit(15,2) << endl;*/
+	cout << setBit(1) << endl;
+    cout << (4&1) << endl;
 	return 0;
 }
 
