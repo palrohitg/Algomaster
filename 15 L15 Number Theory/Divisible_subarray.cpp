@@ -9,7 +9,9 @@
   * Take the count of each subarray which is divide by the N 
 
 */
+/*
 
+// This is O(N^2)
 #include <iostream>
 using namespace std;
 
@@ -27,6 +29,7 @@ int divisbleSubarray(int arr[], int n) {
 		}
 	}
 	return count;
+
 }
 
 int main() {
@@ -35,16 +38,50 @@ int main() {
 	while(t--) {
 		int n;
 		cin >> n;
-		int arr[100000];
+		int arr[n+1];
 			for(int i=0; i<n; i++) {
 				cin >> arr[i];
 			}
-			// for(int i=0; i<n; i++) {
-			// 	cout <<  arr[i] << " ";
-			// }
-			// cout << endl;
-			// cout << n << endl;
     		cout << divisbleSubarray(arr,n) << endl;
 	}
+	return 0;
+}
+*/
+
+
+#include<iostream>
+#include<cstring>
+using namespace std;
+
+#define ll long
+
+ll a[1000005], pre[1000005];
+
+int main(int argc, char const *argv[])
+{
+	int t;
+	cin >> t;
+	while(t--) {
+		memset(pre,0,sizeof(pre));// set all the value of the prefix array to zero
+		int  n; 
+		cin >> n;	
+		pre[0] = 1;
+		int sum=0;
+		for(int i=0; i<n; i++) {
+			cin >> a[i];
+			sum = sum + a[i];
+			sum = sum %n;
+			sum = (sum + n) % n;
+			pre[sum]++ ;
+		}
+
+		ll ans =0; 
+		for(int i=0; i<n; i++) {
+			ll int m = pre[i];
+			ans += (m)*(m-1)/2;
+		}
+		cout << ans;
+	}
+	
 	return 0;
 }

@@ -1,8 +1,8 @@
-/*
+/*/*
  Kadane Algo is efficient methods to find out the sum of all subarray in a given arrays
  O(N) solution using a single loops
 */
-
+/*
 #include <iostream>
 using namespace std;
 
@@ -29,5 +29,15 @@ int main() {
 	int arr[] = {-2, -3, 4, -1, -2, 1, 5, -3};
 	int n = sizeof(arr)/sizeof(arr[0]);
 	cout << Kadane(arr,n);
+	return 0;
+}*/
+
+#include<iostream>
+using namespace std;
+
+int main(int argc, char const *argv[])
+{
+	int a = 1000000000;
+	cout << a;]
 	return 0;
 }

@@ -1,3 +1,5 @@
+// Fast power using the bit manipualtion that is .
+
 #include<iostream>
 using namespace std;
 

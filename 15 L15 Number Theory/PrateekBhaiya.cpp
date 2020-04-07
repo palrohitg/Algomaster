@@ -9,17 +9,18 @@
 
 #include <iostream>
 using namespace std;
+#define max_size 100000001
 #define ll long long
 void primeSieve(int p[]) {
 
 	// odd number is set to be 1 because they are like prime
-	for(ll i=3; i<n; i+=2) {
+	for(ll int  i=3; i<max_size; i+=2) {
 		p[i] = 1;
 	}
 
-	for(ll j=3; j<1000000; j+=2){
+	for(ll int j=3; j<max_size; j+=2){
 		if(p[j] == 1) {
-			for(ll i=j*j; i<1000000; i+=j){
+			for(ll int  i=j*j; i<max_size; i+=j){
 				p[i] =0;
 			}
 		}
@@ -32,16 +33,28 @@ void primeSieve(int p[]) {
 
 int main() {
 
-	int n;
-    int p[1000000] = {0}; 
-	cin >> n;
+    int n;
+    cin >> n;
+    int p[max_size] = {0};  //how size should be declared
 
     primeSieve(p);
+    int prime[n];
+    int j=1;
 	// call the primeSieve
-	for(int i=0; i<n; i++) {
+	for(int i=3; i<max_size; i++) {
 		if(p[i] == 1) {
-			cout << i << " ";
+			prime[j] = i;
+			j++; 
 		}
 	}
+	int num;
+	cout << "Enter the number :"; 
+	cin >> num;
+	for(int i=1; i<n; i++) {
+		if(i == num){
+			cout << prime[i];
+		}
+	}
+
 	return 0;
 }
