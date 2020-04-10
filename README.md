@@ -22,6 +22,11 @@
 
 **`Day 6 : 7 April`**
 ```1. Thought : Consistence is the key to success. You to need to fail million time to become good at something. Follow you work ethics Don't make any kind of excuse```
+
 ```2. Started with Recursion and left some Problem of Number theory```
+
 ```3. Ratatype fun activities For next 14 Days just for 20 minutes. It Extends my productivities```
 
+**`Day 10 : 10 April`**
+``` 1. Thought make the smallest habits to do works and everything will be done ```
+``` 2. Solving Subsequnces Probem using Recursion Approach```
