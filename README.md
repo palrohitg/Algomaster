@@ -30,3 +30,65 @@
 **`Day 10 : 10 April`**
 ``` 1. Thought make the smallest habits to do works and everything will be done ```
 ``` 2. Solving Subsequnces Probem using Recursion Approach```
+
+**`Day 11 : 10 April`**
+``` 1. Learn Some important Question about  backtracking Algorithm ```
+``` 2. Solved the Nqueen and Permutation Problem but some difficulting to Understand the tead and head recursion ```
+
+**`Day 12 : 11 April`**
+```1. Nqueen problem annd Starting Recording  video for the DSA series 10 Question each days```
+
+**`Day 13 : 12 April`**
+
+
+**`Day 14 : 13 April`**
+
+
+**`Day 15 : 14 April`**
+
+
+**`Day 16 : 15 April`**
+
+
+
+**`Day 17 : 16 April`**
+
+
+**`Day 18 : 17 April`**
+
+
+**`Day 19 : 18 April`**
+
+
+**`Day 20 : 19 April`**
+
+
+
+**`Day 21 : 20 April`**
+
+
+
+**`Day 22 : 21 April`**
+
+
+
+**`Day 23 : 22 April`**
+
+**`Day 24 : 23 April`**
+
+**`Day 25 : 24 April`**
+
+**`Day 26 : 25 April`**
+
+**`Day 27 : 26 April`**
+
+**`Day 28 : 27 April`**
+
+**`Day 29 : 28 April`**
+
+**`Day 30 : 29 April`**
+
+**`Day 31 : 30 April`**
+
+**`Day 32 : 31 April`**
+

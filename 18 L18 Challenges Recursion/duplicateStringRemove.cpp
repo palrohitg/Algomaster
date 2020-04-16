@@ -54,6 +54,7 @@ void duplicateString(char*str, int i, int j, int n) {
     // print currrent character in the str
     cout << str[i];
 	// check out condition of duplicate 
+	// increment unitll the consquent character are duplicate and end is encourted
     // increment uptil all consequent character are duplicate or end is encountered
 	while(i+1 < n and str[i] == str[i+1]) {
         
