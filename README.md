@@ -39,6 +39,7 @@
 ```1. Nqueen problem annd Starting Recording  video for the DSA series 10 Question each days```
 
 **`Day 13 : 12 April`**
+```1. Inversion Sort , MergeSort, QuickSort  ```
 
 
 **`Day 14 : 13 April`**
