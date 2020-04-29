@@ -3,6 +3,8 @@
 ### You need to write the 10 Question on each night and solve in the Afternoon on noteobook
 ### Taking a 20 Min challenges to improve the accuracy and typin speed every night for fun activities.
 
+[Quotes](https://www.keepinspiring.me/positive-inspirational-life-quotes/)
+
 **` Day 1 : 24 March`**
 ```1.Implementing the string,Arrays ```
 
@@ -40,10 +42,11 @@
 
 **`Day 13 : 12 April`**
 ```1. Inversion Sort , MergeSort, QuickSort  ```
+``` Vector Or STL section revision need you are far below in the race```
 
 
 **`Day 14 : 13 April`**
-
+``` 1. Solving the Recursion Problem```
 
 **`Day 15 : 14 April`**
 
@@ -84,6 +87,7 @@
 **`Day 27 : 26 April`**
 
 **`Day 28 : 27 April`**
+``` 1 . Learn about Dynamic Memory allocation and how the arrays and 2-D store and maintains in the heap areas ```
 
 **`Day 29 : 28 April`**
 

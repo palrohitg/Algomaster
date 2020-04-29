@@ -1,43 +1,49 @@
-// Quick Sort Interesting Algorithm
-
+// Quick Sort  In place Algorithm 
 #include<iostream>
 using namespace std;
 
 
-int partitionIndex(int arr[], int s, int e) {
-	int pivot = arr[e];
+// Return the partition index
+int partitionIndex(int a[], int s, int e) {
+
+	// choose the last element as pivot
+	int pivot = a[e];
 	int i = s-1;
-	int j = s;
-	for (; j <= e - 1; j++) {
-		if(arr[j] < pivot) {
-			i = i+1; // increase the small regions
-			swap(arr[i],arr[j]);
+
+	//check from s to e-1
+	for(int j=s; j <= e-1; j++) {
+		if(a[j] < pivot) {
+			i = i+1;
+			swap(a[i], a[j]);
 		}
 	}
-	swap(arr[i+1], arr[e]);
+	swap(a[i+1], a[e]); //swap the pivot elements
 
-	// return the index
 	return i+1;
 }
-void quickSort(int arr[], int s, int e) {
-	if (s >= e) {
-		return;
-	}
 
-	// find the partition index
-	int p = partitionIndex(arr, s , e);
-	quickSort(arr, s, p-1);
-	quickSort(arr, p+1,e);
+void quickSort(int a[], int s, int e) {
+	// Base case 
+	if(s >= e) {
+		return;
+	} 
+
+	// Partitioning the arrays
+	int p = partitionIndex(a,s,e);
+	cout << p << endl;
+	quickSort(a,s,p-1);
+	quickSort(a,p+1,e);
 }
 
+int main(int argc, char const *argv[])
+{
+	int arr[] = {5,2,3,1,6};
+	int n = sizeof(arr)/sizeof(int);
+	quickSort(arr,0,n-1);
 
-int main() {
-
-	int arr[] = {5, 1, 4, 3, 2};
-	quickSort(arr, 0, 4);
-
-	for (int i = 0; i < 5; ++i)
-	{
+	for(int i=0; i<n; i++) {
 		cout << arr[i] << " ";
 	}
+
+	return 0;
 }
