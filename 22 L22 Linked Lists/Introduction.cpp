@@ -1,3 +1,5 @@
+
+
 Linked List  :
 
 Point to Remember :
@@ -11,4 +13,15 @@ Point to Remember :
 	3. Insert at middles
 
 # jumping of the temp variables in the given elements 
+
+
+# Reverse a Linked list using Iterative , Recursively
+
+# Runner Technique to find out the midpoint Linked List
+ 
+# Return the Kth pos the linked list from the last nodes  Using Singles pass 
+	- we have to 
+
+# Return
+
 	

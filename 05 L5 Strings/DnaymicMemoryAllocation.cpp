@@ -11,3 +11,14 @@
 	 * Visulaized the memory allocated is during when the programs is runnings 
 
 
+# 2-D Arrays ;
+	 * No direct ways to store the arrays in heaps areas 
+	 * We need to create a linear arrays and store in pointer arrays then static arrays of two memorys 
+	 * 
+
+# Arrays store in the memory :
+	 1. Row major order in 2-D arrays 
+	 2. Columns major order in 2-D arrays 
+
+
+
