@@ -4,6 +4,7 @@
     - Try to put the files and every Days Quotes After Doing The Challenges
     - [Inspiritional Quotes](https://www.keepinspiring.me/positive-inspirational-life-quotes/)   [Programmer Quotes](https://www.goodreads.com/quotes/tag/programming)
     - My Progress Report
+    - [learning DS&Algo](https://medium.com/coderbyte/how-to-get-good-at-algorithms-data-structures-d33d5163353f)
 
 
 ## **Some Tips for the good Developer** :
@@ -15,6 +16,18 @@
 	* Then write the code in IDE 
 	* Repeat the Cycle
 
+## **Some More tips** :
+	
+		Interviewers look for following:
+		0. how well you understood the problems
+		1. your step-by-step approach to the solution
+		2. does your Algorithm solves the problem statement
+		3. can your solution be improved
+		4. what is the Time and Space complexity
+		5. did you cover the Edge cases
+		6. can you Code your approach &
+		7. is your code neat, that's all
+		
 **Quotes** :
 		
 		* When your Why is big enough then you will found out the how
@@ -44,4 +57,10 @@
 	
 		* Teaching makes the learning Twices
 		* We can stop of mind to thinking but we can changes our direction of mind to do the great work
+
+**Day 7 : 8 May**:
+
+		* Linked list problems MergeSort ,Floyd Cycle and Circular linked list
+
+
 
