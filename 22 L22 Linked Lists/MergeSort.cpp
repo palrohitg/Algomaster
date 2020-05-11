@@ -74,7 +74,7 @@ Node * mergeList(Node*&head1, Node*&head2) {
 		return head2;
 	}
 	if(head2 == NULL) {
-		return head2;
+		return head1;
 	}
     Node *c = NULL;
 	if(head1->data < head2->data) {
@@ -89,35 +89,59 @@ Node * mergeList(Node*&head1, Node*&head2) {
 	return c;
 }
 Node* mergeSortLL(Node*&head) {
-	// divide from the middle points 
-	Node* mid = middlePoint(head);
-	// printList(mid);
-	Node*b = mid->next;
-	mid->next= NULL;
-	Node*a = head;
-	// recursively sort the linkedlist
-	Node*head1 = mergeSortLL(a);
-	Node*head2 = mergeSortLL(b);
-
-	Node*new_head = mergeList(head1,head2);
-	return new_head; // head after the sorting of the LL
+	// base case  single node
+	if(head == NULL || head->next == NULL) {
+		return head;
+	}
+	Node * mid = middlePoint(head); 
+	Node * b_head = mid->next;
+	mid->next = NULL;
+	// Recursive case
+	Node * head1 = mergeSortLL(head);
+	Node * head2 = mergeSortLL(b_head);
+	return mergeList(head1, head2);
 }
 
 // print the list
 
 
 int main() {
-	Node * head1 = NULL;
-	insertAtHead(head1, 5);	
-	insertAtTail(head1, 10);
-	insertAtTail(head1,15);
-	insertAtTail(head1,1);
-	insertAtTail(head1,0);
-	insertAtTail(head1,12);
-	printList(head1);
-	cout << endl;
+	// Node * head1 = NULL;
+	// insertAtHead(head1, 1);	
+	// insertAtTail(head1, 4);
+	// insertAtTail(head1, 7);
+	// insertAtTail(head1, 9);
+	// printList(head1);
+	// cout << endl;
+	// Node * head2 = NULL; 
+	// insertAtHead(head2, 0);
+	// insertAtTail(head2, 3);
+	// insertAtTail(head2, 30);
+	// printList(head2);
+	// cout << endl;
+    // merge two sorted list
+	// Node*new_head = mergeList(head1, head2);
+	// printList(new_head);
+	// cout << endl;
+
+
 	// mergeSortLL(head1);
-	Node* result_head = mergeSortLL(head1);
-	printList(result_head);
+	// Node* result_head = mergeSortLL(head1);
+	// printList(result_heaexid);
+
+    Node * head = NULL; 
+    insertAtHead(head, 2);
+    insertAtTail(head, 0);
+    insertAtTail(head, 12);
+    insertAtTail(head, 10);
+    insertAtTail(head, 9 );
+    insertAtTail(head, 5);
+    cout << "originals list : " << endl;
+    printList(head);
+    cout << endl;
+    Node * new_head = mergeSortLL(head);
+    cout << "Result list :" << endl;  
+    printList(new_head);
+    cout << endl;
 	return 0;
 }
