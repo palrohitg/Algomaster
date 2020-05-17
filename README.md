@@ -62,5 +62,18 @@
 
 		* Linked list problems MergeSort ,Floyd Cycle and Circular linked list
 
+**Day 7 : 11 May**:
+	
+		* "My code only works when its is working fine in my head and paper :)" : vikas Pal
+		* "find bugs in your code is most challenging parts"
 
+**Day 8 : 16 May**:
+	
+		* Linked list 3 problems 
+		* +2 partially
+
+**Day 9 : 17 May**:
+		
+		* All linked list solved  + Circular linked list
+		* Implementing the stacks easy for me
 

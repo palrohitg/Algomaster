@@ -88,6 +88,20 @@ Node * mergeList(Node*&head1, Node*&head2) {
 	}
 	return c;
 }
+
+// function take will take the inputs the end while the -1 is encountered
+
+void builtLL(Node *&head, int n) {
+	int data;
+	//cin >> data;
+	int i=0;
+	while(i < n) {
+		cin >> data;
+		insertAtTail(head,data);
+		i++;
+	}
+}
+
 Node* mergeSortLL(Node*&head) {
 	// base case  single node
 	if(head == NULL || head->next == NULL) {
@@ -129,19 +143,23 @@ int main() {
 	// Node* result_head = mergeSortLL(head1);
 	// printList(result_heaexid);
 
-    Node * head = NULL; 
-    insertAtHead(head, 2);
-    insertAtTail(head, 0);
-    insertAtTail(head, 12);
-    insertAtTail(head, 10);
-    insertAtTail(head, 9 );
-    insertAtTail(head, 5);
-    cout << "originals list : " << endl;
-    printList(head);
-    cout << endl;
-    Node * new_head = mergeSortLL(head);
-    cout << "Result list :" << endl;  
-    printList(new_head);
-    cout << endl;
+    // Node * head = NULL; 
+    // insertAtHead(head, 2);
+    // insertAtTail(head, 0);
+    // insertAtTail(head, 12);
+    // insertAtTail(head, 10);
+    // insertAtTail(head, 9 );
+    // insertAtTail(head, 5);
+    // cout << "originals list : " << endl;
+    // printList(head);
+    // cout << endl;
+    // Node * new_head = mergeSortLL(head);
+    // cout << "Result list :" << endl;  
+    // printList(new_head);
+    // cout << endl;
+
+     Node *head = NULL; 
+     builtLL(head,9);
+     printList(head);
 	return 0;
 }

@@ -237,6 +237,7 @@ void builtLL(Node *&head) {
 		cin >> data;
 	}
 }
+
 bool search(Node*head, int key) {
 	while(head != NULL) {
 		if(head->data == key) {

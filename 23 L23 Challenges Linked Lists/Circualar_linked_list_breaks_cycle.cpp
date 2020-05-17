@@ -1,0 +1,1 @@
+// Break the cycle and remove the elements of the linked list
