@@ -77,3 +77,7 @@
 		* All linked list solved  + Circular linked list
 		* Implementing the stacks easy for me
 
+**Day 10 : 18 May** :
+		
+		* Even odd problems , K append problems , Stack Reverse , Stack STL 
+		* "My mission in life is not merely to survive, but to thrive; and to do so with some passion, some compassion, some humor, and some style"
