@@ -48,13 +48,17 @@ void reversStack(stack <char> s) {
 // }
 
 void insertAtBottom(stack <char> &s1, int data) {
+	// If stack is empty then directly put the push the elements
 	if(s1.empty()) {
 		s1.push(data);
 		return;
 	}
-	int x = s1.top();
+	int y = s1.top();
 	s1.pop();
-	insertAtBottom(s1, x);
+	// Recursion will push the data and finally we need to push that elements
+	insertAtBottom(s1, data);
+	// finally push that elements in the stack
+	s1.push(y);
 }
 
 void reverseRecursion(stack <char>& s1) {

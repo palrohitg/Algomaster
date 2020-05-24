@@ -1,6 +1,8 @@
 /*
  	Every even comes after the odd ones  
     Recursion Solutions 
+    1. One test Case Fails
+    2. How to make the changes agaings
 */
 
 #include<iostream>
@@ -69,6 +71,8 @@ node * evenAfterOdd(node *&head) {
 	
 	return head;
 }
+
+// Find the elements are going to have to even and odd 
 
 void printLL(node *head) {
 	while (head != NULL) {

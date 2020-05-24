@@ -1,0 +1,52 @@
+Prateek sir loves coding. Hence, he took up position of an instructor and founded Coding Blocks, a startup that serves students with awesome code modules. It is a very famous place and students are always queuing up to have one of those modules. Each module has a cost associated with it. The modules are kept as a pile. The job of an instructor is very difficult. He needs to handle two types of queries:
+
+1) Student Query: When a student demands a module, the code module on the top of the pile is given and the student is charged according to the cost of the module. This reduces the height of the pile by 1. In case the pile is empty, the student goes away empty-handed.
+
+2) Instructor Query: Sir prepares a code module and adds it on top of the pile. And reports the cost of the module. Help him manage this process.
+
+
+7
+2 73
+2 83
+2 43
+1
+1
+2 16
+2 48
+
+
+
+43
+83
+
+
+Iteration 1 :
+Input : 2 73
+Stack : 73 <- Top
+
+Iteration 2 :
+Input : 2 83
+Stack : 73, 83 <- Top
+
+Iteration 3 :
+Input : 2 43
+Stack : 73, 83,43 <- Top
+
+Iteration 4 :
+Input : 1
+Print and pop 43
+Stack : 73, 83 <- Top
+
+Iteration 5 :
+Input : 1
+Print and pop 83
+Stack : 73 <- Top
+
+Iteration 6 :
+Input : 2 16
+Stack : 73, 16 <- Top
+
+Iteration 7 :
+Input : 2 48
+Stack : 73, 16, 48 <- Top
+
