@@ -1,0 +1,3 @@
+Types of Graphs:
+1. Unweighted  -->no weight
+2. Weighted --> some weight

@@ -1,0 +1,7 @@
+1. ETL Extract, Transform and Load present in data lakes 
+2. ETL perform the extraction of the information 
+3. Data volumne comes under the data extraction 
+4. ETL may be performs under the data analysis part 
+5. Make a Read me file for the under constraction
+
+
