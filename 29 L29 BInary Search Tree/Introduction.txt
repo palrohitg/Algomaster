@@ -1,0 +1,30 @@
+Date 22 June 
+
+# AFL technique : "It does not matter how many problems u solved all matter how well u understood the problems that u have already solved "
+
+
+# Binary Search Tree BST : 
+- It just the improvement of BT to make the program more efficient. 
+- In BT searching take O(N) bcoz need to visit each and every node. 
+- In BST in just some special features on the top of BT like. In left subtree all the nodes are small then the root and in right subtree all the elements are greater than the binary tree 
+- It take efficient O(logn) times but if the tree is skew tree in worst case it take the O(N)
+
+# In this module we are going to look at some important problems relateed to BST and their implementation and time and space complexity
+- Some common implementation like how to build BST 
+- how to make all the left element small and right greater than the root elements 
+- Pick one node and insert it to their appropriate place 
+- Searching, Building a 
+- Deletion of node 
+- check for the BST 
+
+
+# Deletion in the BST 
+Tree possible case for deletion 
+- Node with 0 child 
+- Node with 1 child store in the temp var not NULL child 
+- Node with 2 child Potential replacement for the root node Max in the left subtree | Minimum at the right subtree 
+
+# Life is game and your job/challenges is find out what to do ?
+- karcho ki race main  bhagna 
+- Do what you love , there is nothings like hard-work , If u are doing hard-works is means u are not passionate and interested about. 
+- It's like going on flow no hard-works and no efforts. If u tell like how hard-work then u don't called a genious don't be parts of rat race.
