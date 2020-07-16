@@ -58,6 +58,9 @@ int allOccurence(int *a, int i, int n , int key , int *out , int j) {
 }
 
 
+
+
+
 int main() {
 	int arr[] = {3, 3, 3, 4};
 	int size = sizeof(arr) / sizeof(int);
