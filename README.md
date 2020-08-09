@@ -1,20 +1,25 @@
 ## **I am Undertaking the 50 Days of code challenges**: :sparkles: :camel: :tada: :rocket: :metal:
 	
-	- Timing fixed Daily 12pm-4pm Lecuture and Problem Sovling and making video what I am learn.
-    - Try to put the files and every Days Quotes After Doing The Challenges
-    - [Inspiritional Quotes](https://www.keepinspiring.me/positive-inspirational-life-quotes/)   [Programmer Quotes](https://www.goodreads.com/quotes/tag/programming)
-    - My Progress Report
-    - [learning DS&Algo](https://medium.com/coderbyte/how-to-get-good-at-algorithms-data-structures-d33d5163353f)
+		- Timing fixed Daily 12pm-4pm Lecuture and Problem Sovling and making video what I am learn.
+    	- Try to put the files and every Days Quotes After Doing The Challenges
+	
+
+# Good Points To Remember
+[Inspiritional Quotes](https://www.keepinspiring.me/positive-inspirational-life-quotes/)   
+	
+[learning DS&Algo](https://medium.com/coderbyte/how-to-get-good-at-algorithms-data-structures-d33d5163353f)
+		
+		
 
 
 ## **Some Tips for the good Developer** :
 	
-	* Read the problem Statement
-	* Design the Solution Architecture
-	* Code in paper Dry run the code on paper 
-	* Run test on paper for the edges cases
-	* Then write the code in IDE 
-	* Repeat the Cycle
+		* Read the problem Statement
+		* Design the Solution Architecture
+		* Code in paper Dry run the code on paper 
+		* Run test on paper for the edges cases
+		* Then write the code in IDE 
+		* Repeat the Cycle
 
 ## **Some More tips** :
 	
@@ -87,3 +92,8 @@
 		
 		* Solve recursion problems and challenges.
 		* Happing coding :)))
+
+**Day12 : 9 August** :
+
+		* Backtracking and Recursion- Revision 
+		* Most Famous Backtracking Problems are Rat in Maze, Sudoku Solver and chess in chess and NQueen Problems are  
