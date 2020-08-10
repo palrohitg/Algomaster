@@ -2,13 +2,14 @@
 	
 		- Timing fixed Daily 12pm-4pm Lecuture and Problem Sovling and making video what I am learn.
     	- Try to put the files and every Days Quotes After Doing The Challenges
+		- Daily Target of Solving 10 Question Maximum in a Days 
 	
 
 # Good Points To Remember
 [Inspiritional Quotes](https://www.keepinspiring.me/positive-inspirational-life-quotes/)   
 	
 [learning DS&Algo](https://medium.com/coderbyte/how-to-get-good-at-algorithms-data-structures-d33d5163353f)
-		
+[Document](https://docs.google.com/spreadsheets/d/1zszcyBuv17IrJhY_mtfN26P96OkvKRB_2e5SpRqA4Uo/edit?usp=drive_web&ouid=109098549570077415389)
 		
 
 
@@ -20,6 +21,7 @@
 		* Run test on paper for the edges cases
 		* Then write the code in IDE 
 		* Repeat the Cycle
+		* DSA is not about how many problems you have solved but how well you understand the problems that u have already solved : Akshay Saini 
 
 ## **Some More tips** :
 	
@@ -97,3 +99,11 @@
 
 		* Backtracking and Recursion- Revision 
 		* Most Famous Backtracking Problems are Rat in Maze, Sudoku Solver and chess in chess and NQueen Problems are  
+
+
+
+**Day : 10 August** 
+
+		1. Combination Revision from Don't Memories with graphical format
+		2. Permutation is all about arranging the things repetation and without repetitions
+		3. Combination is all about selecting the things
