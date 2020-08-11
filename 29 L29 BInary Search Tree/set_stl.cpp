@@ -16,3 +16,25 @@
 		or the name of the iterators 
 
 */
+
+#include<iostream>
+#include<set>
+using namespace std;
+int main() {
+
+	int arr[] = {10,20,11,20,20};
+	int n = sizeof(arr)/sizeof(int);
+	
+	set<int> s;
+	
+	for(int i=0; i<n; i++) {
+		s.insert(arr[i]);
+	}
+
+	// print all the elements 
+	for(set<int>:: iterator it = s.begin(); it != s.end(); it++) {
+		cout << *(it);
+	}
+
+	return 0;
+}

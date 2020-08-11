@@ -11,12 +11,13 @@
 
 #include <iostream>
 #include <algorithm>
+#include<string.h>
 #include <vector>
 using namespace std;
 
 int main() {
-    vector<int> v{1,2,3,4,5}; // basic initialization
-    vector<int> a;
+    // vector<int> v{1,2,3,4,5}; // basic initialization
+    // vector<int> a;
     // rotate(v.begin(),v.begin()+2,v.end());
      // int N = v.size()
      // v.reverse(N);
@@ -27,35 +28,40 @@ int main() {
      
 
     // for each  most commonly used iterator for vectors
-    for(int x : v) {
-    	cout << x << " ";
+    // for(int x : v) {
+    // 	cout << x << " ";
+    // }
+    // cout <<endl;
+    // int N;
+    // cin >> N;
+    // for(int i =0; i<N; i++) {
+    // 	int no;
+    // 	cin >> no;
+    //     a.push_back(no);
+    // }
+    // cout << endl;
+    // for(int x : a) {
+    // 	cout << x << " ";
+    // }
+
+    // /*
+    //  push_back() basically doubly the memory after each is inserted
+    //  size(),capacity(), max_size()
+    // */
+
+    // cout << v.size() << endl;
+    // cout << v.capacity() << endl;
+    // cout << v.max_size() << endl;
+
+    // cout << a.size() << endl;
+    // cout << a.capacity() << endl;
+    // cout << a
+    // .max_size() << endl;
+    char arr[100];
+    cin >> arr;
+    next_permutation(arr, arr + strlen(arr));
+    for(auto x: arr) {
+      cout << *(x);
     }
-    cout <<endl;
-    int N;
-    cin >> N;
-    for(int i =0; i<N; i++) {
-    	int no;
-    	cin >> no;
-        a.push_back(no);
-    }
-    cout << endl;
-    for(int x : a) {
-    	cout << x << " ";
-    }
-
-    /*
-     push_back() basically doubly the memory after each is inserted
-     size(),capacity(), max_size()
-    */
-
-    cout << v.size() << endl;
-    cout << v.capacity() << endl;
-    cout << v.max_size() << endl;
-
-    cout << a.size() << endl;
-    cout << a.capacity() << endl;
-    cout << a
-    .max_size() << endl;
-
 	return 0;
 }
