@@ -16,7 +16,28 @@ bool ratInMaze(char maze[][10], int sol[][10], int i, int j, int m, int n) {
 
 		// Print the solution
 		for(int i=0; i<m; i++) {
-			for(int j=0; j<n; j++) {
+			void sum(int arr[], int i, int key) {
+    // Base case
+    if(arr[i] == key) {
+        v.push_back(arr[i]);
+        for(auto x: v) {
+            cout << x;
+        }
+        return;
+    }
+
+
+    // Condition 
+    if(arr[i] < key) {
+        v.push_back(arr[i]);
+        sum(arr, i+1, key - arr[i]);
+    }
+    else {
+        v.pop_back();
+        sum(arr, i+1, key);
+    }
+}
+for(int j=0; j<n; j++) {
 				cout << sol[i][j] << " " ;
 			}
 			cout << endl;
@@ -26,7 +47,7 @@ bool ratInMaze(char maze[][10], int sol[][10], int i, int j, int m, int n) {
 		return true;
 	}
 
-	// if Rat is outside the matrix
+	// if Rat is outside the matrix grid se bahar 
 	if(i>m || j>n) {
 		return false;
 	}
