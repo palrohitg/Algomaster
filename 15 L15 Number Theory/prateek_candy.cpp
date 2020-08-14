@@ -3,13 +3,20 @@
 #include<iostream>
 using namespace std;
 
+int
+
+
+
+
 int main() {
 
 	int t;
 	cin >> t;
 
 	while (t--) {
-		cin >> arr[i];
+		int n;
+		cin >> n;
+
 	}
 
 	return;

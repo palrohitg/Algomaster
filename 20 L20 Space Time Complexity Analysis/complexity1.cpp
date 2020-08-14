@@ -9,4 +9,7 @@
  3. * Time Complexity with Recurrence Methods for Exam point of view
  4. Time Complexity for polynomial evaluation with the help of power function where N > Nlogn> N^2 is the brute kind of solution but the N is better
  5. Fibnonic series for Recursion left this part
- 6. 
+ 
+ 
+ # Extra space Optimization: 
+ 1. Running time of the N^2 lots a times.

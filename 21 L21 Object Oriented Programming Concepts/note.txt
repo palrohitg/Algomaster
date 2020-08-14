@@ -1,0 +1,100 @@
+### Recursion concepts will be more clear when we have the tree, graphs and dynamic programming
+
+## Important Concepts in OOPS Parts
+
+# Operator Overloading :
+* It will add or increase the functionality of the Operator which is already predefined like +, -, *, / etcs
+* suppose we have two complex num
+bers like 5 + 6i, 5 + 6i , when c1 + c2 = 10 + 12i means its a complex numbers additions
+        * Setters and Getters are used when we have to set the values by using the function
+        * Constructors are usefull when we have to set the values at the time of the objects creations
+        * Shift Operator left and right Shift ( >> << ) helps us to take cin >> complex and cout << complex which is not defined by  this objects
+
+
+
+# Objects Oriented Paradigms :
+
+1. Constructors :
+        - Same name as the class
+        - Used to initialize the objects
+	- Multiple Constructors we have are called Constructors Overloading
+
+2. Copy Constructors:
+        - Copy the content of one object to another
+        - car d(c); d is the copy in the code
+        - we aren't passing the copy but we are reference the address to that why we are using pass by reference
+
+3. Getters and Setters : 
+
+        - Used to set the private data members values and also encapsulates so the outer members can acces them directly 
+        - Setters set the private data members values 
+        - Getter print the data value of private data members 
+
+4. Shallow and Deep Copy 
+     
+        - Deep copy is need when we have some data members are dynamically allocated some memorys 
+        - So the changes made at one address could made the changes to the new address that is called the shallow copy so we need to avoid that
+        - To avoid that we need to allocated the memorys first and then breaks it out
+
+
+5. Copy Assigment Operator
+
+        - Similar to the copy constructor but it call multiple times 
+        with respect to the current calls 
+        - to make the deep copy 
+        - a = b ;
+
+6. Destructors 
+
+        - Clear out the memory occupied by the objects 
+        - automatically when the object goes out of the scope 
+        - expect for the cases when you have the dynamically allocated memorys 
+        - car must be dynamically allocated to delete the memorys occupied by the objects
+
+
+
+7. Initialization Lists , Consts 
+
+
+8. 
+
+
+
+# Object Oriented programming Features : 
+
+1. Inheritance 
+
+        - Extract the characteristics and features of another class 
+        - Sub class - Derived Class jo inherits the property of another class  
+        - Super class - Base Class whose properities got accessed by some another class 
+        Example : 
+                lets we have to create some class like car, truck, bus 
+                base case vechicle whichs has three functions like that fuelAmount, applyBreaks, capacity()
+
+        Modes of Inheritance : 
+        1. Public mode 
+        2. Protect mode 
+        3. Private 
+
+        Types of Inheritance : 
+        1. Single 
+        2. Multiple
+        3. Mutilevel 
+        4. Hierarchical Inheritance 
+        5. Hybrid(virtual) Inheritance
+
+2. Polymorphisms 
+
+
+3. Encapsulations 
+
+
+4. Abstractions 
+
+
+
+5. Dynamic Binding 
+
+
+
+6. Message Passing 
