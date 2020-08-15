@@ -6,4 +6,12 @@
     4. Car Sorting Problems 
     5. Container Design
     6. Templates
+
+
+    1. Cab sorting problem using the custom comparators 
+    2. Car sorting problems using vectors 
+
+
 */
+
+
