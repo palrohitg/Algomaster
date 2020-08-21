@@ -1,4 +1,27 @@
 /*
+ 
+ 1. Neartest Greater to left 
+ 2. Nearest Greater to right 
+ 3. Nearest smaller to left 
+ 4. Nearest smaller to right 
+
+
+ 5. Stock Span Problems 
+ 6. Max Area of histograms 
+
+ 7. Rain Water Harvesting 
+ 8. Implementing stack using heap 
+ 9. The celebrity problems 
+ 12. Longest Valid Parenthesis 
+ 11. Maxium Area of rectangle in Maxtrix 
+ 13. Iteartively Implement TOH
+
+
+*/
+
+
+
+/*
 	- Stacks is linear Data structure stores the data in LIFO order
 	- Implementation varies can be arrays , linked list, vectors
 	- Vectors is prateek bhaiya favourites
