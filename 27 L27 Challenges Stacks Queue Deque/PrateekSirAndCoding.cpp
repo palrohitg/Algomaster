@@ -1,3 +1,5 @@
+/*
+
 Prateek sir loves coding. Hence, he took up position of an instructor and founded Coding Blocks, a startup that serves students with awesome code modules. It is a very famous place and students are always queuing up to have one of those modules. Each module has a cost associated with it. The modules are kept as a pile. The job of an instructor is very difficult. He needs to handle two types of queries:
 
 1) Student Query: When a student demands a module, the code module on the top of the pile is given and the student is charged according to the cost of the module. This reduces the height of the pile by 1. In case the pile is empty, the student goes away empty-handed.
@@ -49,4 +51,34 @@ Stack : 73, 16 <- Top
 Iteration 7 :
 Input : 2 48
 Stack : 73, 16, 48 <- Top
+
+*/
+
+#include<iostream>
+#include<stack>
+using namespace std;
+
+int main() {
+
+    int q; cin >> q;
+    stack<int> s;
+    for(int i=1; i<=q; i++) {
+        int input; 
+        cin >> input; 
+        if( input == 2) {
+            int cost; cin >> cost;
+            s.push(cost);
+        }
+        else {
+            if(s.empty()) {
+                cout << "no code modules";
+            }
+            else {
+                cout << s.top() << endl;
+                s.pop();
+            }
+        }
+    }
+    return 0;
+}
 
