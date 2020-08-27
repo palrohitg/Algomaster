@@ -1,5 +1,6 @@
 // Implemenatation of the Hashtable
-// Custom Class with hashmaps  
+// Custom Class with hashmaps learning operators overloading size_t and () how to compare two customs objects 
+  
 #include<iostream>
 #include<unordered_map>
 #include<cstring>
