@@ -10,6 +10,10 @@
 https://github.com/arjan-bal/competitive-coding-library
 
 
+1. Pratice Question and learn somethings new from that onces you learn any topic it will strength knowledge for 
+	border area. 
+2. learn new concept and practice and easy to debug code 
+
 
 
 
