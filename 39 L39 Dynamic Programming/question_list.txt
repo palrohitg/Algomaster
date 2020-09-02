@@ -1,10 +1,11 @@
 # 1 sep 2020 : DP Problems 
+# 2 sep 2020 :
 
 1. min step from one  Done 
 2. coin change problems Done 
-3. wines problems 
-4. maxium sub arrays 
-5. ladders 
+3. wines problems Done bottom up dp is left here
+4. maxium sub arrays  Done 
+5. ladders recursion based questions left rec
 6. Roadcutting to maxium profits * 1-DP 
 7. longest common subsequences * 
 8. Lis 4 variations 
