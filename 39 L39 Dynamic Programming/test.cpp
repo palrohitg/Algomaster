@@ -1,13 +1,11 @@
-#include<iostream> 
+#include<iostream>
 using namespace std; 
 
 int main() {
 
-    // int x = 10;
-    // int y = 20;
-    // int z = 5; 
-    // cout << min(min(x,y),z);
-    cout << max(3,3);
+    int ls = int arr[100][00];
+    cout << ls;
+
 
     return 0;
 }
