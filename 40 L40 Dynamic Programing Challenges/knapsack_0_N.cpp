@@ -3,6 +3,13 @@
 3 2 4 5 1
 4 3 5 6 1
 
+
+Algorithms : 
+1. Iterate over the cap and then iterate over the frequency arrays and then checkout the maximum profits we can
+    make by using the same items w.r.t to the current prices 
+
+
+
 unbounded knapsack means we can add the value for multiple times right 
 
 */
