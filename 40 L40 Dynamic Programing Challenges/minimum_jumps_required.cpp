@@ -1,48 +1,53 @@
 /*
 
-Tughlaq introduces a strange monetary system. He introduces copper coins and each coin has a number written on it. A coin n can be exchanged in a bank into three coins: n/2, n/3 and n/4. A coin can also be sold for gold. One can get as much grams of gold as the number written on the coin. You have one copper coin. What is the maximum weight of gold one can get from it?
+You are provided an array of integers where each element represents the max number of steps you can take to move ahead. You need to check that how many minimum steps required to reach at the end of the array.
+
+Hint - If N==0 you can never move forward, your return INT_MAX (Infinity).
 
 Input Format
-The input file contains a single integer n, the number on the coin.
+First line contains integer t which is number of test case. For each test case, it contains an integers n which the size of array A[]. Next line contains n space separated integers.
 
 Constraints
-0 <= n <= 1 000 000 000
+1<=t<=50
+1<=n<=1000
+0<=A[i]<=100
 
 Output Format
-Print the maximum weight of gold you can get.
+Print the minimum number of jumps.
 
 Sample Input
-12
+1
+11
+1 3 5 8 9 2 6 7 6 8 9
 Sample Output
-13Tughlaq introduces a strange monetary system. He introduces copper coins and each coin has a number written on it. A coin n can be exchanged in a bank into three coins: n/2, n/3 and n/4. A coin can also be sold for gold. One can get as much grams of gold as the number written on the coin. You have one copper coin. What is the maximum weight of gold one can get from it?
-
-Input Format
-The input file contains a single integer n, the number on the coin.
-
-Constraints
-0 <= n <= 1 000 000 000
-
-Output Format
-Print the maximum weight of gold you can get.
-
-Sample Input
-12
-Sample Output
-13
-
+3
+Explanation
+1-> 3 (you can pick 5 or 8 or 9 , pick either 8 or 9) -> 8 -> 9
 */
 
 #include<iostream>
 using namespace std; 
 
+int minSteps(int arr[], int n) {
 
-int coinChange(int n) {
-    
+
+    return 0; 
 }
 
 int main() {
 
-    int n; cin >> n; 
+    int t; cin >> t;
+    int arr[101];
+
+    while(t--) {
+        
+        int n; cin >> n; 
+        
+        for(int i = 0; i < n; i++) {
+            cin >> arr[i];
+        }
+        minSteps(arr, n);
+    } 
 
 
     return 0;
