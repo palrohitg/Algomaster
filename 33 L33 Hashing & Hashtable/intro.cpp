@@ -29,3 +29,4 @@ Collision : when two keys get the same address in the hashtable buckets so, we h
     Note : To aviod collision we can do assign the large memorys which is known to us in advances to aviod collision time/space complexity trade 
     
     
+# Mapping of key and value pair is also done using the hashfunctions : 
