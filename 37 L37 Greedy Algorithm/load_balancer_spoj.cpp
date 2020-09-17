@@ -1,5 +1,6 @@
 // follow up Question print -1 is load balancing is not possibles 
 // logic maximum transfer of the job from one part of the arrays to the another part of the arrays 
+// Break at the given k and return the maximum values
 #include<iostream>
 using namespace std;
 
@@ -18,7 +19,7 @@ int loadBalancer(int arr[], int n) {
         return -1;
     }
     
-    int avg = sum/n;
+    int avg = sum/n; // no of jobs that each processor can process 
 
     for(int i=0; i<n; i++) {
 

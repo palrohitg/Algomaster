@@ -1,0 +1,7 @@
+// Editorial for the priority Queue or the heaps data structure to findout the maxiumum and the miniumum value in the 
+Running Streams 
+
+// Heaps min/max heaps is known as the priority Queue in STL 
+
+1. max heaps 
+2. min heaps priority_queue<int, vector<int>, greater<int>> greater is doing the comparison here 
