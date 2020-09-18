@@ -1,0 +1,14 @@
+
+Binary Tree : 
+    Hierachical Data structure unlike the stack and queue 
+    Example directory structure, company organizations 
+
+
+Terms : 
+1. Siblings : child of the same parents 
+2. Ancestors : All the parent node 
+3. Decendent : All all child node 
+4. Leaf : not have not children 
+
+
+
