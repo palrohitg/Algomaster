@@ -11,4 +11,12 @@ Terms :
 4. Leaf : not have not children 
 
 
+Different View of the tree : 
+1. top little variations 
+2. bottom 
+3. left 
+4. right 
+
+
+
 

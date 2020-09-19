@@ -63,12 +63,16 @@ void printKthLevel(node *root, int k) {
 	return;
 }
 
+
+// Print the value of the kth levels 
 void printAllLevel(node *root, int height) {
 	for(int k = 1; k<=height; k++) {
 		printKthLevel(root, k);
 		cout << endl;
 	}
 }
+
+
 
 void bfs(node *root) {
 

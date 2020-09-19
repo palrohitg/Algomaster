@@ -13,3 +13,10 @@
  
  # Extra space Optimization: 
  1. Running time of the N^2 lots a times.
+
+
+
+# Three notations is used : 
+1. Big Notations Upper bound
+2. Omega Notations Exract behaviour
+3. Theta Notations Lower bound of the functions
