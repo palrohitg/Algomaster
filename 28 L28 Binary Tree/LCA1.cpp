@@ -1,10 +1,10 @@
+// Check in the left and right if both are not null means the value present at the root and root is LCA
+
 #include<iostream>
 using namespace std;
 
 int main() {
-	cout << endl;
-	if(k==1) {
-		cout << "helo";
-	}
+
+	cout << "hello";
 	return 0;
 }

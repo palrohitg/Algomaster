@@ -18,5 +18,14 @@ Different View of the tree :
 4. right 
 
 
+# Some Importants theory Concepts : 
+1. Diameter of the tree 
+2. Sum replacements 
+3. Height Balanced Tree AVL trees 
+4. Build tree from arrays 
+5. PreOrder and PostOrder builds 
+6. Right View of the tree 
+7. Shorest distances between two nodes
+8. longest common Ancestors
 
 

@@ -59,11 +59,24 @@ void bfs(node *root) {
     queue<node *> q; 
     if(root != NULL) {
         q.push(root);
+        q.push(NULL);
     }
 
     // While the queue is not empty pop out the elements and insert the value of the childrens 
     while (!q.empty()) {
         node * front = q.front();
+
+        // is null is encountered that print the values 
+        if (front == NULL) {
+            cout << endl;
+            q.pop();
+            // insert the values  
+            if(!q.empty()) {
+                q.push(NULL);
+            }
+        }
+
+
         cout << front->data << " "; 
         q.pop(); 
 
@@ -80,13 +93,29 @@ void bfs(node *root) {
     }
 }
 
+// Diameter : Largest paths between any two node. 
+
+int diameter(node *root) {
+
+    // Base Case 
+    if(root == NULL) {
+        return -1;
+    }
+ 
+    int left = diameter(root->left);
+    int right = diameter(root->right);
+    return max(left, right) + 1; 
+}
+
+
 
 int main() {
 
     node *root = buildTree(); 
     printTree(root);
-    cout << endl; 
+    // cout << endl; 
     bfs(root);
+    cout << diameter(root) << endl; 
 
     return 0;
 }
