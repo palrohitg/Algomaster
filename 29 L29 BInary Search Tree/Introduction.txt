@@ -28,3 +28,12 @@ Tree possible case for deletion
 - karcho ki race main  bhagna 
 - Do what you love , there is nothings like hard-work , If u are doing hard-works is means u are not passionate and interested about. 
 - It's like going on flow no hard-works and no efforts. If u tell like how hard-work then u don't called a genious don't be parts of rat race.
+
+
+
+# list of Question : 
+1. Vertical Order Traversal 
+    1. Top view
+    2. Right view
+    3. Bottom view 
+    4. left view 

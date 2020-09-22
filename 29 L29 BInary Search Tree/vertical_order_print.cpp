@@ -5,6 +5,8 @@
         a. Store the horizontial distances as the key and corresponding nodes as the values 
         b. print the hashmaps or assign the values to 2-D vectors 
     3. Two types of maps : map, unordered maps, map maintain the self balancing bst 
+    4. Multi maps have same key for the different values like burger can have different price 10,20
+    https://online.codingblocks.com/app/player/68808/content/107303/5172/code-challenge
 */
 
 #include<iostream>
@@ -54,15 +56,26 @@ void horizontalDistance(node *root, map<int, int> &m, int hd) {
 void verticalOrderPrint(node *root) {
 
     // Hashmaps to store the keys and values w.r.t to horizontal distances and node data order maps
-    map<int, int > m;
+    multimap<int, int > m;
     vector<vector<int>> v;  
     horizontalDistance(root, m, 0);
     
     for(auto p : m) {
-        v[p.first].push_back(p.second);
+        cout << p.first << " " << p.second << endl;
+        
+    }   
+
+
+    for(auto it : m) {
+
+        auto it1 = lower_bound(it->first);
+        auto it2 = upper_bound(it->first); 
+
+
     }
 
-    // insert all the value in the vectors     
+    
+
     return;
 }
 
