@@ -24,6 +24,8 @@ public:
 
 node *buildTree() {
 	string 	str; cin >> str;
+
+	// Base case hit on the NULL values 
 	if (str == "false") {
 		return NULL;
 	}

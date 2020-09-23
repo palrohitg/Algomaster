@@ -1,4 +1,8 @@
-Date 22 June 
+Date 22 June  Introduction to BST 
+
+# BST => left subtree has smaller elements than the root and the right subtree has greater elements than the roots 
+
+
 
 # AFL technique : "It does not matter how many problems u solved all matter how well u understood the problems that u have already solved "
 
