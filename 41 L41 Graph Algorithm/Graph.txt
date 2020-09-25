@@ -1,3 +1,38 @@
+Graphs : Most Important and widely used to data structure with many real life applications + Problems Solutions 
+
+
+Commonly Asked Platforms : 
+1. Easy problems 
+2. ACM-ICPC (2)
+3. Hiring challenges 
+4. Google kickstart 
+
+
+
+Applications : 
+1. Google maps V : landmarks/cities E : roads 
+2. Socical Networking  V : people , E : connections 
+3. Circuits 
+4. Routing Algorithms 
+5. Delivery Route for Vans 
+6. Resolving Dependencies like installations of softwares 
+7. Deep learning Tensorflows 
+8. Web Documents 
+9. Paint Bucket Tools 
+
+
+
 Types of Graphs:
 1. Unweighted  -->no weight
 2. Weighted --> some weight
+
+
+Representations of Grahps : 
+1. AdjList Most commonly hashmaps Representations or arrays of list || Arrays of list or hashmaps 
+2. AdjMaxtrix
+
+// Pro tips : 
+1. First present the key idea for desgining an Algorithms for this problems. The idea has to describe clearly 
+2. Present your Algorithms and its pseudo-code along with the relevant comments 
+3. Illustrate your Algorithms by taking an example 
+4. Analyse the correctness and the run-time of your Algorithms
