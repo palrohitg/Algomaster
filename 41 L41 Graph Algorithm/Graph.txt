@@ -36,3 +36,61 @@ Representations of Grahps :
 2. Present your Algorithms and its pseudo-code along with the relevant comments 
 3. Illustrate your Algorithms by taking an example 
 4. Analyse the correctness and the run-time of your Algorithms
+
+
+1. Strongly connected components 
+2. Minimum spanning tree : krushal and prims algorithms 
+3. Single Sources shortest paths 
+4. Bellman ford algorithms 
+
+==========================================================================================================================================
+                                                GRAHPS ALOGRITHMS 
+==========================================================================================================================================
+
+- BFS 
+- DFS 
+- SSSP using BFS 
+- Snakes and ladder BFS-SSSP 
+- connected components using DFS Graphs 
+- DAG's Topologies Sort using DFS 
+- Topologies sort using BFS 
+- Undirected Grahps is tree or not 
+- Cycle detection in directed Grahps using dfs 
+- Cycle detection in directed Grahps using bfs 
+- Flood fill algorithms 
+- Dijkstra's Algorithms path on weighted graphs 
+- ICPC trips 
+- Disjoint set union 
+- union and find operations 
+- union fine pseduocode & complexity 
+- cycle detection & implementation 
+- cycle detection and implementation 
+- path compression optimizations 
+- union by ranks optimization 
+- dry run Analyse 
+- pairing problem 
+- krushal's algo 
+- prims algo
+- bellman ford algorithms
+- floyd warshall algorithms
+- travelling salesman problems 
+- holiday accomodation concept
+- holiday accomodation implementation 
+- bipartite grahps check 
+- Strongly connected component kasaruja algorithms 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
