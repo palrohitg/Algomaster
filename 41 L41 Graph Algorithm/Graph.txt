@@ -91,6 +91,19 @@ Representations of Grahps :
 
 
 
+### Todays problems sets : 
 
+1. ICPC trips 
+2. DSU Cycle detection algorithms 
+3. Regilious problems 
+
+
+
+# Grahps 
+
+
+1. Traversal algorithms (BFS, DFS)
+2. Disjoint set and union 
+3. MST(Minimum spanning Tree) 
 
 
