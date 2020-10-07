@@ -49,7 +49,7 @@ class DSU {
                 }
                 else {
                     parent[s2] = s1;
-                    rank[s2] += rank[s1];
+                    rank[s1] += rank[s2];
                 }
             }  
         }
@@ -84,7 +84,10 @@ class DSU {
                 ans += V - rank[findSet(i, parent)];
             }
 
+            delete [] parent; 
+            delete [] rank;
             cout << ans/2 << endl;
+            
         }
 };
 
