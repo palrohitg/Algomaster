@@ -1,0 +1,11 @@
+==============================
+1. Kruskal Algorthms 
+2. Prim's Algorthms 
+3. Bellman ford 
+4. Floyd Warshall Algorthms 
+============================
+Question 2 Graphs Along with time complexity and constraints 
+
+1. MST using Kruskal and prim's 
+2. Snakes and ladders problems using BFS 
+3. ELogN 
