@@ -1,5 +1,5 @@
 /*
- String sorting based on the lexiographical order 
+ String sorting based on the lexiographical order / dictionary order of the strings 
 
 */
 
