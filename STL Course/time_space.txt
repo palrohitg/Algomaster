@@ -1,0 +1,7 @@
+
+
+Space Complexity : Amount of memory is going to need in the worst case when the algo is executing extra auilxiary space part from the input space. 
+Example: bubble sort inplace algorithms
+Example: fib for three variabe a,b,c O(1)
+1. bottom up dp O(N)
+2. recursion call stack O(N)
