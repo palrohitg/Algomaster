@@ -60,6 +60,8 @@ class trie {
                     return false; 
                 }
                 else {
+                    // increment the temp pointer 
+                    temp = temp->children[ch];
                 }
             }
             return temp->terminal; 

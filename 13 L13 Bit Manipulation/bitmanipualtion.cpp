@@ -23,6 +23,7 @@ bool isodd(int n) {
   return 0;
 }
 */
+
 //clear bit clear a particular bit
 int clearBit(int n, int i) {
 	int mask = ~(1<<i); // masks is ready
@@ -38,6 +39,8 @@ int setBit(int n) {
   }	
   return set;
 }
+
+
 int updateBit(int n, int i, int v) {
 	int mask = ~(1<<i);
 	int cleared_bit_number = n&mask;
@@ -45,10 +48,12 @@ int updateBit(int n, int i, int v) {
 	return n;
 }
 
+
 int clearedLastBit(int n, int i) {
 	int mask = (-1 << i);
 	return n & mask;
 }
+
 
 int clearedFromTtoJ(int n, int i,int j) {
 	int ones = (~0);
