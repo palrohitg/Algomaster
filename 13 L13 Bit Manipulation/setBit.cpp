@@ -3,27 +3,17 @@
 #include<bits/stdc++.h> 
 using namespace std; 
 
-int setAllBitsInRange(int n, int k) {
 
-
-
-
-    return 0;     
+int flipbits(int n) {
+    return ~n; 
 }
-
-
 
 int main() {
 
     // int n, k; cin >> n >> k; 
-    // setAllBitsInRange(n, k); 
-    vector<int> n; 
-    n.push_back(10); 
-
-    
-    for (auto it : n) {
-        
-    }
+    // cout << "hellow";
+    int n; cin >> n; 
+    cout << flipbits(n);
 
 
     return 0; 
