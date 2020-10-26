@@ -1,3 +1,6 @@
+// prove of the a<b<c then there adjacent element is always going to smallers to need to traverse the adjacent element only
+
+
 int Solution::findMinXor(vector<int> &A) {
 
     sort(A.begin(), A.end()); 
