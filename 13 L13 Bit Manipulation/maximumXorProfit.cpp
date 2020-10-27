@@ -1,5 +1,5 @@
 // prove of the a<b<c then there adjacent element is always going to smallers to need to traverse the adjacent element only
-
+// sort the arrays and do the linear searchs 
 
 int Solution::findMinXor(vector<int> &A) {
 
@@ -12,3 +12,6 @@ int Solution::findMinXor(vector<int> &A) {
     }
    return ans;
 }
+
+
+// new problems
