@@ -3,11 +3,39 @@
  accept null value when it will print the one token.
  Part 2 : Design and Implementation of String tokenizer function on your own
   1. Dynamic memory Allocation and some Static varibles
+
+  // tokenization means break the strings using some delimiters values
+  example--> space, comman anythings ....
 */
 
+#include<iostream>
+using namespace std;
+
+int main() {
+
+#ifndef ONLINE_JUDGE
+  freopen("input.txt", "r", stdin);
+  freopen("output.txt", "w", stdout);
+#endif
+  return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 char* mystrtok(char *str, char del) {
-	
-	
+
+
 }
 
 
@@ -17,14 +45,14 @@ char* mystrtok(char *str, char del) {
 using namespace std;
 int main() {
 
-	char s[100] = "Corono is latest news in market";
+  char s[100] = "Corono is latest news in market";
 
-	char *ptr = strtok(s, " "); // strtok(string, "delimeter")
+  char *ptr = strtok(s, " "); // strtok(string, "delimeter")
+  cout << ptr << endl;
+
+  while (ptr != NULL) {
+    ptr = strtok(NULL, " "); // token is space it may be anything
     cout << ptr << endl;
-    
-    while(ptr != NULL) {
-       ptr = strtok(NULL, " "); // token is space it may be anything
-       cout << ptr <<endl;
-    }
- return 0;
+  }
+  return 0;
 }
