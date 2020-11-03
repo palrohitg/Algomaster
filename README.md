@@ -107,3 +107,10 @@
 		1. Combination Revision from Don't Memories with graphical format
 		2. Permutation is all about arranging the things repetation and without repetitions
 		3. Combination is all about selecting the things
+
+===============================================================================
+Data-Strcuture Analysis Graphs 
+
+priority queue(heaps) : 
+- top() -> O(1)
+- push() -> logN 

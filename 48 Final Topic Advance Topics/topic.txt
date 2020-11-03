@@ -22,3 +22,7 @@ path for directed acylic graphs, All pair shortest path- Floyd Warshall Algorith
 UNIT – IV: String Matching Algorithms
 The Naïve string-matching algorithm, Rabin-Karp Algorithm, String matching with finite automata,
 Knuth-Morris-Pratt Algorithm.
+
+String Matching : 
+1. Brute-force 
+2. Rabin-karn algorithm 
