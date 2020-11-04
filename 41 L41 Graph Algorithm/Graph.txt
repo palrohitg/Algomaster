@@ -8,6 +8,13 @@ Commonly Asked Platforms :
 4. Google kickstart 
 
 
+# Dfs : 
+ - Pick one nodes and visits i neighbour 
+ - Repeat the above process 
+ - Coming back to the same paths 
+
+
+
 
 Applications : 
 1. Google maps V : landmarks/cities E : roads 
@@ -105,5 +112,7 @@ Representations of Grahps :
 1. Traversal algorithms (BFS, DFS)
 2. Disjoint set and union 
 3. MST(Minimum spanning Tree) 
+=================================================================================
 
-
+Min Height Tree : 
+a. Course Schedule 
