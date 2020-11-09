@@ -2,42 +2,42 @@
 using namespace std;
 
 class node {
-	
-	public : 
-		
-		int data;
-		node *left;
-		node *right;
 
-	public :
+public :
 
-		node(int data) {
-			this->data = data;
-			left = NULL;
-			right = NULL;
-		}
+	int data;
+	node *left;
+	node *right;
+
+public :
+
+	node(int data) {
+		this->data = data;
+		left = NULL;
+		right = NULL;
+	}
 };
 
-// Build-Tree 
+// Build-Tree
 node * buildTree() {
-	
+
 	int data;
 	cin >> data;
 
-	if(data == -1) {
+	if (data == -1) {
 		return NULL;
 	}
-	
+
 	node *root = new node(data);
 	root->left = buildTree();
 	root->right = buildTree();
-	
-	return root; 
+
+	return root;
 }
 
 void printTree(node *root) {
 
-	if(root == NULL) {
+	if (root == NULL) {
 		return;
 	}
 
@@ -49,31 +49,31 @@ void printTree(node *root) {
 
 int height(node *root) {
 
-	if(root == NULL) {
+	if (root == NULL) {
 		return 0;
 	}
 
 	int h1 = height(root->left);
 	int h2 = height(root->right);
-	
+
 	return max(h1, h2) + 1;
 }
 
-// Calculate the diameter means the longest path exist in the tree 
+// Calculate the diameter means the longest path exist in the tree
 
 int diameter(node *root) {
-	
-	if(root == NULL) {
+
+	if (root == NULL) {
 		return 0;
 	}
 
 	/*
-	   1. Root main exits h1, h2, max return 
-	   2. left subtree exits 
-	   3. right subtree exits 
+	   1. Root main exits h1, h2, max return
+	   2. left subtree exits
+	   3. right subtree exits
 	*/
 
-	int h1 = height(root->left);
+	int h1 = height(root->left); n
 	int h2 = height(root->right);
 	int opt1 = h1 + h2;
 
@@ -83,7 +83,7 @@ int diameter(node *root) {
 	return max(opt3, max(opt1, opt2));
 }
 int main() {
-	
+
 	node *root = buildTree();
 	printTree(root);
 	cout << endl;

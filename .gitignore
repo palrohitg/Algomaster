@@ -3,3 +3,5 @@ Dtemp Data
 *.exe
 *.out
 DailyPlan.txt
+input.txt*
+output.txt*

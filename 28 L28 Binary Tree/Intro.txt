@@ -3,6 +3,39 @@
 Binary Tree : 
     Hierachical Data structure unlike the stack and queue 
     Example directory structure, company organizations 
+    Application : real world, directory structure : 
+
+
+
+Traversal : To Print the nodes of the binary tree : 
+
+-> Inorder(left,root,right), Preorder(root, left, right), PostOrders (left, right, root) 0(N) visting each nodes 
+-> level order traversal : print all the elements level by levels
+
+# Level Order traversal : 
+-> height of the tree 
+-> Print all the level till the height of the tree 
+
+/*Function to print level order traversal of tree*/
+printLevelorder(tree)
+for d = 1 to height(tree)
+   printGivenLevel(tree, d);
+
+/*Function to print all nodes at a given level*/
+printGivenLevel(tree, level)
+if tree is NULL then return;
+if level is 1, then
+    print(tree->data);
+else if level greater than 1, then
+    printGivenLevel(tree->left, level-1);
+    printGivenLevel(tree->right, level-1);
+
+
+
+
+
+
+
 
 
 Terms : 
