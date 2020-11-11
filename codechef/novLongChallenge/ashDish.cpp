@@ -1,6 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+
 bool compare(int a, int b) {
 	return a < b;
 }
