@@ -14,6 +14,11 @@
 		- find and erase functions is used to find the pair and erase any pair present in the container
 		- it->first and it->second first, second pair is useful to print the first and second elements of the container 
 		or the name of the iterators 
+	
+	
+	Operational complexity of the set stl functions: 
+	1. https://ide.codingblocks.com/s/372486
+		
 
 */
 
