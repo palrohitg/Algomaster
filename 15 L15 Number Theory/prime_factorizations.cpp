@@ -1,7 +1,32 @@
 /*
+Prime Factorizations:
+== == == == == == == == == == =
+    1. Naive Approches O(N) keep dividing the numbers
+    2. Optimised Approches
+    3. Sieive Based Approches each query can be answer logN steps
+=== == == = == == == == == == == == == == == ==
 
-1. Naive Approaches  O(N)
-2. Optimized Approaches O(root(N))
-3. Using Prime Sieve Useful when you have N no of Queries
+	gcd * lcm = a * b;
+
+	gcd(b, a % b);
+
+
 
 */
+
+#include<bits/stdc++.h>
+using namespace std;
+
+
+
+
+
+
+
+
+int main() {
+
+
+
+	return 0;
+}

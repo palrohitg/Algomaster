@@ -96,3 +96,61 @@ int main() {
 	}
 	return 0;
 }
+
+/*
+
+1. Naive Approaches  O(N)
+2. Optimized Approaches O(root(N))
+3. Using Prime Sieve Useful when you have N no of Queries
+
+*/
+
+// Sieve Based Approachs NloglogN when we have n inputs
+// Problem Print the Nth prime number like 1 then 2
+// 1<=n<=500000
+
+#include<iostream>
+#include<vector>
+#include<bitset>
+#define ll long long
+using namespace std;
+
+// globally declare the greater values
+bitset<10000001> b;// set all the bits of the prime numbers
+vector<int> prime;
+
+// Store the prime no vectors and print out the prime number
+void sieve() {
+
+	b.set(); // set the bits to 1
+	b[0] = b[1] = 0;
+
+	for (int i = 4; i < 10000001; i += 2) b[i] = 0; // mark all the even number as zeroes
+
+	prime.push_back(2);
+
+	for (ll i = 3; i < 10000001; i += 2 ) { //  odd number is potential answer
+
+		if (b[i]) {
+			prime.push_back(i);
+
+			for (ll j = i * i; j < 10000001; j += i) {
+				b[j] = 0; // Mark the multiple of the i is not prime
+			}
+		}
+	}
+	return;
+}
+
+
+
+int main() {
+
+	int n; cin >> n;
+	sieve();
+
+	cout << prime[n - 1];
+
+	return 0;
+}
+

@@ -73,7 +73,7 @@ int diameter(node *root) {
 	   3. right subtree exits
 	*/
 
-	int h1 = height(root->left); n
+	int h1 = height(root->left);
 	int h2 = height(root->right);
 	int opt1 = h1 + h2;
 

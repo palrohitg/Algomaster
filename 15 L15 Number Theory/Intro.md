@@ -4,5 +4,3 @@
 2. Divisible Subarrays 
 3. Prateek loves Candy 
 4. Prime Visits
-
-    [vikas]([Heroku](https://www.heroku.com/))
