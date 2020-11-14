@@ -5,3 +5,26 @@ Running Streams
 
 1. max heaps 
 2. min heaps priority_queue<int, vector<int>, greater<int>> greater is doing the comparison here 
+
+
+=========================================================================================================== 
+Introduction to heaps and Hashtable/tables Analysis of their function: 
+
+
+# Type of the problems : 
+1. find max/min of n elements 
+Example : 10000 students appearing 10 test. 
+
+# Operations : 
+1. Insert/push 
+2. pop  maximum element
+3. get 
+
+What is heaps ? 
+1. Binary Tree 
+2. Complete Binary Tree --> all level fill except last levels left to right orders 
+3. Heap order proiorty  
+
+Use of Heap : 
+1. when the elements need to be access having some proiorty associated with it. O(1)
+2. 

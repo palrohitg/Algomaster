@@ -15,6 +15,12 @@
     13. merge k sorted arrays 
     14. kthe smallest element in row and col wise 
     15. hostel visits 
+
+
+    // Pop operations : 
+    1. Swapping first and the elments 
+    2. Shrink/remove the last nodes 
+    3. heapify operations 
 */
 
 // remove operation pop the min or topmost element delete 
