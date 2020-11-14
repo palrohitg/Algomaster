@@ -17,6 +17,7 @@
 		- Return the pair using the auto iterator
 		- make_pair functions is used to make the pair of integer
 		- find and erase functions is used to find the pair and erase any pair present in the container
+<<<<<<< HEAD
 		- it->first and it->second first, second pair is useful to print the first and second elements of the container
 		or the name of the iterators
 
@@ -29,6 +30,15 @@
 
 	// pair is sorted always sorted
 
+=======
+		- it->first and it->second first, second pair is useful to print the first and second elements of the container 
+		or the name of the iterators 
+	
+	
+	Operational complexity of the set stl functions: 
+	1. https://ide.codingblocks.com/s/372486
+		
+>>>>>>> f9c32e1f986901846aa4a861db191d63481d7872
 
 */
 

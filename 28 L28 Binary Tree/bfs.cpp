@@ -3,6 +3,9 @@
  BFS : Breadth first search O(n) how ?
  input : 10 20 40 -1 -1 -1 30 50 -1 -1 -1 
  new line character each line
+ 
+ BFS with line break : https://leetcode.com/explore/challenge/card/november-leetcoding-challenge/565/week-2-november-8th-november-14th/3529/
+ 
 */
 
 #include<iostream>
