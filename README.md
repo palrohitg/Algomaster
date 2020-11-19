@@ -11,6 +11,7 @@
 [learning DS&Algo](https://medium.com/coderbyte/how-to-get-good-at-algorithms-data-structures-d33d5163353f)
 [Document](https://docs.google.com/spreadsheets/d/1zszcyBuv17IrJhY_mtfN26P96OkvKRB_2e5SpRqA4Uo/edit?usp=drive_web&ouid=109098549570077415389)
 		
+Readme updated
 
 
 ## **Some Tips for the good Developer** :

@@ -21,6 +21,10 @@
     1. Swapping first and the elments 
     2. Shrink/remove the last nodes 
     3. heapify operations 
+
+
+    # Problem based on the heaps data structures 
+    
 */
 
 // remove operation pop the min or topmost element delete 
