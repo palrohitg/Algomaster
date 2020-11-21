@@ -1,3 +1,10 @@
+Real-life example of hashtable : 
+1. 
+
+
+
+
+
 Hashing convert the phone to one integer to access the elements which is not possible in arrays 
 Hash function is used to do the above conversions 
 
@@ -30,3 +37,9 @@ Collision : when two keys get the same address in the hashtable buckets so, we h
     
     
 # Mapping of key and value pair is also done using the hashfunctions : 
+
+Collision is resolved using the linear probing techniques:
+Assumption : 
+1. There are no more than 20 elements in the data set.
+2. Hash function will return an integer from 0 to 19.
+3. Data set must have unique elements.
