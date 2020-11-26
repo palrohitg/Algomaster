@@ -1,0 +1,1 @@
+// find the maximum xor of the subarrays

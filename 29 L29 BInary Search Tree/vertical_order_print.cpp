@@ -1,81 +1,78 @@
 /*
 
-    1. Brute force = Calculate the min, max and generate all the nodes data with traversing to all the line O(w*n) w = width of the binary tree 
-    2. Hashmap + tree: 
-        a. Store the horizontial distances as the key and corresponding nodes as the values 
-        b. print the hashmaps or assign the values to 2-D vectors 
-    3. Two types of maps : map, unordered maps, map maintain the self balancing bst 
+    1. Brute force = Calculate the min, max and generate all the nodes data with traversing to all the line O(w*n) w = width of the binary tree
+    2. Hashmap + tree:
+        a. Store the horizontial distances as the key and corresponding nodes as the values
+        b. print the hashmaps or assign the values to 2-D vectors
+    3. Two types of maps : map, unordered maps, map maintain the self balancing bst
     4. Multi maps have same key for the different values like burger can have different price 10,20
     https://online.codingblocks.com/app/player/68808/content/107303/5172/code-challenge
 */
 
 #include<iostream>
 #include<map>
-#include<vector> 
-using namespace std; 
+#include<vector>
+using namespace std;
 
 
 class node {
 
-    public : 
-        int data; 
-        node *left; 
-        node *right; 
+public :
+    int data;
+    node *left;
+    node *right;
 
-        node(int data) {
-            this->data = data; 
-            this->left = NULL; 
-            this->right = NULL; 
-        }
+    node(int data) {
+        this->data = data;
+        this->left = NULL;
+        this->right = NULL;
+    }
 };
 
 
-// Utilities of the maps functions to store the key and values 
+// Utilities of the maps functions to store the key and values
 void horizontalDistance(node *root, map<int, int> &m, int hd) {
 
-    // Base Case is node is null then return it 
+    // Base Case is node is null then return it
     if (root == NULL) {
-        return; 
+        return;
     }
 
-    // Insert the current nodes distances and its repsective value in the maps 
-    m[hd] = root->data; 
+    // Insert the current nodes distances and its repsective value in the maps
+    m[hd] = root->data;
 
-    // Call on the left subtrees with hd minus 1 
+    // Call on the left subtrees with hd minus 1
     horizontalDistance(root->left, m, hd - 1);
 
     // Call on the right subtree with hd plus 1
     horizontalDistance(root->right, m, hd + 1);
-   
-    return; 
+
+    return;
 }
 
 
 
-// Main functions to print the vertical orders of all nodes 
+// Main functions to print the vertical orders of all nodes
 void verticalOrderPrint(node *root) {
 
     // Hashmaps to store the keys and values w.r.t to horizontal distances and node data order maps
     multimap<int, int > m;
-    vector<vector<int>> v;  
+    vector<vector<int>> v;
     horizontalDistance(root, m, 0);
-    
-    for(auto p : m) {
+
+    for (auto p : m) {
         cout << p.first << " " << p.second << endl;
-        
-    }   
-
-
-    for(auto it : m) {
-
-        auto it1 = lower_bound(it->first);
-        auto it2 = upper_bound(it->first); 
-
 
     }
 
-    
 
+    for (auto it : m) {
+
+        auto it1 = lower_bound(it->first);
+        auto it2 = upper_bound(it->first);
+
+
+    }
     return;
 }
 
@@ -83,24 +80,24 @@ void verticalOrderPrint(node *root) {
 void printTree(node *root) {
 
     if (root == NULL) {
-        return; 
+        return;
     }
 
     cout << root->data << " ";
     printTree(root->left);
     printTree(root->right);
-    return;  
+    return;
 }
 
 
 int main() {
 
-    node *root = NULL; 
-    root = new node(3); 
+    node *root = NULL;
+    root = new node(3);
     root->left = new node(9);
     root->right = new node(20);
     root->right->left = new node(15);
-    root->right->right= new node(7); 
+    root->right->right = new node(7);
 
 
     printTree(root);
@@ -108,7 +105,7 @@ int main() {
 
     // Vertical Order print functions
     verticalOrderPrint(root);
-    
+
 
 
 
