@@ -1,6 +1,9 @@
 /*
-How BFS works in the graphs Problems 
 
+How BFS works in the graphs Problems 
+1. To find out the level off each nodes just maintain the level arrays and traverse like the bfs works 
+2. Deque-> you can perform queue operations from both ends 
+3. 
 
 */
 
@@ -32,7 +35,7 @@ class Graph {
         void bfs(int src) {
             
             // Marked all the visited arrays keys denoted the node and second will denotes the values  
-            map<int, int> visited; // ordered maps  
+            map<int, int> visited; // ordered maps or arrays 
             queue<int> q; 
             q.push(src); 
             visited[src] = 1; 
