@@ -1,6 +1,9 @@
 ==============================
+Spanning Tree = edges that connect all the nodes include every vertex of graphs g 
+MST = weight of all the edges should be minimum 
 1. Kruskal Algorthms 
 2. Prim's Algorthms 
+==============================
 3. Bellman ford 
 4. Floyd Warshall Algorthms 
 ============================
