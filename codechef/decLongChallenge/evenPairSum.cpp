@@ -2,25 +2,25 @@
 using namespace std;
 #define ll long long int
 
-ll noOfPair(float a, float b) {
+ll noOfPair(ll a, ll b) {
 
-	if (a == 1 and b == 1) return 1;
+	if (a % 2 != 0 and b % 2 != 0) return ((a * b) / 2 ) + 1;
 
-	return ceil((a * b) / 2);
+	return (a * b) / 2;
 }
 
 
 int main() {
 
-#ifndef ONLINE_JUDGE
-	freopen("input.txt", "r", stdin);
-	freopen("output.txt", "w", stdout);
-#endif
+// #ifndef ONLINE_JUDGE
+// 	freopen("input.txt", "r", stdin);
+// 	freopen("output.txt", "w", stdout);
+// #endif
 
 	ll t; cin >> t;
 
 	while (t--) {
-		float a, b; cin >> a >> b;
+		ll a, b; cin >> a >> b;
 		cout << noOfPair(a, b) << endl;
 	}
 
