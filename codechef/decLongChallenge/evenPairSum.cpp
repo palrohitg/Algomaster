@@ -1,3 +1,7 @@
+// codechef problem based on the even and odd simple concepts 
+// Solve the XOR problem hard and string problems also 
+
+
 #include<bits/stdc++.h>
 using namespace std;
 #define ll long long int
