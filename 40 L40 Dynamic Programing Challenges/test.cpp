@@ -1,1 +1,0 @@
-dp[i] = (dp[i] - dp[last[s[i - 1]]] + mod) % mod;
