@@ -11,16 +11,36 @@ int main() {
 // 	freopen("input.txt", "r", stdin);
 // 	freopen("output.txt", "w", stdout);
 // #endif
+// new content
+	int m = 7;
+	int n = 3;
 
-	int arr[10][10] {0};
+	int dp[m][n] = {0};
 
-	for (int i = 0; i < 5; i++) {
-		for (int j = 0; j < 5; j++) {
-			cout << arr[i] << " ";
+	// first col with 1 ways only
+	for (int i = 1; i < n; i++) {
+		dp[0][i] = 1;
+	}
+
+
+	// first rows with 1 ways only
+	for (int i = 1; i < m; i++) {
+		dp[i][0] = 1;
+	}
+
+	// for the rest of the elments
+	for (int i = 1; i < m; i++) {
+		for (int j = 1; j < n; j++) {
+			dp[i][j] = dp[i - 1][j] + dp[i][j - 1];
+		}
+	}
+
+	for (int i = 0; i < m; i++) {
+		for (int j = 0; j < n; j++) {
+			cout << dp[i][j] << " ";
 		}
 		cout << endl;
 	}
-
 
 	return 0;
 }
