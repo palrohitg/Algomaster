@@ -1,6 +1,14 @@
-1. Robot and paths codechef 
-2. hackerearth grid dp 
-3. Painter parition problems 
-4. minimum jumps required 
+1. Robot and paths codechef Done 
+2. hackerearth grid dp Done 
+3. Painter parition problems Google 
+4. minimum jumps required  Done 
 5. brackets all overs 
-6. unique path some blocks cells 
+6. unique path some blocks cells Done 
+7. Burst Ballon 
+
+
+
+HackerEarth GRID DP : 
+1. Find min Cost path in grid : simple (Dijakstra algorithms)
+2. No of ways to reach to end of the grid : simple
+3. No of ways to reach to end of the grid with some blocks cells. leetcode (Unique Path II) done with top , bottom 
