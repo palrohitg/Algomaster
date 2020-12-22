@@ -116,3 +116,12 @@ Representations of Grahps :
 
 Min Height Tree : 
 a. Course Schedule 
+
+
+
+
+
+# Advanced Data structures : 
+1. Binomial heaps, fibonnacci heaps, splay tree, red-black tree 
+2. Network and sorting algorithms : flow Network, ford fulkhen method, maximum bipartite matching, sorting Network
+   Comparison Network, Zero-One principle, Bitonic Network, Merging Network. 

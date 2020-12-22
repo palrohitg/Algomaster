@@ -37,12 +37,6 @@ class Graph {
             }
             dfs_helper(src, visited);
         }
-
-        void adjList() {
-            for (auto a : l) {
-                for(l[a])
-            }
-        }
 };
 
 
