@@ -53,29 +53,33 @@ int main() {
             l[x].push_back(make_pair(y, w));
             l[y].push_back(make_pair(x, w));
         }
+        
+        for(int i = 1; i <= m; i++) {
+            cout << l[i].first << l[i].second; 
+        }
 
         // Create the distance arrays
-        dist = new int[n + 1];
+        // dist = new int[n + 1];
 
-        for (int i = 1; i <= n; i++) {
-            dist[i] = INT_MAX; 
-        }
+        // for (int i = 1; i <= n; i++) {
+        //     dist[i] = INT_MAX; 
+        // }
         
-        int src; cin >> src; 
+        // int src; cin >> src; 
 
-        dijkstra(src); 
+        // dijkstra(src); 
 
-        // Print out the distances arrays 
-        for (int i = 1; i <= n; i++) {
-            if (i == src) continue; 
-            else if (dist[i] == INT_MAX) { 
-                cout << "-1" << " "; 
-            }
-            else { 
-                cout << dist[i] << " ";
-            }
-        }
-        cout << endl; 
+        // // Print out the distances arrays 
+        // for (int i = 1; i <= n; i++) {
+        //     if (i == src) continue; 
+        //     else if (dist[i] == INT_MAX) { 
+        //         cout << "-1" << " "; 
+        //     }
+        //     else { 
+        //         cout << dist[i] << " ";
+        //     }
+        // }
+        // cout << endl; 
 
     }
 
