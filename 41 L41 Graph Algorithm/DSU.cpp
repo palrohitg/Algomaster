@@ -18,12 +18,6 @@ Application :
 Ans-> Create each nodes as indepedent set and union them, if both element having the common parent then it
 has the cycle in the graphs
 2. Pairing Problem (DSU, BFS, DFS)
-
-
-
-
-
-
 */
 
 #include<bits/stdc++.h>
@@ -32,8 +26,8 @@ using namespace std;
 
 class DSU {
 
-int V:
-    list<pair<int, int> > l;
+    int V;
+    list<pair<int, int> > l; // to store all the edges
 
 public :
 
@@ -44,58 +38,53 @@ public :
     void addEdge(int a, int b) {
         l.push_back(make_pair(a, b));
     }
+
     // 1. find operations
+    int findSet(int i, int *parent) {
+        if (parent[i] == -1) {
+            return i;
+        }
+        return parent[i] = findSet(parent[i]);
+    }
 
-    // int findSet(int i, int *parent) {
-    //     if (parent[i] == -1) {
-    //         return i;
-    //     }
-    //     return parent[i] = findSet(parent[i]);
-    // }
+    // 2. Union Operation;
+    void union_set(int a, int b, int parent[]) {
 
+        int s1 = findSet(a, parent); // O(N) in worst case searching
+        int s2 = findSet(b, parent);
 
+        // belongs to different set merge the set
+        if (s1 != s2) {
+            parent[s2] = s1;
+        }
+    }
 
+    bool detect_cycle() {
+        int *parent = new int[V];
 
-    // // 2. Union Operation;
+        for (int i = 0; i < V; i++) {
+            parent[i] = -1;
+        }
 
+        // Iterate over the edgelist
+        for (auto edge : l) {
 
-    // void union_set(int a, int b, int parent[]) {
+            int i = edge.first;
+            int j = edge.second;
 
-    //     int s1 = findSet(a, parent); // O(N) in worst case searching
-    //     int s2 = findSet(b, parent);
+            int s1 = findSet(i, parent);
+            int s2 = findSet(j, parent);
 
-    //     // belongs to different set merge the set
-    //     if (s1 != s2) {
-    //         parent[s2] = s1;
-    //     }
-    // }
-
-    // bool detect_cycle() {
-    //     int *parent = new int[V];
-
-    //     for (int i = 0; i < V; i++) {
-    //         parent[i] = -1;
-    //     }
-
-    //     // Iterate over the edgelist
-    //     for (auto edge : l) {
-
-    //         int i = edge.first;
-    //         int j = edge.second;
-
-    //         int s1 = findSet(i, parent);
-    //         int s2 = findSet(j, parent);
-
-    //         if(s1 != s2) {
-    //             union_set(i, j, parent);
-    //         }
-    //         else {
-    //             return true;
-    //         }
-    //     }
-    //     delete [] parent;
-    //     return false;
-    // }
+            if (s1 != s2) {
+                union_set(i, j, parent);
+            }
+            else {
+                return true;
+            }
+        }
+        delete [] parent;
+        return false;
+    }
 };
 
 
