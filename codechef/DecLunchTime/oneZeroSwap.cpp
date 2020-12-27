@@ -3,16 +3,16 @@ using namespace std;
 
 int main() {
 
-#ifndef ONLINE_JUDGE
-	freopen("input.txt", "r", stdin);
-	freopen("output.txt", "w", stdout);
-#endif
+// #ifndef ONLINE_JUDGE
+// 	freopen("input.txt", "r", stdin);
+// 	freopen("output.txt", "w", stdout);
+// #endif
 
 	int t; cin >> t;
 	vector<char> S, P;
 	while (t--) {
 
-		int n;
+		int n; cin >> n;
 		for (int i = 0; i <= n; i++) {
 			char ch; cin >> ch;
 			S.push_back(ch);

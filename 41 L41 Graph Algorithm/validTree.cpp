@@ -8,3 +8,8 @@
 // -- > Simply bfs or dfs can findout this two properites
 
 
+bool isCyclic(vector<int> g[], int V)
+{
+	// Your code here
+
+}
