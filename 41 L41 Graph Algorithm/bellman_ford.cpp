@@ -29,6 +29,7 @@ void bellmanFord(vector<vector<int>> edges, int n, int src) {
 		int u = edge[0]; // src
 		int v = edge[1]; // dest
 		int wt = edge[2]; 
+		
 		if(dist[u] != INT_MAX and dist[u] + wt < dist[u]) {
 				dist[u] = dist[u] + wt; 
 			}
