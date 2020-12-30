@@ -1,11 +1,16 @@
 /*
- Approachs : 1
+ Approachs : BFS
  1. check the corner case when arr.size() == 1 and arr[start] == 0 return true
  2. insert the start index in the queue
  	a. opt1 = idx + arr[idx] also opt1 < n right side boundarys
  	b. opt2 = idx - arr[idx] also op2 >= 0 left side boundarys
 
  3. if not found zero then return false
+
+ Appraoch : DFS
+ 1. check on the left part of the arrays or the right part of the arrays
+ 2. if left || right return true and else return false
+ 3. create two visited arrays for the left and right part of the arrays
 */
 
 
@@ -32,12 +37,12 @@ bool canReach(vector<int>& arr, int start) {
 		int opt1 = idx + arr[idx];
 		int opt2 = idx - arr[idx];
 
-		if (opt1 <= arr.size() and visited[opt1] == false) {
+		if (opt1 < arr.size() and visited[opt1] == false) {
 			q.push(opt1);
 			visited[opt1] = true;
 		}
 
-		if (opt2 >= arr.size() and visited[opt2] == false) {
+		if (opt2 >= 0 and visited[opt2] == false) {
 			q.push(opt2);
 			visited[opt2] = true;
 		}
@@ -53,9 +58,9 @@ int main() {
 	vector<int>arr;
 	int n; cin >> n;
 	int start; cin >> start;
-	arr.resize(n);
+	arr.resize(n + 1);
 
-	for (int i = 0; i < n; i++) {
+	for (int i = 1; i <= n; i++) {
 		cin >> arr[i];
 	}
 

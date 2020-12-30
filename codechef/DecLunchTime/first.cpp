@@ -30,7 +30,6 @@ int main() {
 	}
 
 	while (i < j) {
-
 		if (spiralArray[i] <= spiralArray[j] and temp[k] <= spiralArray[i]) {
 			k++;
 			temp[k] = spiralArray[i];

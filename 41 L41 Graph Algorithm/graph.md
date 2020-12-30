@@ -89,49 +89,41 @@ public :
 
 * Visit the current node and explore the current path go deeper and deeper and come back do the same recursively
 
-    ```cpp
-    class Graph {
+```cpp
+class Graph {
 
-        map<int, list<int>> l;
+map<int, list<int>> l;
+public :
 
-    public :
-
-        void addEdge(int x, int y)  {
-            l[x].push_back(y);
-            l[y].push_back(x);
-        }
+    void addEdge(int x, int y)  {
+        l[x].push_back(y);
+        l[y].push_back(x);
+    }
 
 
-        void dfs_helper(int src, map<int, bool>  &visited) {
-            // Traverse the graphs one by one using the recursion;
-            cout << src << " ";
+    void dfs_helper(int src, map<int, bool>  &visited) {
+        // Traverse the graphs one by one using the recursion;
+        cout << src << " ";
 
-            // Visited all the neigbour of the sources
-            for (int nbr : l[src]) {
-                if ( !visited[nbr]) {
-                    dfs_helper(nbr, visited);
-                }
+        // Visited all the neigbour of the sources
+        for (int nbr : l[src]) {
+            if ( !visited[nbr]) {
+                dfs_helper(nbr, visited);
             }
         }
+    }
 
-        void dfs(int src) {
+    void dfs(int src) {
 
-            // created an arrays to check that the elements is visited or not
-            map<int, bool> visited;
-            for (auto p : l) {
-                int node = p.first;
-                visited[node] = false;  // all the nodes as unvisited
-            }
-            dfs_helper(src, visited);
+        // created an arrays to check that the elements is visited or not
+        map<int, bool> visited;
+        for (auto p : l) {
+            int node = p.first;
+            visited[node] = false;  // all the nodes as unvisited
         }
-    };
+        dfs_helper(src, visited);
+    }
+};
 ```
 
-#### 3. Cycle Detection in Unweighted graphs
-
-* Use the dfs to traverse the tree
-* Make a parent varible and if num != parent do recurisvely if cycle found then return true else false
-
-                    ```cpp
-
-                    ```
+#### 3. Word Ladder problems Graph 
