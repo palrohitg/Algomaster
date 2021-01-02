@@ -19,16 +19,16 @@ int main() {
 
 		int contents = total / k;
 
-		if (contents > d) {
+		if (contents > d)
 			cout << d << endl;
-		}
-		else {
-			cout << contents << endl;
-		}
-
+	}
+	else {
+		cout << contents << endl;
 	}
 
+}
 
 
-	return 0;
+
+return 0;
 }
