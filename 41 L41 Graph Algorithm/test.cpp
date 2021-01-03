@@ -3,26 +3,19 @@ using namespace std;
 
 int main() {
 
-// #ifndef ONLINE_JUDGE
-// 	freopen("input.txt", "r", stdin);
-// 	freopen("output.txt", "w", stdout);
-// #endif
+#ifndef ONLINE_JUDGE
+	freopen("../input.txt", "r", stdin);
+	freopen("../output.txt", "w", stdout);
+#endif
+	map<int, vector<int>> m;
+	m[0].push_back(1);
+	// m[1].push_back({2, 2, 3});
 
-	int t; cin >> t;
-	while (t--) {
-		int n, k; cin >> n >> k;
-
-		long long int sum = 0;
-		for (int i = 0; i < n; i++) {
-			int num; cin >> num;
-			sum += num;
+	for (auto p : m[0]) {
+		for (auto it = p.begin(); it != p.end(); it++) {
+			cout << *it << endl;
 		}
-
-		if (sum % k == 0) cout << "0";
-		else cout << "1";
-		cout << endl;
 	}
-
 
 	return 0;
 }
