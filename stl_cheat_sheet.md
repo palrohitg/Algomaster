@@ -4,6 +4,19 @@
 
 * Similar to list in python but must have the same datatypes
 ```cpp
+// how to work with 2-d vector in cpp
+vector<vector<int>> 2d;
+
+// Declaration with initilizations
+std::vector<std::vector<int>> fog(M, std::vector<int>(N, default_value));
+vector<vector<int>> fog(N, vector<int>(M, default_value));
+
+// how to make the 2d unvisited grid
+
+
+
+
+
 #include<vector>
 1. .push_back() // append the element in vector
 2. .size() // return the size or length

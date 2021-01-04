@@ -1,5 +1,9 @@
 // Tag : Amazon, Google
-
+/*
+	Time Complexity in the worst case :
+	1. When all the nodes are unvisited
+	2. When all the nodes are visited at once time only.
+*/
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -11,7 +15,7 @@ bool isInside(int i, int j, int n, int m) {
 	return false;
 }
 
-void bfs(vector<vector<char>> &mat, vector<vector<bool>> &visited, int sx, int sy, int n, int m) {
+void bfs(vector<vector<int>> &mat, vector<vector<bool>> &visited, int sx, int sy, int n, int m, int &temp) {
 
 	queue<pair<int, int>> q;
 	q.push(make_pair(sx, sy));
@@ -23,6 +27,7 @@ void bfs(vector<vector<char>> &mat, vector<vector<bool>> &visited, int sx, int s
 	while (!q.empty()) {
 		pair<int, int> p = q.front();
 		q.pop();
+		temp++;
 
 		// check for the adjacent vertex
 		for (int i = 0; i < 4; i++) {
@@ -31,7 +36,7 @@ void bfs(vector<vector<char>> &mat, vector<vector<bool>> &visited, int sx, int s
 			// check if (x,y) is inside the grid
 			// Value of (x,y) = 1
 			// (x,y) is not visited
-			if (isInside(x, y, n, m) and mat[x][y] == '1' and visited[x][y] == false) {
+			if (isInside(x, y, n, m) and mat[x][y] == 1 and visited[x][y] == false) {
 				q.push(make_pair(x, y));
 				visited[x][y] = true;
 			}
@@ -42,21 +47,22 @@ void bfs(vector<vector<char>> &mat, vector<vector<bool>> &visited, int sx, int s
 
 
 
-int noOfIsland(vector<vector<char>> mat, int n, int m) {
+int noOfIsland(vector<vector<int>> mat, int n, int m) {
 
 	vector<vector<bool>> visited(n, vector<bool>(m, false));
 
-	int count = 0;
+	int ans = INT_MIN;
 	for (int i = 0; i < n; i++) {
 		for (int j = 0; j < m; j++) {
-			if (visited[i][j] == false and mat[i][j] == '1') {
-				bfs(mat, visited, i, j, n, m);
-				count++;
+			if (visited[i][j] == false and mat[i][j] == 1) {
+				int temp = 0;
+				bfs(mat, visited, i, j, n, m, temp);
+				ans = max(temp, ans);
 			}
 		}
 	}
 
-	return count;
+	return ans;
 }
 
 int main() {
@@ -68,16 +74,17 @@ int main() {
 // 	freopen("../output.txt", "w", stdout);
 // #endif
 	int n, m; cin >> n >> m;
-	vector < vector<char>> mat;
+	vector <vector<int>> mat;
 
 	for (int i = 0; i < n; i++) {
-		vector<char> temp;
+		vector<int> temp;
 		for (int j = 0; j < m; j++) {
-			char ch; cin >> ch;
+			int ch; cin >> ch;
 			temp.push_back(ch);
 		}
 		mat.push_back(temp);
 	}
+
 	cout << noOfIsland(mat, n, m);
 
 	return 0;
