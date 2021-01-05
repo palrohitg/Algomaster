@@ -1,4 +1,4 @@
-// // Linked list skeleton 
+// // Linked list skeleton
 
 // /*
 // 	Albert Einstein : “If you can’t explain it simply, you don’t understand it well enough.”
@@ -116,25 +116,28 @@ void builtInInput(node *&head, int n) {
 	}
 }
 
+/// h->1->2->3->X
+/// h->3->2->1->X
+
 node * reverseLL(node *&head, int K) {
 	node *cur = head;
-	node *prev = NULL; 
+	node *prev = NULL;
 	node *next = NULL;
 	int count = 0;
 
-	while( cur != NULL && count < K) {
-		 next = cur->next;
-		 cur->next = prev;
-		 prev = cur;
-		 cur = next;
-		 count++;
+	while ( cur != NULL && count < K) {
+		next = cur->next;
+		cur->next = prev;
+		prev = cur;
+		cur = next;
+		count++;
 	}
 
-	if(cur != NULL) {
+	if (cur != NULL) {
 		head->next =  reverseLL(cur, K);
 	}
 
-	return prev; 
+	return prev;
 }
 
 void printLL(node *head) {
@@ -155,6 +158,6 @@ int main() {
 	cout << endl;
 	node * result_head = reverseLL(head, K);
 	cout << result_head->data;
-	
+
 	return 0;
 }
