@@ -1,4 +1,70 @@
 // Cycle detection and removal parts
+
+
+
+
+
+
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode(int x) : val(x), next(NULL) {}
+ * };
+ */
+
+/*
+a. Distance travelled by fast
+b. Distance travelled by slow
+c. Distance travelled by know
+
+
+ x1 + x2 + x3 + x2 = 2(x1 + x2) // slow the equations
+ x1 = x3
+
+*/
+
+
+
+class Solution {
+public:
+	ListNode *detectCycle(ListNode *head) {
+
+		if (head == NULL || head->next == NULL) return NULL;
+
+		ListNode* firstp = head;
+		ListNode* secondp = head;
+		bool isCycle = false;
+
+		while (firstp != NULL && secondp != NULL) {
+			firstp = firstp->next;
+			if (secondp->next == NULL) return NULL;
+			secondp = secondp->next->next;
+			if (firstp == secondp) { isCycle = true; break; }
+		}
+
+		if (!isCycle) return NULL;
+		firstp = head;
+		while ( firstp != secondp) {
+			firstp = firstp->next;
+			secondp = secondp->next;
+		}
+
+		return firstp;
+	}
+};
+
+
+
+
+
+
+
+
+
+
+
 #include<iostream>
 using namespace std;
 
@@ -106,3 +172,4 @@ int main() {
 
 	return 0;
 }
+

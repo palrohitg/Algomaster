@@ -11,8 +11,8 @@ int solve(vector<int> A, vector<int> B, int n, int m) {
 	sort(B.begin(), B.end());
 
 	// Find the total of a and b
-	int total_A = 0;
-	int total_B = 0;
+	ll total_A = 0;
+	ll total_B = 0;
 
 	// find the total in A
 	for (int i = 0; i < n; i++) {
