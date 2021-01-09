@@ -1,3 +1,7 @@
+# Pro tips : 
+* Solved atmost 800 question on leetcode till dates and distribution of the question should be good. 
+* Ask for the referral for the sames 
+
 # Unordered Map
 
 # Vectors
