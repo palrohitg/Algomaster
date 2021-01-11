@@ -35,6 +35,9 @@ for (int i = 0; i < m; i++) {
 	v.push_back(v1);
 }
 
+// size of the arrays means actually content present in the arrays 
+1. v.size()
+
 ```
 
 
