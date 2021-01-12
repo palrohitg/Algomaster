@@ -151,6 +151,7 @@ void printLL(node *head) {
 int main() {
 	int N, K;
 	cin >> N >> K;
+
 	node *head = NULL;
 	cout << "Enter the list elements :" << endl;
 
