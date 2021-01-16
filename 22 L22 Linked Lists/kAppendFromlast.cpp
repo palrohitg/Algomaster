@@ -4,7 +4,7 @@
 	Todays algorithms questions : 16 mays  Day 5 :
 
 	Contraints : k > n how to solve is k % n it will resolve the issue in case when k is greaters
-	1. Number is always going to less than the n 
+	1. Number is always going to less than the n
 	Using the temp and the previous pointer
 */
 // Append the k elements from the last  in Linked List

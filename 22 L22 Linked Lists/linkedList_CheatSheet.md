@@ -39,8 +39,8 @@
 | 25 | Rotate the list | :x:  | | 
 | 26 | middle of the list | :heavy_check_mark:|| 
 | 27 | linked list in binary tree |:x: | | 
-| 28 | delete node in a linked list | :x: |  | 
-| 29 | sort list |  :x: |  | 
+| 28 | delete node in a linked list | :heavy_check_mark:|  | 
+| 29 | sort list |  :heavy_check_mark: |  | 
 
 
 <!-- ## Linked list and Stack Queue 
