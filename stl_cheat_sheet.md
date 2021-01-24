@@ -117,6 +117,18 @@ for (int i = 0; i < m; i++) {
 
 
 # Set 
-```cpp 
 
+* Set are a type of associative containers in which each elements has to be unique. 
+* Value can't be modified onces it is added to the set. 
+* We can though it is possible to remove and add the modified values of the elements.  
+```cpp 
+ 1. begin() --> Return the iterator to the first element in the set 
+ 2. end() --> iterator the last elements 
+ 3. size() --> returns the numbers of elements in the set. 
+ 4. max_size() --> returns the max numbers of elements that the set can hold. 
+ 5. empty() --> whether the set is empty or not. 
+
+// Delcaration of the set 
+ set<int> s1; 
+ s1.insert(); 
 ``` 

@@ -1,5 +1,5 @@
-1. Permutations 46 
-2. Permuations II 47 
+1. Permutations 46 Done 
+2. Permuations II 47 Done 
 3. Sudo-Solver 37 
 4. N-Queen 51
 5. N-Queen II 52  
