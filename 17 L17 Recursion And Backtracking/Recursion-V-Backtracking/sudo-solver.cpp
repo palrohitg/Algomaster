@@ -54,7 +54,7 @@ public:
 		}
 		// digits 1 to 9 :
 		for (int num = 1; num <= 9; num++) {
-			if (canPlace(board, i, j, n, num)) {
+			if (canPlace(board, i, j, n, num)) { 
 				// we can place it
 				board[i][j] = num;
 				break;
@@ -63,7 +63,7 @@ public:
 		return false;
 	}
 
-
+ /// dfjklg
 
 
 	void solveSudoku(vector<vector<char>>& board) {
