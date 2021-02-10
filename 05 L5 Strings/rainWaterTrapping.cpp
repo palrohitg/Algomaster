@@ -16,4 +16,13 @@
     i. Instead of the using the two arrays makes two variables
        to know the heights of the left and right most elements
     ii. sames as in the approaches 2 in both the arrays
+4. Approaches :
 */
+
+class Solution {
+public:
+	int trap(vector<int>& height) {
+		vector<int> left;
+		vector<int> right;
+	}
+};
