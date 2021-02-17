@@ -1,4 +1,7 @@
 // Calculate how much water we can stores
+// 42 trapping rain waters
+
+
 /*
 1. Approaches : O(N^2) and O(1)
 	i. for each elements find the higher height from
@@ -19,10 +22,37 @@
 4. Approaches :
 */
 
+/*
+1. Create leftHighestHeight arrays and rightHeighestHeight arrays
+2. Compute the required water store from the above to arrays
+
+
+*/
+
 class Solution {
 public:
 	int trap(vector<int>& height) {
-		vector<int> left;
-		vector<int> right;
+		int n = height.size();
+		vector<int> leftHeight(n);
+		vector<int> rightHeight(n);
+
+		int leftHighest = 0;
+		for (int i = 0; i < n; i++) {
+			leftHighest = max(leftHighest, height[i]);
+			leftHeight[i] = leftHighest;
+		}
+
+		int rightHighest = 0;
+		for (int i = n - 1; i >= 0; i--) {
+			rightHighest = max(rightHeight, height[i]);
+			rightHeight[i] = rightHighest;
+		}
+
+		int totalStoredWater = 0;
+		for (int i = 0; i < n; i++) {
+			totalStoredWater += min(leftHeight[i], rightHighest[i]) - height[i];
+		}
+
+		return totalStoredWater;
 	}
 };
