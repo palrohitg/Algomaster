@@ -17,6 +17,7 @@
 	1. Insert at the head of the linked list 
 	2. Traversal the linked list
 	3. Functionality of the circular linked list
+	4. Delete all the nodes using STL 
 
 */
 
