@@ -1,3 +1,10 @@
+/*
+    Forget Mistak done : Implementation based questions
+    01 then compute the length of the strings
+    j = 0,1  and at which s[j] == '1' char then include the resulant score in the answer
+*/
+
+
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -8,43 +15,32 @@ int main() {
 	vector<int> v, temp;
 	map<int, int> m;
 	while (t--) {
-		int n; cin >> n;
-		for (int i = 0; i < n; i++) {
-			int num; cin >> num;
-			v.push_back(num);
-			temp.push_back(num);
+		int n; cin >> n; // participants
+		int k; cin >> k;  // problems
+
+		// Problem score associated with each problems at least k problems
+		for (int i = 0; i < k; i++) {
+			int score; cin >> score;
+			v.push_back(score);
 		}
 
-		// sort the temp arrays
-		sort(temp.begin(), temp.end(), greater<int>());
-
+		long long int total = 0;
+		// Given strings input formats
 		// Assigning the temp values to maps
-		for (int i = 1; i <= n; i++) {
-			m[i] = temp[i - 1];
-		}
+		for (int i = 0; i <= n; i++) {
+			string input; cin >> input;
 
-		for (int i = 0; i < n; i++) {
-
-			int query = v[i];
-			// cout << query << " ";
-			auto next_it = m.begin();
-			for (auto it = m.begin(); it != m.end(); it = next_it) {
-				next_it = next_it++;
-				if (it->second == query) {
-					int hour = it->first;
-					cout << hour << " ";
-
-					// 		// remove the element in the hashmaps
-					m.erase(it->first);
+			// iterate over the each character of the strings and whether we
+			// found the 1 just include the respective score of the problems
+			for (int j = 0; j <= input.length(); j++) {
+				int score = 0;
+				if (input[j] == '1') {
+					total = score;
 				}
-				// cout << it->first << " ";
+				cout << total << endl;
 			}
-			cout << endl;
-		}
-		cout << endl;
-		v.clear();
-		temp.clear();
 
+		}
 	}
 
 
