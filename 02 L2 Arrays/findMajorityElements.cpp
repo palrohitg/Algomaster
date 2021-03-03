@@ -4,18 +4,9 @@
 */
 
 
-#include<bits/stdc++.h>
-using namespace std;
+class Solution {
+public:
+	int majorityElement(vector<int>& nums) {
 
-int main(int argc, char const *argv[])
-{
-	// int n; cin >> n;
-	// vector<int> v(n + 1);
-
-	// for (int i = 0; i < n; i++) {
-	// 	int data; cin >> data;
-	// 	v.push_back(data);
-	// }
-	cout << floor(2.1) << endl;
-	return 0;
-}
+	}
+};
