@@ -13,29 +13,22 @@ int main() {
 	while (t--) {
 		string str;
 		cin >> str;
+
+		// iterate over the strings
+		// count the different group
+		// just keep ignore the continuous one
 		int count = 0;
+		for (int i = 0; i < str.length(); i++) {
 
-		for (int i = 0; i < str.length() - 1;) {
-
-			if (str[i] == '0' and str[i + 1] == '1') {
-				i = i + 2;
-				count++;
-			}
-			else if (str[i] == '1' and str[i + 1] == '0') {
-				i++;
-				count++;
-			}
-			else if (str[i] == '1' and str[i + 1] == '1') {
+			if (str[i] == '1') {
 				count++;
 				i++;
-			}
-			else {
-				i++;
+				while (i < str.length() and str[i] == '1') {
+					i++;
+				}
 			}
 		}
-
 		cout << count << endl;
-
 	}
 
 
