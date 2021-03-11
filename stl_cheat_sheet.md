@@ -131,4 +131,23 @@ for (int i = 0; i < m; i++) {
 // Delcaration of the set 
  set<int> s1; 
  s1.insert(); 
-``` 
+```  
+
+# Priority Queue 
+
+- heap/pq is data-structure which performs operations based on the certain priority. 
+- Give the some k greatest elements and insert some elements in the heaps. 
+- it used when you thinks the sorting of all the elements is actually not required instead of that we can store the elements in the heaps and performs the operations. 
+
+some functions. 
+push(number) - logn
+pop() - logn 
+top() = 1 
+empty() = 1 
+
+priority_queue<int> pq; // defaults is max heaps. 
+priority_queue<int,vector<int>, greater<int>> pq; // defaults comparater by using defaults 
+
+# some general problems related to heaps. 
+- top k elements ex : 10 from 10000 
+- instead of NlogN we can do it with klogn time which is more efficients 
