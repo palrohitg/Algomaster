@@ -25,7 +25,7 @@ int main() {
 	pq.push(5);
 	pq.push(20);
 
-	printQueue(pq);
+	// printQueue(pq);
 
 	cout << "size of pg " << pq.size();
 
