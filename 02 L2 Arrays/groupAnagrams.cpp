@@ -48,10 +48,10 @@ class Solution {
 public:
 	bool isAnagram(string s, string t) {
 
-		string str1 = sort(s.begin(), s.end());
-		string str2 = sort(t.begin(), t.end());
+		sort(s.begin(), s.end());
+		sort(t.begin(), t.end());
 
-		if (str1 == str2) {
+		if (s == t) {
 			return true;
 		}
 
