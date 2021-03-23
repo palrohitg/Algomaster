@@ -48,3 +48,18 @@ public:
 		return ans;
 	}
 };
+
+
+class Solution {
+public :
+	int lengthOfLongestSubstring(string s) {
+
+		vector<int> cnt(26, -1);
+		int i = 0, j = 0;
+		int ans = 0;
+
+		while ( i < n and j < n) {
+
+		}
+	}
+}
