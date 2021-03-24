@@ -49,17 +49,33 @@ public:
 	}
 };
 
-
+// Another Ways of doing this :
 class Solution {
 public :
 	int lengthOfLongestSubstring(string s) {
 
-		vector<int> cnt(26, -1);
+		if ( s.size() == 0) return 0;
+
+		int n = s.size();
+		vector<int> cnt(26, 0);
 		int i = 0, j = 0;
-		int ans = 0;
+		int ans = 1;
+		cnt[s[0]]++;
 
-		while ( i < n and j < n) {
+		while ( j != n - 1) {
 
+			// checking the next character because the min length will one
+			if (cnt[s[j + 1]] == 0) {
+				j++;
+				cnt[s[j]] = 1;
+				ans = max(ans, j - i + 1);
+			}
+			else {
+				cnt[s[i]]--;
+				i++;
+			}
 		}
+
+		return ans;
 	}
 }
