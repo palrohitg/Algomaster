@@ -27,4 +27,7 @@ What is heaps ?
 
 Use of Heap : 
 1. when the elements need to be access having some proiorty associated with it. O(1)
-2. 
+
+
+# Commonly asked heaps questions : 
+https://medium.com/techie-delight/heap-practice-problems-and-interview-questions-b678ff3b694c
