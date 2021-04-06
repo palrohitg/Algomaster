@@ -30,4 +30,11 @@ Use of Heap :
 
 
 # Commonly asked heaps questions : 
-https://medium.com/techie-delight/heap-practice-problems-and-interview-questions-b678ff3b694c
+https://medium.com/techie-delight/heap-practice-problems-and-interview-questions-b678ff3b694c 
+
+
+
+heap based questions 
+===================================================================================================== 
+1. Find kth largest elements in the arrays  
+2. 
