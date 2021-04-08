@@ -36,5 +36,8 @@ https://medium.com/techie-delight/heap-practice-problems-and-interview-questions
 
 heap based questions 
 ===================================================================================================== 
-1. Find kth largest elements in the arrays  
-2. 
+1. Find kth largest elements in the arrays  Done 
+2. Sort a k-sorted arrays 
+3. Merge "M" sorted lists of variables length 
+4. Find the kth smallest element in an arrays 
+5. Convert max heaps to min heaps in linear times 

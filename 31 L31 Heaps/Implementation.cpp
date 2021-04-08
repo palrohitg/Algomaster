@@ -55,10 +55,10 @@ private:
 
         int left = 2 * idx;
         int right = 2 * idx + 1;
-        // pop back the last elements
+
 
         int min_idx = idx;
-        int last  = v.size() - 1;
+        int last  = v.size() - 1; // last index
 
         // compare the value of the left and right index and do the swapping accordingly
         if (left <= last and compare(v[left], v[idx])) {
@@ -83,6 +83,7 @@ public :
 
     void push(int data) {
         v.push_back(data);
+
         int idx = v.size() - 1;
         int parent = idx / 2;
 
@@ -95,11 +96,17 @@ public :
 
     // remove the smallest element in the heaps
     void pop() {
+        // index of the first top elements
         int idx = v[1];
         int last = v.size() - 1;
-        swap(v[idx], v[last]);// swap the last and first elements
+
+        // swap the first and last elements
+        swap(v[idx], v[last]);
+
+        // remove the last elements
         v.pop_back();
-        //Now heapify the queue
+
+        // heapify the elements from top to bottom
         heapify(idx);
 
     }
