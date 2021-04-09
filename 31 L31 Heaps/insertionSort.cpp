@@ -6,8 +6,9 @@ void insertionSort(int arr[], int n) {
 	//iterate over the arrays
 	for (int i = 1; i < n; i++) {
 		int j = i - 1;
+		int key = arr[i];
 
-		while (j >= 0 and arr[j] > arr[i]) {
+		while (j >= 0 and arr[j] > key) {
 
 			//shift the left element to right
 			arr[j +  1] = arr[j];
@@ -15,7 +16,7 @@ void insertionSort(int arr[], int n) {
 		}
 
 		// ith element at correction place
-		arr[j + 1] = arr[i];
+		arr[j + 1] = key;
 	}
 
 	return;
