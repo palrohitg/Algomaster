@@ -109,6 +109,7 @@ void insertAtMiddle(Node *&head, int data, int pos) {
 		head = new Node(data);
 		return;
 	}
+
 	Node *temp = head;
 	Node *prev = NULL;
 
