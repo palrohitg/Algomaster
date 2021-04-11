@@ -1,0 +1,74 @@
+
+Heaps
+1. What is Heaps ? tree based ds, where the element specific orders Done 
+2. Where to apply heap ?  Done 
+3. Motivations to learn heaps ? Done / real example 
+4. Time Complexity of each operations // Done 
+5. See implement of the heaps ? Done 
+5. STL Container implements ?  
+
+==================================== 
+#include<queue> 
+
+priority<int> pq; // max heaps 
+priority<int, vector<int>, greater<int> > pq;
+
+operation : 
+1. push() 
+2. pop() 
+3. top() 
+4. size() 
+5. empty() --> empty or not // traversing the arrays parts 
+
+==================================== 
+
+
+Actual : 
+1. Based on array, but you have visualized in tree(Binary)
+
+====================================== 
+Example : N people standing in front bank queue : 
+            
+            N1 , N2, N3 
+        Age 50   23  89 
+
+        lets : 
+        1. Sort the arrays in desec. 
+            example : 89 50 23 , NlogN 
+        2. 500000 , given prize to top 100 students 
+           higher marks : 
+           300 500 200 
+           Sort : 500 300 200 ..... 
+           10 participants : Sorting  
+
+        3. Tricks heaps : Identifications
+        1. largest, smallest, top k elements. Heaps this kind of problems
+
+
+types ; 
+1. Max Heap 
+2. Min heap  
+
+
+Operation : 
+1. insertion  -> logN 
+2. deletion - > logN    
+        1. Replace , first element with last one 
+        2. Remoe the node / element 
+        3. Heapify 
+
+Heaps Problem :
+1. Join the Ropes
+2. Running Median of Integer Stream
+3. Merge K Sorted Arrays
+4. Kth Smallest Element in Row and Col Wise Sorted Arrays
+5. Hostel Visits
+== == == == == == == == == == == == == == == == == == == == == == == == == == == == ==
+1. Build Heap from Arrays in NlogN
+2. Build Heap from Arrays in N
+3. Inplace HeapSort
+
+
+1. Find kth largest Element in an arrays
+2. Sort a k - sorted Arrays
+3. Find the kth Smallest element in an arrays

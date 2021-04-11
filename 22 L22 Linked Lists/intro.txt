@@ -1,0 +1,25 @@
+						LINKED LIST DATA-STRUCUTRES 
+======================================================================================================== 
+1. A linked list is a linear data - structures in which the element are not stored in
+continuous memory locations. The elements in a linked list are linked using some store of pointers.
+
+1->2->3->4->X 
+
+========================================================================================================
+
+Operation on linked list 
+
+1. Insertions  
+	a. At the front of the linked list O(1)
+	b. After a given node  
+	c. At the end of the linked list O(N) but optimized to O(1) by maintaining extra temp pointers  
+2. Deletion  
+	a. Deletion the node at the specific poistion like pos = 0, 1, 2 etc 
+	b.
+	c. 
+3. Traversing 
+
+
+STL linked list (list represntations) : 
+1.  
+========================================================================================================

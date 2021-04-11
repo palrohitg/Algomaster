@@ -116,7 +116,7 @@ void insertAtMiddle(Node *&head, int data, int pos) {
 	int count = 1;
 
 	while (temp->next != NULL and count < pos) {
-		prev = NULL;
+		prev = temp;
 		temp = temp->next;
 	}
 
@@ -134,7 +134,7 @@ void reverseList(Node *&head) {
 	Node *prev = NULL;
 
 	while (cur != NULL) {
-		nextNode = cur->next;
+		nextNode = cur->next; insert at middle in linked list  in cpp
 		cur->next = prev;
 		prev = cur;
 		cur = nextNode;
