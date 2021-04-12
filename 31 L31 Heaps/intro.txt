@@ -59,7 +59,7 @@ Operation :
 
 Heaps Problem :
 1. Join the Ropes
-2. Running Median of Integer Stream
+2. Running Median of Integer Stream 
 3. Merge K Sorted Arrays
 4. Kth Smallest Element in Row and Col Wise Sorted Arrays
 5. Hostel Visits
@@ -68,7 +68,15 @@ Heaps Problem :
 2. Build Heap from Arrays in N
 3. Inplace HeapSort
 
-
+======================================================== 
 1. Find kth largest Element in an arrays
 2. Sort a k - sorted Arrays
-3. Find the kth Smallest element in an arrays
+3. Find the kth Smallest element in an arrays 
+
+
+Flow : 
+1. Problem stat 
+2. input/output 
+3. Brute-force solution after the complexity analysis 
+4. Min/Max
+5. Dry Run 

@@ -27,16 +27,22 @@ public:
 
 		// Min heaps
 		priority_queue < pair<int, int> , vector < pair<int, int>>, greater<pair<int, int>> > pq;
+
 		// NlogK
 		for (auto it = m.begin(); it != m.end(); it++) {
+
 			pq.push({it->second, it->first});
+
 			if (pq.size() > k) {
 				pq.pop();
 			}
+
 		}
 
 		vector<int> ans;
+
 		// O(K)
+
 		while (!pq.empty()) {
 			ans.push_back(pq.top().second);
 			pq.pop();
