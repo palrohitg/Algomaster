@@ -8,9 +8,14 @@
 
     inputs : [5, 4, 2, 8]  = 19
 
-    6
+    9
     11
     19  = 36
+
+    13
+
+    approch 1 : Get the Smallest Ropes and then join it.
+                Insert the result in the arrays
 
 
 */

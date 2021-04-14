@@ -62,5 +62,6 @@ public:
 
 		}
 
+		return pq.top();
 	}
 };
