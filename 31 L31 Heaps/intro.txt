@@ -79,4 +79,11 @@ Flow :
 2. input/output 
 3. Brute-force solution after the complexity analysis 
 4. Min/Max
-5. Dry Run 
+5. Dry Run  
+
+
+===================================================================================== 
+                                      15 APRIL 
+=====================================================================================
+1. Easy Stone Weight 
+2. 
