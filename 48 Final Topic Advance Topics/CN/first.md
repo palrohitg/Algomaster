@@ -61,3 +61,6 @@ c. Full-Duplex Mode : Transmission in Both the Directions Simulanteneously. Exam
 3. IPV4 Vs IPV6 
 * https://www.geeksforgeeks.org/differences-between-ipv4-and-ipv6/
 https://www.guru99.com/difference-ipv4-vs-ipv6.html#:~:text=IPv4%20is%2032%2DBit%20IP,is%20an%20alphanumeric%20addressing%20method.&text=IPv4%20uses%20ARP%20(Address%20Resolution,to%20map%20to%20MAC%20address.
+-----------------------------------------------------------------------------------------------------------------------
+Subnetting : 
+1. 

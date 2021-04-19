@@ -6,14 +6,33 @@ Recursion Problems:
 3. Increasing / Decreasing Print N  Done 
 4. Sorted Arrays Done 
 5. Binary Search, Power(a, n) Mutiply two (a, b) without using * operators  
-
-
+-----------------------------------------------------------------
+Date = 19 April 
 Recursion - II 
 1. first occurrence 
 2. last occurence 
-3. Merge-Sort 
-4. Quick-Sort 
-5. Bubble Sort  
+3. All Occurrence 
+4. Merge-Sort 
+5. Quick-Sort 
+6. Bubble Sort  
+------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ============================================================================================================ 
 Recursion : 
