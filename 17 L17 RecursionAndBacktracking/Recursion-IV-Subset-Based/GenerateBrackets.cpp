@@ -15,8 +15,8 @@ int solve(int *weight, int *price, int W, int i, int n) {
 	int include = 0, exclude = 0;
 
 	if (weight[i] <= W) {
-		int include = price[i] + solve(weight, price, W - weight[i], i + 1, n);
-		int exclude = solve(weight, price, W, i + 1, n);
+		include = price[i] + solve(weight, price, W - weight[i], i + 1, n);
+		exclude = solve(weight, price, W, i + 1, n);
 	}
 
 	return max(include, exclude);

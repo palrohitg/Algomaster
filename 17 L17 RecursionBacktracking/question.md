@@ -31,9 +31,6 @@ Recursion - II
 
 
 
-
-
-
 ============================================================================================================ 
 Recursion : 
 1. Functional Approach to solve some complex problem. 
@@ -43,3 +40,7 @@ Recursion :
 5. Recurrence Relations 
 
 Tips : Whether Recursion apply or not. 
+
+================================================================================= 
+Backtracking Problems : 
+1. Rat In Maze Problem 
