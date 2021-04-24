@@ -16,21 +16,6 @@ Recursion - II
 5. Quick-Sort 
 6. Bubble Sort  
 ------------------------------------------------------------------
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ============================================================================================================ 
 Recursion : 
 1. Functional Approach to solve some complex problem. 
@@ -43,4 +28,10 @@ Tips : Whether Recursion apply or not.
 
 ================================================================================= 
 Backtracking Problems : 
-1. Rat In Maze Problem 
+1. Rat In Maze
+2. Generate Parenthesis 
+3. Permutations 
+4. Permutation II 
+5. N Queen 
+- print / count 1 configg 
+- print / count all config 

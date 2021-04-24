@@ -1,4 +1,0 @@
-Day 1 : Arrays (29 October 2020)
-1. https://leetcode.com/problems/find-the-duplicate-number/
-2. https://practice.geeksforgeeks.org/problems/find-missing-and-repeating/0
-3. https://leetcode.com/problems/sort-colors/
