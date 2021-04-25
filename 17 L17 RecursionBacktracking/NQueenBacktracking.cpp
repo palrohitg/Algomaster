@@ -3,6 +3,8 @@
 #include<iostream>
 using namespace std; 
 
+int count = 0; 
+
 bool isSafe(int board[][10],int i,int j, int n) {
 	// Check for the Col Condition 
 	for(int row=0; row<i; row++) {
