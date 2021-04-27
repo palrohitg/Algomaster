@@ -87,7 +87,7 @@ bool solve(int n, int i, vector<vector<int>> &board) {
 }
 
 
-int totalNQueens(int n) {
+vector<vector<string>> solveNQueens(int n)  {
 	vector<vector<int>> board(n, vector<int>(n));
 	bool res = solve(n, 0, board);
 	return ans;
@@ -97,7 +97,7 @@ int main() {
 
 	int n; cin >> n;
 
-	cout << totalNQueens(n);
+
 
 
 	return 0;
