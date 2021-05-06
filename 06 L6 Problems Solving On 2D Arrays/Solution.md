@@ -125,3 +125,10 @@ public:
 	}
 };
 ```
+
+## 3. Nearly Sorted Arrays
+```cpp
+// Trick :
+// check on the middle 3 elements only
+// because the left part is smaller and right part is greater
+```

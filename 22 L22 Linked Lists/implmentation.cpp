@@ -65,6 +65,21 @@ Node * reverseListRec(Node *&head) {
 }
 
 // Insert At End
+void insertAtHead(Node *&head, int data) {
+
+	// Base case
+	if (head == NULL) {
+		head = new Node(data);
+		return;
+	}
+
+	// another case
+	Node *ptr = new Node(data);
+	ptr->next = head;
+	head = ptr;
+	return;
+}
+
 
 void insertAtEnd(Node *&head, int data) {
 
@@ -80,23 +95,6 @@ void insertAtEnd(Node *&head, int data) {
 	}
 
 	temp->next = new Node(data);
-	return;
-}
-
-
-// Insert at head
-void insertAtHead(Node *&head, int data) {
-
-	// Base case
-	if (head == NULL) {
-		head = new Node(data);
-		return;
-	}
-
-	// another case
-	Node *ptr = new Node(data);
-	ptr->next = head;
-	head = ptr;
 	return;
 }
 

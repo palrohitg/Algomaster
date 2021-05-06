@@ -11,7 +11,7 @@
 9. find the floor in sorted arrays Done 
 10. Ceil of an element in a sorted arrays Done 
 11. Next Alphabetical Elements Done 
-12. Find the position of an element in infinite sorted arrays 
+12. Find the position of an element in infinite sorted arrays Done | Famous 
 13. Index of first 1 in a binary sroted inifited arrays 
 14. Minimum Difference Elements in a sorted Arrays 
 15. Binary Search on Answer concept 

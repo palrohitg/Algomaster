@@ -4,7 +4,7 @@ public:
 		int m = grid.size();
 		int n = grid[0].size();
 		int count = 0;
-		int i = n - 1;
+		int i = m - 1;
 		int j = 0;
 
 		while (i >= 0 and j < n) {
@@ -14,7 +14,7 @@ public:
 				i--;
 			}
 			else {
-				i++;
+				j++;
 			}
 		}
 
