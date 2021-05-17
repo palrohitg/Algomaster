@@ -1,18 +1,19 @@
 // Theory and the compelxity analysis vs tradeoff between different data-structure
 
-Binary Tree : 
+## Binary Tree : 
+
     Hierachical Data structure unlike the stack and queue 
     Example directory structure, company organizations 
     Application : real world, directory structure : 
 
 
 
-Traversal : To Print the nodes of the binary tree : 
+## Traversal : To Print the nodes of the binary tree : 
 
 -> Inorder(left,root,right), Preorder(root, left, right), PostOrders (left, right, root) 0(N) visting each nodes 
 -> level order traversal : print all the elements level by levels
 
-# Level Order traversal : 
+## Level Order traversal : 
 -> height of the tree 
 -> Print all the level till the height of the tree 
 
