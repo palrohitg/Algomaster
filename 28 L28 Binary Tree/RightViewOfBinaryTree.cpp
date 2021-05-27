@@ -13,7 +13,7 @@ class TreeNode {
 	TreeNode * buildTree() {
 		int d;
 		cin >> d;
-
+ 
 		// Base Case
 		if (d == -1) {
 			return NULL;
