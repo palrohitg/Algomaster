@@ -1,8 +1,6 @@
 /*
- 	Every even comes after the odd ones  
-    Recursion Solutions 
-    1. One test Case Fails
-    2. How to make the changes agaings
+1. Even odd linked list
+2. find the shortes path between the algorithms
 */
 
 #include<iostream>
@@ -47,32 +45,32 @@ void builtInInput(node *&head, int n) {
 	}
 }
 
-// Even-After-Odd problem 
+// Even-After-Odd problem
 node * evenAfterOdd(node *&head) {
 
-	//Base case if one or zero node 
-	if(head == NULL || head->next == NULL) {
+	//Base case if one or zero node
+	if (head == NULL || head->next == NULL) {
 		return head;
 	}
 
-	// Recursive Case 
+	// Recursive Case
 	node *small_head = evenAfterOdd(head->next);
 
 	// First node is even and second is odd then replace it
-	if(head->data%2 == 0 && small_head->data%2 != 0) {
+	if (head->data % 2 == 0 && small_head->data % 2 != 0) {
 		int head_data = head->data;
 		int small_data = small_head->data;
 		head->data = small_data;
 		small_head->data = head_data;
-				
+
 	}
 	// head will point to next node
 	head->next = small_head;
-	
+
 	return head;
 }
 
-// Find the elements are going to have to even and odd 
+// Find the elements are going to have to even and odd
 
 void printLL(node *head) {
 	while (head != NULL) {

@@ -1,4 +1,6 @@
 Date : 2 March 21 
+Arrays and Strings 
+================================
 1. Find majority elements  Done 
 2. Unique character Strings Done 
 3. Containers Cotaining Water 
@@ -21,8 +23,8 @@ Date : 2 March 21
 20. Search in Rotated Sorted Arrays 
 21. Sorting in linear Time 
 22. Balanced SubArrays 
-23. Longest common Prefix Algo 
-24. Party Halls 
+23. Longest common Prefix Algo Done 
+24. Party Halls Done 
 25. Zero Sum Subarrays 
 26. Petrols Pumps 
 27. Find all eleements with frequency two 
@@ -44,9 +46,9 @@ Date : 2 March 21
 43. Median of Two Sorted Arrays 
 44. First Missing Positive Number 
 45. Candy Distribution 
-46. Closest Three Sum 
+46. Closest Three Sum Done 
 
-
+Linked Lists
 ========================= 
 1. Arrange odd and even linked list  
 2. Make deep Copy of list 
@@ -55,7 +57,7 @@ Date : 2 March 21
 5. Straightening multilevel DLL 
 
 
-
+Stack and Queue 
 ==============================
 1. Sheldon Coopers Using Strings 
 2. Sri Ram and Arrows 
@@ -69,7 +71,7 @@ Date : 2 March 21
 10. Rain Water Harvesting 
 11. Shorest Subarrays With Sum Not less 
 
-
+Trees 
 =====================================
 1. Total SubTree with Given Sum 
 2. Big Bang Theory Tree Coloring 
