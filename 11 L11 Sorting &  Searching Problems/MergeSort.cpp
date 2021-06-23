@@ -1,17 +1,21 @@
-// Dry Run on the smal and check whether the code is working on not
+/*
+
+https://www.geeksforgeeks.org/merge-sort/
+
+*/
 
 
 #include<iostream>
 using namespace std;
 
 void merge(int a[], int s, int e) {
-	int mid = (s+e)/ 2;
+	int mid = (s + e) / 2;
 	int i = s;
 	int j = mid + 1;
 	int k = s;
 	int temp[100];
-	while(i <= mid && j <= e) {
-		if(a[i] < a[j]) {
+	while (i <= mid && j <= e) {
+		if (a[i] < a[j]) {
 			temp[k] = a[i];
 			k++;
 			i++;
@@ -22,20 +26,20 @@ void merge(int a[], int s, int e) {
 			j++;
 		}
 	}
-	while(i <= mid){
+	while (i <= mid) {
 		temp[k] = a[i];
-         k++;
-         i++;     
+		k++;
+		i++;
 	}
 
-	while(j <= e) {
+	while (j <= e) {
 		temp[k] = a[j];
 		k++;
 		j++;
 	}
 
 	// Paste into the original arrays
-	for(int i=s; i <=e; i++) {
+	for (int i = s; i <= e; i++) {
 		a[i] = temp[i];
 	}
 
@@ -66,3 +70,12 @@ int main() {
 	}
 	return 0;
 }
+
+
+/*
+
+Time Complexity :
+Best, Worst, Average = O(NlogN)
+Space : O(N) // auxilarliy space
+
+*/
