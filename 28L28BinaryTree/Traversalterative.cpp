@@ -12,5 +12,5 @@
 		a. push the left child into the stacks
 		b. pop out and points to right elements
 
-
+	3. Questions
 */
