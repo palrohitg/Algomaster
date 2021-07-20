@@ -1,4 +1,12 @@
 /*
+    Given time par person ek activities he kar sakta hais
+
+    Consider the following 6 activities.
+         start[]  =  {1, 3, 0, 5, 8, 5};
+         finish[] =  {2, 4, 6, 7, 9, 9};
+    The maximum set of activities that can be executed
+    by a single person is {0, 1, 3, 4}
+
 Sorted the activity Based on three factors
 1. Start time
 2. End Time Greedy Solutions
