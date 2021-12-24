@@ -33,11 +33,8 @@ int main() {
 }*/
 
 #include<iostream>
-using namespace std;
+using namespace std; 
 
-int main(int argc, char const *argv[])
-{
-	int a = 1000000000;
-	cout << a;]
-	return 0;
+int main(){
+	cout <<"testing the files" << endl;
 }
