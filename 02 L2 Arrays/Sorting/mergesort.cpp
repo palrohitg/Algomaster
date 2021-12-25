@@ -7,7 +7,17 @@ using namespace std;
 	pass by the reference code.
 */ 
 void merge(int arr[], int start, int mid, int end) {
-	
+	/*
+		- find out the size of left and right arrays
+		- create two arrays left and right arrays 
+		- create three indexes, leftindex, rightindex, mergeSortIndex 
+		- copy the origin elements of the arrays to the left and right part
+		- Make the loops for the lenght of the arrays based on the left and right arrays 
+		- If some elements are left in right / left arrays then make place them as well there
+
+		
+
+	*/
 }
 
 

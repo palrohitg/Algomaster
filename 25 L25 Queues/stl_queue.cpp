@@ -2,6 +2,18 @@
 #include<queue>
 using namespace std;
 
+/*
+    Function in queues:
+    1. 
+
+
+
+
+*/
+
+
+
+
 int main() {
 
     queue<int> q;

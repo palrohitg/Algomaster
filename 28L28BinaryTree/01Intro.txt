@@ -1,0 +1,122 @@
+// Theory and the compelxity analysis vs tradeoff between different data-structure
+
+## Binary Tree : 
+
+- Hierachical Data structure unlike the stack and queue 
+    Example directory structure, company organizations 
+    Application : real world, directory structure : 
+
+
+
+## Traversal : To Print the nodes of the binary tree : 
+
+-> Inorder(left,root,right), Preorder(root, left, right), PostOrders (left, right, root) 0(N) visting each nodes 
+-> level order traversal : print all the elements level by levels
+
+## Level Order traversal : 
+-> height of the tree 
+-> Print all the level till the height of the tree 
+
+/*Function to print level order traversal of tree*/
+printLevelorder(tree)
+for d = 1 to height(tree)
+   printGivenLevel(tree, d);
+
+/*Function to print all nodes at a given level*/
+printGivenLevel(tree, level)
+if tree is NULL then return;
+if level is 1, then
+    print(tree->data);
+else if level greater than 1, then
+    printGivenLevel(tree->left, level-1);
+    printGivenLevel(tree->right, level-1);
+
+
+
+
+
+
+
+
+
+Terms : 
+0. Root : First Node / parent node of the tree 
+1. Siblings : child of the same parents 
+2. Ancestors : All the parent node 
+3. Decendent : All all child node 
+4. Leaf : not have children (last node of the tree) 
+5. Child Node : descent nodes of the tree 
+6. Internal Node : Atleast have one child we called it as internal node
+
+
+
+Different View of the tree : 
+1. top little variations 
+2. bottom 
+3. left 
+4. right 
+
+
+# Some Importants theory Concepts : ()
+1. Diameter of the tree 
+2. Sum replacements 
+3. Height Balanced Tree AVL trees 
+4. Build tree from arrays 
+5. PreOrder and PostOrder builds 
+6. Right View of the tree 
+7. Shorest distances between two nodes
+8. longest common Ancestors
+
+
+## Important Points: 
+1. Most of the problem will be solved using the recursion techniques.
+2. No of Edges : if n nodes is in tree than n-1 edges.
+3. 
+
+
+## Applications:
+1. Routing tables
+2. B-tree and B+ tree in the databases;
+3. Heap : also a tree data structures using arrays and implements pq; 
+
+
+
+
+
+# Types of Binary trees 
+1. 
+
+
+
+
+
+
+
+
+## Resources to follow Links: 
+Introduction to Trees: https://youtu.be/sAtplKUhtQ8
+Binary Trees: https://youtu.be/2edIhwsnqBY&t=8s
+Binary Tree Traversals: https://youtu.be/p3YUlEZr2vM&t=64s
+Shortcut trick for Binary Tree Traversals: https://youtu.be/Y-FcfdAWd8Q
+Inorder Traversal Iterative: https://youtu.be/_4Jhejxvttc
+Preorder Traversal Iterative: https://youtu.be/RDG4jtLGDmo
+Postorder Traversal Iterative (2 stack method): https://youtu.be/4VpO4lrRINc
+Postorder Traversal Iterative (1 stack method): https://youtu.be/Zv14sK2kvtQ
+Level Order Traversal: https://youtu.be/lXIk1PXb1Jc
+Morris Inorder Traversal: https://youtu.be/BuI-EULsz0Y
+Zigzag Level Order Traversal: https://youtu.be/YwABW6q3DOM
+Binary Tree From Inorder and Preorder (Recursive): https://youtu.be/FBaSrNSf9po
+Binary Tree From Inorder and Preorder (Iterative): https://youtu.be/LVFYyw7rZb8
+Binary Tree From Inorder and Postorder (Recursive):https://youtu.be/rY9ejIY9Osw
+Binary Tree From Inorder and Postorder (Iterative):https://youtu.be/8cUuA066lZQ
+Binary Tree From Inorder and Levelorder: https://youtu.be/7eBndROfUnw
+Binary Tree From Preorder and Postorder: https://youtu.be/LnHSOy7ctms
+Height of a Binary Tree (Recursive): https://youtu.be/9ejFkjEgK3k
+Height of a Binary Tree (Iterative): https://youtu.be/OUhTI4dtQbY&t=385s
+Diameter of a Binary Tree: https://youtu.be/Prph-j0sgr4
+Lowest Common Ancestor: https://youtu.be/k7NF6rNOs4Y
+Left View and Right View (Recursive): https://youtu.be/3Qjm1iX5dw8
+Left View and Right View (Iterative): https://youtu.be/ruT7rVIveqA
+Top View and Bottom View (Recursive): https://youtu.be/zoagmWU1yD8
+Top View and Bottom View (Iterative): https://youtu.be/=-Cr4I8ZTXgc
+Boundary Traversal: https://youtu.be/0nx-t0PcccA
