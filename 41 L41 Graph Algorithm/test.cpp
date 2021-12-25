@@ -1,21 +1,45 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-int main() {
+class Graph {
+	int V;
+	// list of arrays pointers of types pointing to this data types 
+	list<int> *l;
+public:
 
-#ifndef ONLINE_JUDGE
-	freopen("../input.txt", "r", stdin);
-	freopen("../output.txt", "w", stdout);
-#endif
-	map<int, vector<int>> m;
-	m[0].push_back(1);
-	// m[1].push_back({2, 2, 3});
+	Graph(int V) {
+		this->V = V;
+		l = new list<int>[V]; // list of arrays files
+	}
 
-	for (auto p : m[0]) {
-		for (auto it = p.begin(); it != p.end(); it++) {
-			cout << *it << endl;
+	void addEdge(int x, int y) {
+		l[x].push_back(y);
+		l[y].push_back(x);
+	}
+
+
+	void printGraph() {
+
+		for (int i = 0; i < V; i++) {
+			cout << i << " = ";
+			for (auto nbr : l[i]) {
+				cout << nbr << "->";
+			}
+			cout << endl;
 		}
 	}
 
-	return 0;
+};
+
+int main() {
+
+	Graph g(4); 
+	g.addEdge(0,1);
+	g.addEdge(0,2);
+	g.addEdge(2,3); 
+
+	g.printGraph(); 
+
+
+	return 0; 
 }
