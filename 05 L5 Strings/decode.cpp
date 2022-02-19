@@ -1,13 +1,15 @@
-// Deocode XORed arrays
+#include<iostream>
+using namespace std;
 
-class Solution {
-public:
-	vector<int> decode(vector<int>& encoded, int first) {
-		for (int &n : encoded) {
-			swap(n, first);
-			first ^= n;
-		}
-		encoded.push_back(first);
-		return encoded;
-	}
-};
+int main()
+{
+
+#ifndef ONLINE_JUDGE
+	freopen("input.txt", "r", stdin);
+	freopen("output.txt", "w", stdout);
+#endif
+
+	int x; cin >> x;
+	cout << (x + 10) << endl;
+	return 0;
+}
