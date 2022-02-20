@@ -9,20 +9,20 @@
   * Take the count of each subarray which is divide by the N
 
 */
-/*
+
 
 // This is O(N^2)
 #include <iostream>
 using namespace std;
 
 int divisbleSubarray(int arr[], int n) {
-	int count=0;
-	int cur_sum=0;
-	for(int i=0; i<n; i++) {
-		cur_sum=0;
-		for(int j=i; j<n; j++) {
+	int count = 0;
+	int cur_sum = 0;
+	for (int i = 0; i < n; i++) {
+		cur_sum = 0;
+		for (int j = i; j < n; j++) {
 			cur_sum = cur_sum + arr[i];
-			if(cur_sum%n == 0) {
+			if (cur_sum % n == 0) {
 				// << cur_sum << endl;
 				count++;
 			}
@@ -35,18 +35,18 @@ int divisbleSubarray(int arr[], int n) {
 int main() {
 	int t;
 	cin >> t;
-	while(t--) {
+	while (t--) {
 		int n;
 		cin >> n;
-		int arr[n+1];
-			for(int i=0; i<n; i++) {
-				cin >> arr[i];
-			}
-    		cout << divisbleSubarray(arr,n) << endl;
+		int arr[n + 1];
+		for (int i = 0; i < n; i++) {
+			cin >> arr[i];
+		}
+		cout << divisbleSubarray(arr, n) << endl;
 	}
 	return 0;
 }
-*/
+
 
 
 // #include<iostream>
