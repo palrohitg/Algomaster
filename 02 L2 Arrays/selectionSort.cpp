@@ -1,45 +1,48 @@
 /*
-The selection sort algorithm sorts an array by repeatedly finding the minimum element (considering ascending order) from unsorted part and putting it at the beginning. The algorithm maintains two subarrays in a given array.
-1) The subarray which is already sorted.
-2) Remaining subarray which is unsorted.
-*/
-
-
-
-
-
-
-/*
-# Python program for implementation of Selection
-# Sort
-import sys
-A = [64, 25, 12, 22, 11]
-
-# Traverse through all array elements
-for i in range(len(A)):
-
-	# Find the minimum element in remaining
-	# unsorted array
-	min_idx = i
-	for j in range(i+1, len(A)):
-		if A[min_idx] > A[j]:
-			min_idx = j
-
-	# Swap the found minimum element with
-	# the first element
-	A[i], A[min_idx] = A[min_idx], A[i]
-
-# Driver code to test above
-print ("Sorted array")
-for i in range(len(A)):
-	print("%d" %A[i]),
+ Intituion behined this Algo :
+ * Find the smallest elements in the array and replace this element with the first index and do the same steps for the remains 
+ * So after the N=1 Iteration or we can say that each Iteration we have the sorted element in place 
 
 */
 
+#include<iostream>
+#include<climits>
+using namespace std;
 
 
-/*
-time : O(N^2)
-space : O(1)
+// find the smallest element and replace return to selectionSort
+int smallestElement(int a[],int pos, int n) {
+	int min_Index = pos; // assume this is postion
+	for(int i=pos+1; i<n; i++) { // check from position plus and then return on change the indexes
+		if(a[i] < a[min_Index]) {
+			min_Index = i;
+		}
+	} 
+	return min_Index;
+}
 
-*/
+
+//swap the element which is smallest and return to the main
+void selectionSort(int a[], int n) {
+	for(int i=0; i<n-1; i++) {
+	    int smallIndex = smallestElement(a,i,n);
+		swap(a[i],a[smallIndex]);
+	}
+
+}
+
+int main() {
+	int arr[] = {5,1,4,0,2};
+	int n = sizeof(arr)/sizeof(int);
+	for(int i=0; i<n ; i++) {
+		cout << arr[i] << " ";
+	}
+	cout << '\n';
+	selectionSort(arr,n);
+	for(int i=0; i<n ; i++) {
+		cout << arr[i] << " ";
+	}
+
+	// cout << minIndex(arr,n);
+	return 0;
+}
