@@ -71,7 +71,8 @@ Different View of the tree :
 ## Important Points: 
 1. Most of the problem will be solved using the recursion techniques.
 2. No of Edges : if n nodes is in tree than n-1 edges.
-3. 
+3. Python Interview concepts in the details here. 
+4. Take the reference of a book and do all the basic question of Tree 
 
 
 ## Applications:

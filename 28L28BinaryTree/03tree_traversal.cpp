@@ -1,42 +1,43 @@
-#include<iostream> 
+#include<iostream>
 using namespace std;
 
 class node {
-	
-	public :
 
-		int data;
-		node *left;
-		node *right;
+public :
 
-	 	// Constructor 
-		node(int d) {
-			data = d;
-			left = NULL;
-			right = NULL;
-		}
+	int data;
+	node *left;
+	node *right;
+
+	// Constructor
+	node(int d) {
+		data = d;
+		left = NULL;
+		right = NULL;
+	}
 };
 
 /*
+	Three Most Important Traversal of Tree :
 	-PreOrder
 	-PostOrder
 	-Inorders
-	
+
 */
 
 void preOrder(node *root) {
 
-	// root, left, right 
+	// root, left, right
 
-	if (root == NULL){
-		return; 
+	if (root == NULL) {
+		return;
 	}
 
-	cout << root->data << endl; 
+	cout << root->data << endl;
 	preOrder(root->left);
-	preOrder(root->right); 
+	preOrder(root->right);
 
-	return; 
+	return;
 }
 
 
@@ -48,39 +49,39 @@ void inOrder(node *root) {
 	}
 
 	inOrder(root->left);
-	cout << root->data << endl; 
-	inOrder(root->right);  
+	cout << root->data << endl;
+	inOrder(root->right);
 
-	return; 
+	return;
 }
 
 void levelOrderPrint(node *root) {
 
 	if (root == NULL) {
-		return; 
+		return;
 	}
 
-	
+
 }
 
 int main(int argc, char const *argv[])
 {
 #ifndef ONLINE_JUDGE
-		freopen("../input.txt", "r", stdin);
-		freopen("../output.txt", "w", stdout);
+	freopen("../input.txt", "r", stdin);
+	freopen("../output.txt", "w", stdout);
 #endif
 	node *root = NULL;
 	root = new node(1);
-	root->left = new node(2); 
+	root->left = new node(2);
 	root->right = new node(3);
 	root->left->left = new node(4);
-	root->left->right = new node(5); 
+	root->left->right = new node(5);
 
 	preOrder(root);
-	cout << endl; 
+	cout << endl;
 
-	inOrder(root); 
-	// cout << root->data << endl; 
+	inOrder(root);
+	// cout << root->data << endl;
 
 	return 0;
 }

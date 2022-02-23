@@ -1,77 +1,4 @@
-// // Linked list skeleton
-
-// /*
-// 	Albert Einstein : “If you can’t explain it simply, you don’t understand it well enough.”
-
-// */
-
-
-
-// /*
-
-//  Reverse the linked list in the groups order
-
-// */
-// #include<iostream>
-// using namespace std;
-
-// class node {
-// public :
-// 	int data;
-// 	node *next;
-
-
-// 	node(int d) {
-// 		data = d;
-// 		next = NULL;
-// 	}
-// };
-
-
-// void insertAtTails(node *&head, int data) {
-// 	if (head == NULL) {
-// 		// insert at head
-// 		head = new node(data);
-// 		return;
-// 	}
-
-// 	node *temp = head;
-// 	while (temp->next != NULL) {
-// 		temp = temp->next;
-// 	}
-
-// 	// insert at head
-// 	temp->next = new node(data);
-
-// }
-
-// void builtInInput(node *&head, int n) {
-
-// 	for (int i = 0; i < n; ++i)
-// 	{
-// 		int data;
-// 		cin >> data;
-// 		insertAtTails(head, data);
-// 	}
-// }
-
-
-// void printLL(node *head) {
-// 	while (head != NULL) {
-// 		cout << head->data << "-->";
-// 		head = head->next;
-// 	}
-// }
-
-// int main() {
-
-// 	node *head = NULL;
-// 	int n;
-// 	cin >> n;
-
-// 	return 0;
-// }
-
+// if you cann't explain it simply it means you don't undertand it enough
 
 #include<iostream>
 using namespace std;
@@ -134,6 +61,7 @@ node * reverseLL(node *&head, int K) {
 	}
 
 	if (cur != NULL) {
+		ce
 		head->next =  reverseLL(cur, K);
 	}
 

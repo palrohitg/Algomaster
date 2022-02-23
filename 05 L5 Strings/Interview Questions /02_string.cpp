@@ -3,12 +3,11 @@ using namespace std;
 
 int main() {
 
-    string word = "testing"; 
-
-    for (auto s : word) {
-        cout << s << endl;
-    }
-
+#ifndef ONLINE_JUDGE
+    freopen("./input.txt", "r", stdin);
+    freopen("./output.txt", "w", stdout);
+#endif
+    cout << "testing the values";
 
     return 0;
 }

@@ -1,8 +1,8 @@
 /*
-    1. four varition then findout where is used 
-    a. NGL 
-    b. NSL 
-    
+    1. four varition then findout where is used
+    a. NGL
+    b. NSL
+
 
 */
 
@@ -18,8 +18,8 @@ vector<int> v[10];
 
 
 // void stockSpan(int price[], int n) {
-    
-//     // Insert the first price and the span of the days 
+
+//     // Insert the first price and the span of the days
 //     s.push(0);
 //     v.push_back(1);
 
@@ -29,15 +29,15 @@ vector<int> v[10];
 //         while(!s.empty() and price[s.top()] <= curPrice) {
 //             s.pop();
 //         }
-        
+
 //         if(!s.empty()){
-// 			int prev_highest=s.top();
-// 			v.push_back(i-prev_highest);
-// 		}
-// 		else {
-// 			v.push_back(i+1);
-// 		}
-// 		s.push(i);
+//          int prev_highest=s.top();
+//          v.push_back(i-prev_highest);
+//      }
+//      else {
+//          v.push_back(i+1);
+//      }
+//      s.push(i);
 
 //     }
 
@@ -56,9 +56,9 @@ int main() {
     // for(int i=0; i<n; i++) {
     //     cin >> price[i];
     // }
-    // stockSpan(price, n); 
+    // stockSpan(price, n);
 
-    // delete[] price;  
+    // delete[] price;
     v[5] = 10;
     cout << v[5];
     return 0;
