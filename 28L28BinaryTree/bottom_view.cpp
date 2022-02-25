@@ -1,5 +1,17 @@
 /*
 
+- if node for a particular, hz distance is not present, add to the map 
+- present, add to the maps 
+- if current level is greater than the existing level 
+- I will update the 
+  - Basically update the horizontal distance values in hashmaps
+  a. m[hd].second = curr; 
+  b. m[hd].first = root->data;
+
+- printBottomViewUtil(root->left, curr + 1, hd - 1, m); 
+- printBottomViewUtil(root->right, curr + 1, hd + 1, m); 
+
+
 inputs : 4 1 2 3 4 5 6 7 -1 -1 -1 -1 -1 8 -1 9 -1 -1 -1 -1
 outputs : 
 4
@@ -12,6 +24,21 @@ outputs :
 When the level is greater than the high propabability we are gone see the bottom most items 
 
 
+void top_view(node *root, map<int,pair<int,int>> &m, int dist, int level) {
+    if (node == NULL) return;
+
+
+    if (m.count(dist) == 0 || m[dist].second > level) {
+        m[dist] = make_pair(node->val, level); 
+    }
+
+    bottom_view(node->left, m, dist-1, level + 1); 
+    bottom_view(node->right, m, dist+1, level + 1); 
+
+    return; 
+}
+
+NlogN solution: make_pair skew tree hoota hai agar 
 */
 
 
