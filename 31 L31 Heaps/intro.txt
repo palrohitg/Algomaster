@@ -11,7 +11,7 @@ Heaps
 #include<queue> 
 
 priority<int> pq; // max heaps 
-priority<int, vector<int>, greater<int> > pq;
+priority<int, vector<int>, greater<int> > pq; // min heaps 
 
 operation : 
 1. push() 

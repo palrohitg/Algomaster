@@ -82,4 +82,33 @@ print ("Sorted array is:")
 for i in range(len(arr)):
     print ("%d" %arr[i])
 
+
+
+- Binary search : 
+
+start = 1
+end = x / 2; 
+
+while(start <= end) {
+	mid 
+	sqr 
+
+	if (sqr == mid) {
+		return mid; 
+	}
+	else if (sqr < x) {
+		start = mid + 1; 
+		result = mid; 
+	}
+	else {
+		end = mid - 1; 
+	}
+}
+
+
+
+
 */
+
+
+

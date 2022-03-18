@@ -27,7 +27,6 @@ ll solve(vector<item> arr, int n, int W) {
 	for (int i = 1; i <= n; i++) {
 		for (int j = 1; j <= W; j++) {
 			// cur weight of items
-			int weight = arr[i].wt;
 			if (weight <= j) {
 				dp[i][j] = max(arr[i].val + dp[i - 1][j - arr[i].wt], dp[i - 1][j]);
 			}

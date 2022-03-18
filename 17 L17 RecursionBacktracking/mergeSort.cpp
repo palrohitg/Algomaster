@@ -1,68 +1,97 @@
-#include<iostream>
+// C++ program for Merge Sort
+#include <iostream>
 using namespace std;
 
+// Merges two subarrays of array[].
+// First subarray is arr[begin..mid]
+// Second subarray is arr[mid+1..end]
+void merge(int array[], int const left, int const mid, int const right)
+{
+	auto const subArrayOne = mid - left + 1;
+	auto const subArrayTwo = right - mid;
 
-void merge(int arr[], int s , int e) {
+	// Create temp arrays
+	auto *leftArray = new int[subArrayOne],
+		*rightArray = new int[subArrayTwo];
 
-	int mid = (s + e) / 2;
+	// Copy data to temp arrays leftArray[] and rightArray[]
+	for (auto i = 0; i < subArrayOne; i++)
+		leftArray[i] = array[left + i];
+	for (auto j = 0; j < subArrayTwo; j++)
+		rightArray[j] = array[mid + 1 + j];
 
-	int i = s;
-	int j = mid + 1;
-	int k = s;
+	auto indexOfSubArrayOne = 0, // Initial index of first sub-array
+		indexOfSubArrayTwo = 0; // Initial index of second sub-array
+	int indexOfMergedArray = left; // Initial index of merged array
 
-	int temp[100];
-
-	while (i <= mid and j <= e) {
-		if (arr[i] < arr[j]) {
-			temp[k] = arr[i];
-			k++; i++;
+	// Merge the temp arrays back into array[left..right]
+	while (indexOfSubArrayOne < subArrayOne && indexOfSubArrayTwo < subArrayTwo) {
+		if (leftArray[indexOfSubArrayOne] <= rightArray[indexOfSubArrayTwo]) {
+			array[indexOfMergedArray] = leftArray[indexOfSubArrayOne];
+			indexOfSubArrayOne++;
 		}
 		else {
-			temp[k] = arr[j];
-			k++; j++;
+			array[indexOfMergedArray] = rightArray[indexOfSubArrayTwo];
+			indexOfSubArrayTwo++;
 		}
+		indexOfMergedArray++;
 	}
 
-	while (i <= mid) {
-		temp[k] = arr[i];
-		k++; i++;
-	}
 
-	while (j <= e) {
-		temp[k] = arr[j];
-		k++; j++;
+	// Simple copying the remaining elements from the arrays 
+	// Copy the remaining elements of
+	// left[], if there are any
+	while (indexOfSubArrayOne < subArrayOne) {
+		array[indexOfMergedArray] = leftArray[indexOfSubArrayOne];
+		indexOfSubArrayOne++;
+		indexOfMergedArray++;
 	}
-
-	for (int x = s; x <= e; x++) {
-		arr[x] = temp[x];
+	// Copy the remaining elements of
+	// right[], if there are any
+	while (indexOfSubArrayTwo < subArrayTwo) {
+		array[indexOfMergedArray] = rightArray[indexOfSubArrayTwo];
+		indexOfSubArrayTwo++;
+		indexOfMergedArray++;
 	}
-	return;
 }
 
+// begin is for left index and end is
+// right index of the sub-array
+// of arr to be sorted */
+void mergeSort(int array[], int const begin, int const end)
+{
+	if (begin >= end)
+		return; // Returns recursively
 
-void mergeSort(int arr[], int s, int e) {
-
-	if (s >= e) return;
-
-	int m = (s + e) / 2;
-	mergeSort(arr, s, m);
-	mergeSort(arr, m + 1, e);
-	merge(arr, s, e);
-
+	auto mid = begin + (end - begin) / 2;
+	mergeSort(array, begin, mid);
+	mergeSort(array, mid + 1, end);
+	merge(array, begin, mid, end);
 }
 
+// UTILITY FUNCTIONS
+// Function to print an array
+void printArray(int A[], int size)
+{
+	for (auto i = 0; i < size; i++)
+		cout << A[i] << " ";
+}
 
-int main() {
+// Driver code
+int main()
+{
+	int arr[] = { 12, 11, 13, 5, 6, 7 };
+	auto arr_size = sizeof(arr) / sizeof(arr[0]);
 
-	int arr[100] = {12, 1, 4, 0, 123};
-	int n = sizeof(arr) / sizeof(arr[0]);
+	cout << "Given array is \n";
+	printArray(arr, arr_size);
 
-	mergeSort(arr, 0, n - 1);
+	mergeSort(arr, 0, arr_size - 1);
 
-	for (int i = 0; i < n; i++) {
-		cout << arr[i] << " ";
-	}
-
-
+	cout << "\nSorted array is \n";
+	printArray(arr, arr_size);
 	return 0;
 }
+
+// This code is contributed by Mayank Tyagi
+// This code was revised by Joshua Estes
