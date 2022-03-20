@@ -1,8 +1,11 @@
 // Given  a set of wines your task it to calculate the maximum profits you can make by selling on the wines 
 // 1. You can sell only the first and last wines and each year the wines prices is going to increase 
 
-#include<iostream>
+#include<bits/stdc++.h>
 using namespace std; 
+
+int dp[100][100]; 
+
 
 // recursive solutions 
 int maxProfit(int price[], int start, int end, int y) {
@@ -19,8 +22,14 @@ int maxProfit(int price[], int start, int end, int y) {
     return max(opt1, opt2); 
 }
 
+
+
+
+int maxProfitDP()
+
 int main() {
 
+    memset(dp, -1, sizeof(dp))
     int price[] = {2,3,5,1,4};
     int n = sizeof(price)/sizeof(int);
 

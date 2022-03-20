@@ -15,3 +15,92 @@
 15. Maximum size Square of Ones Algo 
 16. Target Sum 
 17. Equalise Strings 
+
+
+# 1 sep 2020 : DP Problems 
+Total Question to cover the DP 50 implementation with both the top down, bottom up 
+
+1. min step from one  Done 
+2. coin change problems Done 
+3. wines problems Done bottom up dp is left here 
+4. maxium sub arrays  Done 
+5. ladders recursion based questions left rec
+6. Roadcutting to maxium profits * 1-DP 
+7. longest common subsequences *  classicals in DNA 
+8. LIS commmon subsequences longest increasing subsequences 
+
+
+# Main varitations : 
+1. knapsack 0/1 or unbounded knapsack 
+2. lcs 
+3. MCM 
+
+
+
+// Concepts wise DP Problems 
+1. Minium Cost Path 
+2. RAt & Elepaht Ways 
+3. Robot Paths,codechef 
+4. MCM 
+5. Cell mitosis 
+6. Advanced DP : Mixture spojs 
+7. Friends Pairing Problems 
+8. DP-catalan Number Problems 
+9. DP-Optimal game stratery 
+10. LIS O(N^2) to NlogN 
+11. Min steps to one 
+12. Minimum coin Changes 
+13. Sales Wines year 
+14. Maxium Subarray sum problems 
+15. ladders 
+16. Rode cutting problems to maxprofits 
+
+
+
+
+
+// Assigment Question to checkout your DP levels 
+1. Print LCS 
+2. Count Number of Binarys Strings 
+3. 0-1 knapsack Done 
+4. 0-N knapsack 
+5. LCS with 3 Strings 
+6. k-ordered LCS 
+7. 1 Count 
+8. Minimum Money Needed 
+9. Exchanging Coins 
+10. WildCard Patterms Matching 
+11. The subset of Sum to target Done 
+12. Minimum Jumps Required 
+13. Mixture 
+14. Ugly Numbers    
+15. Optimal Game Strategy-I 
+16. Optimal Game Strings-II 
+17. Brackets All Overs 
+18. Count subsequences 
+
+# knapsack based problems 
+1. subset sum parition Done 
+2. equal sum paritions Done 
+3. count of subset sum Done 
+4. Minimum subset differences Done 
+5. target sum  Done 
+6. no of subset in a given differences Done 
+
+
+# LCS varitations : 
+1. Print length 
+2. Print the lcs 
+3. 3 strings 
+4. k 0rdered lcs 
+
+
+12 September 2020 
+
+1. Exchange Coins Currency 
+2. Optimal-Game Strategy 1 
+3. Optimal-Game Strategy 2 
+4. Ugly Numbers 
+5. Mixtures problems 
+
+
