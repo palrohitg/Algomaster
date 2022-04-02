@@ -84,7 +84,6 @@ Different View of the tree :
 1. 
 
 
-
 ## Top Binary Tree Question Must TO DO: 
 Introduction to Trees: https://youtu.be/sAtplKUhtQ8
 Binary Trees: https://youtu.be/2edIhwsnqBY&t=8s

@@ -13,7 +13,7 @@ class TreeNode {
 	TreeNode * buildTree() {
 		int d;
 		cin >> d;
- 
+
 		// Base Case
 		if (d == -1) {
 			return NULL;
@@ -29,6 +29,7 @@ class TreeNode {
 };
 
 
+// DFS Approach to solve the problems
 class Solution {
 	vector<int> v;
 	max_level = -1;

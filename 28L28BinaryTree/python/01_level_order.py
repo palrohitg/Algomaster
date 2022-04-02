@@ -33,7 +33,7 @@ def printLevelOrder(root):
 		# Print front of queue and
 		# remove it from queue
 		print(queue[0].data)
-		node = queue.pop(0)  # always pop from the index at 0 
+		node = queue.pop(0)  # always pop from the index at 0  front element elements always pop up 
 							 # node.left is not None:
 							 	# queue.append(node.left)
 
