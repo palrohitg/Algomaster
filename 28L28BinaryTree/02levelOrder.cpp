@@ -2,14 +2,10 @@
 using namespace std;
 
 /*
-	TC: O(N) no of nodes which traversing , push() and pop()
+	TC: O(N) no of nodes which traversing , push() and pop(), front()
 	operations follows O(1) Time takes
-	SC : O(N) Storing the
-
-
-
+	SC : O(N) Storing the Queue
 */
-
 
 class node {
 

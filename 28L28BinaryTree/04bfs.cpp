@@ -6,6 +6,18 @@
  
  BFS with line break : https://leetcode.com/explore/challenge/card/november-leetcoding-challenge/565/week-2-november-8th-november-14th/3529/
  
+
+
+
+ ## BFS and DFS in depth : 
+ 1. Level Order Traversal -> BFS 
+ 2. Inorder, Preorder, Postorder -> DFS 
+
+ Is there any difference in terms of Extra Space?
+There is difference in terms of extra space required.
+
+Extra Space required for Level Order Traversal is O(w) where w is maximum width of Binary Tree. In level order traversal, queue one by one stores nodes of different level.
+Extra Space required for Depth First Traversals is O(h) where h is maximum height of Binary Tree. In Depth First Traversals, stack (or function call stack) stores all ancestors of a node.
 */
 
 #include<iostream>
@@ -24,7 +36,7 @@ class node {
 	
 	 	// Constructor 
 		node(int d) {
-			data = d;
+			data = d; 
 			left = NULL;
 			right = NULL;
 		}

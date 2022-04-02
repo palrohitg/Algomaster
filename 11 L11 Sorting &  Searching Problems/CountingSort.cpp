@@ -14,7 +14,7 @@ void count_sort(int a[], int n) {
 
 	// create the freq array
 	int *freq = new int[largest+1] {0};
-	for (int i = 0; i < n; ++i) // increase the frequency of the elements
+	for (int i = 0; i < n; ++i) // increase the
 	{
 		freq[a[i]] ++;
 	}

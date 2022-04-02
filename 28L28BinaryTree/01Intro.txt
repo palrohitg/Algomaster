@@ -33,12 +33,6 @@ else if level greater than 1, then
 
 
 
-
-
-
-
-
-
 Terms : 
 0. Root : First Node / parent node of the tree 
 1. Siblings : child of the same parents 
@@ -66,6 +60,8 @@ Different View of the tree :
 6. Right View of the tree 
 7. Shorest distances between two nodes
 8. longest common Ancestors
+9. Sourrounded Common Regions 
+10. LCA - 2, LCA-3, LCA-4 
 
 
 ## Important Points: 
@@ -89,12 +85,7 @@ Different View of the tree :
 
 
 
-
-
-
-
-
-## Resources to follow Links: 
+## Top Binary Tree Question Must TO DO: 
 Introduction to Trees: https://youtu.be/sAtplKUhtQ8
 Binary Trees: https://youtu.be/2edIhwsnqBY&t=8s
 Binary Tree Traversals: https://youtu.be/p3YUlEZr2vM&t=64s
