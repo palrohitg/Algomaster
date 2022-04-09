@@ -1,5 +1,15 @@
+
+
 // Introduction to heap data-structures
 /*
+
+    Heap is CBT that comes with a heap order property 
+
+    What is CBT: 
+        a. Complete Binary Tree 1
+
+
+
     1. Heaps as Arrays  Done
     2. Insertion Done
     3. Insertion Code Done
@@ -82,7 +92,7 @@ public :
     }
 
     void push(int data) {
-        v.push_back(data);
+        v.push_back(data); 
 
         int idx = v.size() - 1;
         int parent = idx / 2;
