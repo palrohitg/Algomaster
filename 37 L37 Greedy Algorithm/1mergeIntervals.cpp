@@ -36,3 +36,24 @@ public:
         return ans;
     }
 };
+
+
+/*
+class Solution:
+    def merge(self, intervals: List[List[int]]) -> List[List[int]]:
+		# sort the intervals based on the start 
+        intervals.sort(key=lambda intervals: intervals[0])
+        ret = []
+        end = intervals[0][1]
+        start = intervals[0][0];
+        for i,n in enumerate(intervals):
+            if n[0] <= end : 
+                if n[1] > end : end = n[1];
+            else:
+                ret.append([start,end]);
+                start = n[0];
+                end = n[1]
+        ret.append([start,end])
+        return ret;
+"""
+*/
