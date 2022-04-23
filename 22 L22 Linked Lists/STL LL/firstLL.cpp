@@ -15,6 +15,17 @@
 #include<string>
 using namespace std;
 
+push_back()
+pop_back()
+push_front()
+back()
+front()
+sort()
+reverse()
+
+for (auto it = l2.begin(); it != l2.end(); it++) {
+	cout << *(it) << endl; 
+}
 int main() {
 	
 	//Init
