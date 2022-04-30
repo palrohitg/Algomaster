@@ -38,3 +38,4 @@ Collision : when two keys get the same address in the hashtable buckets so, we h
                  1. There are no more than 20 elements in the data set.
                  2. Hash function will return an integer from 0 to 19.
                                               3. Data set must have unique elements.
+-

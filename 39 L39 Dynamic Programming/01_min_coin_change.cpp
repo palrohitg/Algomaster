@@ -32,19 +32,15 @@ int minCoins(int n, int coin[], int T, int dp[]) {
     return dp[n];
 }
 
-
 // Bottom up dp 
-
-
-
-
 int main() {
 
-    int n; cin >> n;
+    int n = 3; 
     int coin[] = {1, 7, 10};
     int T = 3; 
     int dp[1000] = {0};
     cout << minCoins(n, coin, T, dp);
+    // cout << minStepToOneRec(n);
 
     return 0;
 }

@@ -41,12 +41,37 @@ int minStep(int n, int dp[]) {
 	return dp[n];
 }
 
+
+int minStepToOneRec(int n) {
+    // Base case 
+    if (n == 1) return 0; 
+
+    // Recursive Case 
+    int op1 = minStepToOneRec(n - 1); 
+    int ans = op1; 
+
+    if (n % 2 == 0) {
+        int op2 = minStepToOneRec(n / 2);
+        if (op2 < ans) {
+            ans = op2; 
+        }
+    }
+
+    if (n % 3 == 0) {
+        int op3 = minStepToOneRec(n / 3);
+        if (op3 < ans) {
+            ans = op3; 
+        }
+    }
+    return ans + 1; 
+}
+
 // Overlapping problem is currently have existing
 int main() {
 	int n = 10;
 	int dp[n + 1];
 
-	// Ensure not take the garbage values
+	// Ensure that doesn't contains the garbage values
 	for (int i = 0; i <= n; i++) {
 		dp[i] = 0;
 	}

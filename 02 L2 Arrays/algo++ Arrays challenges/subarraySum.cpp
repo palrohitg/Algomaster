@@ -1,40 +1,25 @@
-#include <iostream>
-using namespace std;
-// maxsum of which subarrays
-void generateSubarray(int a[], int n)
-{
-	int maxSum = 0;
-	int curSum = 0;
-	int left, right;
-	for (int i = 0; i < n; i++)
-	{
-		for (int j = i; j < n; j++)
-		{
-			curSum = 0;
-			for (int k = i; k <= j; k++)
-			{
-				curSum = curSum + a[k];
-			}
-			if (maxSum < curSum)
-			{
-				maxSum = curSum;
-				left = i;
-				right = j;
-			}
-		}
-	}
-
-	for (int i = left; i <= right; i++)
-	{
-		cout << a[i] << ",";
-	}
-	cout << maxSum;
+#include <stdio.h>
+const int INT_MIN = -1e9;
+int maximumSubarraySum(int arr[], int n) {
+ int maxSum = INT_MIN;
+ int i=0;
+ for(; i <= n - 1; i++) {
+   int currSum = 0;
+   int j=i;
+   for (; j <= n - 1; j++) {
+     currSum += arr[j];
+     if (currSum > maxSum) {
+       maxSum = currSum;
+     }
+   }
+ }
+ 
+ return maxSum;
+ 
 }
-
-int main()
-{
-	int a[] = {1, 2, 3, 4};
-	int n = sizeof(a) / sizeof(int);
-	generateSubarray(a, n);
-	return 0;
+int main() {
+   // Your code goes here
+   int a[] = {1, 3, 8, -2, 6, -8, 5};
+   printf("%d", maximumSubarraySum(a, 7));
+   return 0;
 }

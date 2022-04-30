@@ -14,7 +14,7 @@
     2. Insertion Done
     3. Insertion Code Done
     4. Remove Min/Max Element Done
-    5. Build the heaps from arrays in NlogN
+    5. Build the heaps from arr NlogN
     6. Build the heaps arrays in O(N)
     7, Inplace HeapSorts Done
     8. Priorty Queues

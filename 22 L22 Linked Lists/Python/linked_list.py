@@ -13,7 +13,7 @@ def printList(head):
 
 
 def construct():
-
+	
 	first = Node(1)
 	second = Node(2)
 	third = Node(3)

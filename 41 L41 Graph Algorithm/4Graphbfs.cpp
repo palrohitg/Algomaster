@@ -17,10 +17,6 @@ Algo :
 - compiling the list of files 
 - g++ test.cpp 
 - Run the Files: ./a.out 
-
-
-
-
 */
 
 
@@ -104,7 +100,8 @@ int main() {
 // #endif
 
     Graph g(6);
-
+    
+    // Adding the try catch statement here 
     try {
 
         g.addEdge(0, 1);
