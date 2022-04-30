@@ -1,31 +1,13 @@
-#include<bits/stdc++.h>
-using namespace std;
-
-/*
-
-
-
-
-
+/* 
+	3Sum : Problem Appraoches : 
+	1. 2nd the first no of the approach the minimum 
 */
-
-
-
-
-class Solution {
-public:
-	vector<vector<string>> groupAnagrams(vector<string>& strs) {
-
-	}
-};
-
+#include<bits/stdc++.h> 
+using namespace std;
 
 int main() {
 
-#ifndef ONLINE_JUDGE
-	freopen("../input.txt", "r", stdin);
-	freopen("../output.txt", "w", stdout);
-#endif
-
+	cout << "testing the values" << endl; 
 	return 0;
 }
+
