@@ -1,24 +1,4 @@
-
-    // key - value is associated store key-value mapping 
-    - Self Balancing BST to maintain the ordering 
-    - Ordering happends internals 
-    - Self balacing BST 
-
-    unordered_map mapping the key are not ordered. 
-
-
-
-
-    Opeartion :
-    1. insert each query in 0(1) insert(k,v)
-    2. erase() delete this methods        
-    3. find
-
-    // value determine the associated contents and key uniquely identify the contents
-    // boths the key can be predefined or user-defined
-    // Internally hashtable so the performance will depends upon the hash functions
-    // Internally it make the pair, so access m.first(key) and m.seconds(values)
-
+/*
 */
 
 

@@ -1,12 +1,9 @@
 class Stack:
-
-    # Constructor to initialize the stack
     def __init__(self, size):
         self.arr = [None] * size
         self.capacity = size
         self.top = -1
 
-    # Function to add an element `val` to the stack
     def push(self, val):
         if self.isFull():
             print('Stack Overflow!! Calling exit()…')
@@ -16,7 +13,6 @@ class Stack:
         self.top = self.top + 1
         self.arr[self.top] = val
 
-    # Function to pop a top element from the stack
     def pop(self):
         # check for stack underflow
         if self.isEmpty():
