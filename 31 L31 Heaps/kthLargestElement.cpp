@@ -42,7 +42,7 @@ public:
 };
 
 
-
+// priority_queue<int, vector<int>, greater<int>> pq;  // min heaps 
 class Solution {
 
 public:

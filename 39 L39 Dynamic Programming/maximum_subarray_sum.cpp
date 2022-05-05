@@ -1,16 +1,28 @@
-// Simple arrays based problem using the kadance algoritnms. 
-// Implment the dp based solutions 
-
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-int main() {
+int maxSubArraySum(int a[], int size)
+{
+    int max_so_far = a[0];
+    int curr_max = a[0];
 
-    int arr[] = {-2,4,1};
-    int n = sizeof(arr)/sizeof(int);
+    for (int i = 1; i < size; i++)
+    {
+        curr_max = max(a[i], curr_max + a[i]);
+        max_so_far = max(max_so_far, curr_max);
+    }
+    return max_so_far;
+}
 
-    
-
-
+/* Driver program to test maxSubArraySum */
+int main()
+{
+    int a[] = {-2, -3, 1};
+    int n = sizeof(a) / sizeof(a[0]);
+    int max_sum = maxSubArraySum(a, n);
+    cout << "Maximum contiguous sum is " << max_sum;
     return 0;
 }
+
+
+// TC :O(N)

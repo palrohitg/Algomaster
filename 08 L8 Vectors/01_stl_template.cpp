@@ -35,8 +35,20 @@ int main(int argc, char const *argv[])
 
 	vector<int> v{10, 20, 30};
 	pop_front(v);
+	cout << "testing the element values" << endl;
 
 	cout << v.size() << endl;
 
 	return 0;
 }
+
+
+
+
+
+
+
+
+
+
+

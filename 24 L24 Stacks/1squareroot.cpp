@@ -10,6 +10,12 @@ int mySqrt(int x) {
 }
 
 
+/*      m s   e                         e 
+    1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 
+    log(n) Binary Search Approach 
+
+*/
+
 
 class Solution {
 public:
