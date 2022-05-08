@@ -63,6 +63,7 @@ bers like 5 + 6i, 5 + 6i , when c1 + c2 = 10 + 12i means its a complex numbers a
 # Object Oriented programming Features : 
 
 1. Inheritance 
+        - Class jo inherits the properities is called derived class and other class is base class  
 
         - Extract the characteristics and features of another class 
         - Sub class - Derived Class jo inherits the property of another class  
