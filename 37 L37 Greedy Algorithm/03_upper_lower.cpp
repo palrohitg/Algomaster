@@ -41,3 +41,19 @@ int main(int argc, char const *argv[]) {
 	
 	return 0; 
 }
+
+
+int make_change(int *coins, int n, int money) {
+	
+	int ans = 0; 
+
+	while(money > 0) {
+		int idx = upper_bound(coins, coins + n, money); 
+		money = money - coins[idx];
+		ans++;
+	}
+
+	return ans;
+}
+
+

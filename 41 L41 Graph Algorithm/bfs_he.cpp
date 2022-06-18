@@ -68,6 +68,26 @@ public :
 
 };
 
+void BFS(int src) {
+	int visited[V+1];
+	for (int i = 1; i <= V; i++) {
+		visited[i] = -1;
+	}
+
+	queue<int> q;
+	q.push_back(src); 
+	visited[src] = 1;
+
+	while(!q.empty()) {
+		int node = q.front();
+		q.pop();
+
+		for (auto nbr : adjacent[node]) {
+			if (visited[])
+		}
+	}
+}
+
 int main() {
 
 // #ifndef ONLINE_JUDGE

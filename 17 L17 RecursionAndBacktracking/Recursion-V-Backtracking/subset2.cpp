@@ -1,15 +1,10 @@
 /*
 
 	 subsets  = 123
-
+	Tc : N2^N
+	SC : O(J)
 
 */
-
-
-
-
-
-
 class Solution {
 public:
 	set<vector<int>> tempSet;

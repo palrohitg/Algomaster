@@ -1,32 +1,36 @@
-/*
-	Implement the lru cache program in the cpp to provide the following functionality :
-	1. Get the elements in the lru cache using 0(1) time complexity
-	2. Put the new element in the lru cache and return the values.
-	3. Store the element in the key values pair and remove the least recently used elements
-	4. Initialized the size of the element in the lru cache which called the capacity of the stacks using the new functionalitys
-
-*/
-
-#include<bits/stdc++.h>
-using namespace std;
-
-class LRU {
-
-private :
-public :
-	getElemet()
-
-}
-
-int main() {
-
-#ifndef ONLINE_JUDGE
-	freopen("../input.txt", "r", stdin);
-	freopen("../output.txt", "w", stdout);
-#endif
-
-
-
-
-	return 0;
-}
+class LRUCache
+{
+    public:
+        list<pair<int,int>> l;
+        unordered_map<int,list<pair<int, int>>::iterator> m;
+        int size;
+        LRUCache(int capacity)
+        {
+            size=capacity;
+        }
+        int get(int key)
+        {
+            if(m.find(key)==m.end())
+                return -1;
+            l.splice(l.begin(),l,m[key]);
+            return m[key]->second;
+        }
+        void put(int key, int value)
+        {
+            if(m.find(key)!=m.end())
+            {   
+                // update opeat
+                l.splice(l.begin(),l,m[key]);
+                m[key]->second=value;
+                return;
+            }
+            if(l.size()==size)
+            {
+                auto d_key=l.back().first;
+                l.pop_back();
+                m.erase(d_key);
+            }
+            l.push_front({key,value});
+            m[key]=l.begin();
+        }
+};

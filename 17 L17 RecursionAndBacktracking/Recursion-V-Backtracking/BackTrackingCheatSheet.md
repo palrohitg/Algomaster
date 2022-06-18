@@ -5,12 +5,12 @@
 5. N-Queen II 52  
 6. Word Search 
 7. Word Search II 126 
-8. Generate Parthesis 
+8. Generate Parthesis Done 
 9. Combination Sum  
 10. Combinations Sum II 
 11. WildCard Matching 
 12. Rat in A maze 
 13. Sum it up 
 14. Funcky Chessboard 
-15. Subsets I 
-16. Subsets II 
+15. Subsets I Done 
+16. Subsets II Done 
