@@ -49,7 +49,6 @@ vector<int> zigzagLevelOrder(node * root) {
     public:
         vector<vector<int>> levelOrder(TreeNode* root) {
             vector<vector<int>> result;
-
             // if root is null return result = []
             if (root == NULL) {
                 return result;
@@ -68,8 +67,6 @@ vector<int> zigzagLevelOrder(node * root) {
                 if (t == NULL) {
                     result.push_back(cur_level);
                     cur_level.resize(0);
-                    // if we have some elements left in the queue
-                    // then add the NULL to indicates that cur level ends
                     if (q.size() > 0) {
                         q.push(NULL);
                     }

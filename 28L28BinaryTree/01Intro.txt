@@ -43,7 +43,6 @@ Terms :
 6. Internal Node : Atleast have one child we called it as internal node
 
 
-
 Different View of the tree : 
 1. top little variations 
 2. bottom 

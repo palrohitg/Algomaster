@@ -41,6 +41,7 @@ public :
 	}
 
 	int get(int index) {
+		// Elemnents does't exists 
 		if (index >= size) {
 			return -1;
 		}
@@ -56,8 +57,8 @@ public :
 		// if the index are negative then insert the elements in start
 		if (index <= 0) {
 			addAtHead(val);
-			return;
 			size++;
+			return;
 		}
 
 		int count = 1;
@@ -68,6 +69,7 @@ public :
 			count++;
 		}
 
+		// When both of them are equal then create a new nodes 
 		if (count == index) {
 			Node* ptr = new Node(val);
 			ptr->next = temp->next;
@@ -85,6 +87,7 @@ public :
 		if (head == NULL) {
 			addAtHead(val);
 			size++;
+			return; 
 		}
 
 		Node* temp = head;
@@ -107,7 +110,7 @@ public :
 		cout << endl;
 	}
 
-	// Print Delete at Index
+	// Print Delete any Node at Particular Index
 	void deleteAtIndex(int index) {
 		if (index >= size) {
 			return;

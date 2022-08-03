@@ -8,7 +8,6 @@ public :
 	int data;
 	node *next;
 
-
 	node(int d) {
 		data = d;
 		next = NULL;
@@ -46,27 +45,26 @@ void builtInInput(node *&head, int n) {
 /// h->1->2->3->X
 /// h->3->2->1->X
 
-node * reverseLL(node *&head, int K) {
-	node *cur = head;
-	node *prev = NULL;
-	node *next = NULL;
-	int count = 0;
+//  node * reverseLL(node *&head, int K) {
+// 	node *cur = head;
+// 	node *prev = NULL;
+// 	node *next = NULL;
+// 	int count = 0;
 
-	while ( cur != NULL && count < K) {
-		next = cur->next;
-		cur->next = prev;
-		prev = cur;
-		cur = next;
-		count++;
-	}
+// 	while ( cur != NULL && count < K) {
+// 		next = cur->next;
+// 		cur->next = prev;
+// 		prev = cur;
+// 		cur = next;
+// 		count++;
+// 	}
 
-	if (cur != NULL) {
-		ce
-		head->next =  reverseLL(cur, K);
-	}
+// 	if (cur != NULL) {
+// 		head->next =  reverseLL(cur, K);
+// 	}
 
-	return prev;
-}
+// 	return prev;
+// }
 
 void printLL(node *head) {
 	while (head != NULL) {
