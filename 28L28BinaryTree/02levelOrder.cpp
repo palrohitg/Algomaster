@@ -1,4 +1,4 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 
 /*
@@ -7,45 +7,48 @@ using namespace std;
 	SC : O(N) Storing the Queue
 */
 
-class node {
-
-public :
-
+class node
+{
+public:
 	int data;
 	node *left;
 	node *right;
 
 	// Constructor
-	node(int d) {
+	node(int d)
+	{
 		data = d;
 		left = NULL;
 		right = NULL;
 	}
 };
 
+void levelOrderPrint(node *root)
+{
 
-void levelOrderPrint(node *root) {
-
-	if (root == NULL) {
+	if (root == NULL)
+	{
 		return;
 	}
 	// creating queue in cpp
-	queue<node*> q;
+	queue<node *> q;
 
 	q.push(root);
 
-	while (!q.empty()) {
+	while (!q.empty())
+	{
 
 		node *ele = q.front();
 		q.pop();
-
 		cout << ele->data << endl;
 
-		if (ele->left) {
+		if (ele->left)
+		{
 			q.push(ele->left);
 		}
 
-		if (ele->right) {
+		if (ele->right)
+		{
 			q.push(ele->right);
 		}
 	}
@@ -70,6 +73,3 @@ int main(int argc, char const *argv[])
 	levelOrderPrint(root);
 	return 0;
 }
-
-
-

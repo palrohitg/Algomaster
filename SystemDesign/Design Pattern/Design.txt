@@ -1,0 +1,9 @@
+System Design Question
+Design a Cricket Score Board. The Score Board should have: 
+a. Runs scored by the current batsmen
+b. Ball wise over history of what event took place on that ball (4, 6, wicket) 
+c. Innings should switch over smoothly. 
+d. Target countdown, runrate computation is a plus.
+e. With the inputs given, the scoreboard should recognise which team won and tag that event's winner.
+
+

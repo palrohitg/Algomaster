@@ -13,7 +13,8 @@
  * };
  */
 
-
+#include<bits/stdc++.h> 
+using namespace std; 
 
 vector<int> zigzagLevelOrder(node * root) {
     if (root == NULL) return {};
@@ -45,7 +46,7 @@ vector<int> zigzagLevelOrder(node * root) {
     }
 
 
-    class Solution {
+class Solution {
     public:
         vector<vector<int>> levelOrder(TreeNode* root) {
             vector<vector<int>> result;
@@ -60,7 +61,6 @@ vector<int> zigzagLevelOrder(node * root) {
             vector<int> cur_level;
 
             while (!q.empty()) {
-
                 TreeNode* t = q.front();
                 q.pop();
 

@@ -1,0 +1,16 @@
+- Flatten 2D arrays 
+- Anagrams in Pairs
+- longest substring without repeating character 
+- Design a coffee machine 
+- Search in rotated sorted arrays
+- Pairs sums 
+- Design Instagrams
+- Letter combinations of a phone number 
+- Cricket Scored Board  like cricbuzz 
+
+
+
+PREPARATION TIP
+Tip 1 : The first round is a coding round based mostly on medium problems on Leetcode, 1 month extensive prep of all medium, easy and some hard questions will suffice.
+Tip 2 : Low Level System Design mainly revolves around your grasp of OOPs (Class Deisgn) and DBMS (Deciding Cardinality Of Classes, 1NF, 2NF, 3NF, BCNF)
+Tip 3 : If you're an experienced candidate, an in-depth knowledge about the tools and technologies you worked on previously is a must.

@@ -83,5 +83,18 @@ Total Question to cover the DP 50 implementation with both the top down, bottom 
 3. Optimal-Game Strategy 2 
 4. Ugly Numbers 
 5. Mixtures problems 
+6. Longest substring without repeating characters
 
 
+
+
+## Spinny :
+1. Search in Rotated and sorted arrays 
+2. Max of all subarrays of k sizes
+3. Segrate Odd Even
+4. Flatten 2d Array  
+5. Cycle Detection in one single linked lists 
+6. Move all negative no to beginning and positive no to end 
+7. Longest Increasing Subsequence 
+8. URL shorting LLD and HLD system Design Round 
+9. Anagrams Pairs 

@@ -56,8 +56,8 @@ int fibBU(int n) {
 
 // Bottom up with space optimization 
 int fibBUSpace(int n) {
-
-    int a = 0;
+    
+    long long int  a = 0;
     int b = 1; 
     int c = 0; 
 
