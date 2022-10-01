@@ -17,6 +17,7 @@ int mySqrt(int x) {
 */
 
 
+// Binary Search Approach to check whether a no is a perfect square or not 
 class Solution {
 public:
     bool isPerfectSquare(int num) {

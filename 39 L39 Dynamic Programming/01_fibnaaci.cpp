@@ -17,8 +17,6 @@ int fib(int n) {
 }
 
 
-
-
 // Top Down approaches time : 0(N) , space : O(N)
 int fib(int n, int dp[]) {
    

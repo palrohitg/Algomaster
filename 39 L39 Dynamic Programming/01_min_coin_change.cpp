@@ -1,66 +1,60 @@
-// Greedy approach fails here recursion + memoisation  
-#include<iostream> 
-#include<climits>
-using namespace std; 
+/*
+    - Minimum coin change problems 
+    - No of different coins and type 
+    - Find out the min no of coins needed to make changes / zero to find the arrays 
+*/
+#include<bits/stdc++.h> 
+using namespace std;
 
-
-// top down dp 
-int minCoins(int n, int coin[], int T, int dp[]) {
-
-    // Base Case 
-    if(n == 0) {
-        return 0;
-    }
-
-    // Look up table 
-    if(dp[n] != 0) {
-        return dp[n];
-    }
-
-    int ans = INT_MAX;
-    // Recursive Case 
-    for(int i=0; i<T; i++) {    
-
-        if(n - coin[i] >= 0) {
-            int subproblem = minCoins(n - coin[i], coin, T, dp);
-            ans = min(ans, subproblem+1);
-        }
-    }   
-    
-    // Store the ans 
-    dp[n] = ans;
-    return dp[n];
-}
-
-
-// Bottom up dp solutions
 class Solution {
 public:
-    int coinChange(vector<int>& coins, int amount) {
-        int Max = amount + 1;
-        vector<int> dp(amount + 1, Max);
-        dp[0] = 0;
-        for (int i = 1; i <= amount; i++) {
-            for (int j = 0; j < coins.size(); j++) {
-                if (coins[j] <= i) {
-                    dp[i] = min(dp[i], dp[i - coins[j]] + 1);
+    
+
+    // min no of required coins which is required
+    int minCoinChange(vector<int> &coins, int amount, int type, vector<int> &dp) {
+        // Base Case 
+        if (amount == 0) return 0; 
+        
+        // When we need to calculate min then put the maximum values here
+        int res = INT_MAX; 
+        
+        if (dp[amount] != 0) {
+            return dp[amount]; 
+        }
+        
+        for (int i : coins) {
+            // check whether
+            if (i <= amount) {
+                int sub_res = minCoinChange(coins, amount-i, type, dp);
+                // min coins changes 
+                if (sub_res != INT_MAX && sub_res + 1 < res) {
+                    res = sub_res + 1; 
                 }
             }
         }
-        // case -1 : when not possible to make the changes
-        return dp[amount] > amount ? -1 : dp[amount];
+        dp[amount] = res; 
+        return res; 
+    }
+    
+    int coinChange(vector<int>& coins, int amount) {
+        int type = coins.size(); 
+        vector<int> dp(amount+1, 0);
+        int ans = minCoinChange(coins, amount, type, dp); 
+        return ans == INT_MAX ? -1: ans; 
     }
 };
 
-// Bottom up dp 
-int main() {
+int func1(int ind, int amount, vector<int> &coins) {
+    if (amount == 0) return 1; 
+    if (ind < 0) return 0; 
 
-    int n = 3; 
-    int coin[] = {1, 7, 10};
-    int T = 3; 
-    int dp[1000] = {0};
-    cout << minCoins(n, coin, T, dp);
-    // cout << minStepToOneRec(n);
+    if (dp[ind][amount] != -1) return dp[ind][amount];
+    int ways = 0; 
 
-    return 0;
+    for (int coin_amount = 0; coin_amount <= amount; coin_amount += coins[ind]) {
+        ways += func1(ind-1, amount - coin_amount, coins); 
+    }
+
+    return dp[ind][amount] = ways;
 }
+

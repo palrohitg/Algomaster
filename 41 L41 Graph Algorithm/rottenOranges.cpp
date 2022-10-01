@@ -87,6 +87,7 @@ public:
 
 					if (r >= 0 and r < m and c >= 0 and c < n and grid[r][c] == 1) {
 						// rotte the organes
+						// mark the oranges as rotten 
 						grid[r][c] = 2;
 						q.push(make_pair(r, c));
 						fresh--;

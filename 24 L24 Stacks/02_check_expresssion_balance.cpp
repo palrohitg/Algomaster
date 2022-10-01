@@ -30,6 +30,13 @@ bool isBalanced(string exp) {
     }
 }
 
+/*
+    - When there is an opening brackets then directly push correspoding closing brackets. 
+    - When there is an closing brackets else return false 
+    - Try to check with stac.top() == ch : stack.pop() 
+    - else return false here 
+*/
+
 
 int main(int argc, char) {
 

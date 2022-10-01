@@ -116,7 +116,7 @@ class Solution {
 
                 for (int i = 0; i < sz; i++) {
 
-                    node *t = t.front();
+                    TreeNode *t = q.front();
                     t.pop()
 
                     if (level == 0) {
@@ -135,7 +135,7 @@ class Solution {
                         q.push(t->right);
                     }
                 }
-                result.push_back(q);
+                result.push_back(cur);
                 level != level;
             }
         }

@@ -1,5 +1,8 @@
 Graphs : Most Important and widely used to data structure with many real life applications + Problems Solutions 
 
+Definition:  
+   Graphs is a set of vertices and edges connected together to solve spefic problems
+
 
 Commonly Asked Platforms : 
 1. Easy problems 

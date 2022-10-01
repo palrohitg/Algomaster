@@ -116,7 +116,7 @@ int main() {
         cout << e; 
     }
     
-    // g.bfs(0); // start vertex and the store nodes where we want to start the traversals
+    g.bfs(0); // start vertex and the store nodes where we want to start the traversals
     g.printAdjList();
     // g.display();
 

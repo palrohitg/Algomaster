@@ -1,33 +1,38 @@
-#include <iostream>
+#include<iostream>
 using namespace std;
-
-// when i have at least one positive number 
-// In this case return 0
-
+void kadaneAlgo(int a[], int n) {
+	int cs=0,ms=0,i;
+	for(i=0; i<n; i++) {
+		cs = cs + a[i];
+		if(cs < 0) {
+			cs=0;
+		}
+		ms = max(ms,cs);
+	}
+	// to make the circular subarray when I reaches to n-1 then I have to make the circular
+	//cout << ms;
+	// cout <<i << n;
+	if(i==n) {
+		for(int c=0; c<i-1; c++) {
+			cs = cs + a[c];
+			if(cs < 0) {
+				cs=0;
+			}
+			ms = max(ms,cs);
+		}
+	}
+	cout << ms;
+}
 int main() {
-   int arr[] = {-2,1,-3,4,-1,2,1,-5,4}; // return -1
-   int n = sizeof(arr)/sizeof(arr[0]);
-   int ms=0, cs=0, mx_negative = INT_MIN;
-   for(int i=0; i<n; i++) {
-   	cs = cs + arr[i];
-   	if(cs < 0) { // if cs is negative then make it 0
-   		cs=0;
-   	}
-
-   	if(ms < cs) {
-   		ms=cs;
-   	}
-
-   	if(mx_negative < arr[i]) {
-   		mx_negative = arr[i];
-   	}
-   }
-
-   // In case my ms is 0ee
-   if(ms == 0) {
-   	ms = mx_negative;
-   }
-
-   cout << ms << endl;
-   return 0;
+	int t,c=0,n;
+	cin >> t;
+	while(c<t) {
+		cin >> n;
+		int arr[1000];
+		for(int i=0; i<n; i++) {
+			cin >> arr[i];
+		}
+		kadaneAlgo(arr,n);
+	}
+	return 0;
 }

@@ -1,5 +1,9 @@
 // CPP program to implement Queue using
 // two stacks with costly enQueue()
+// two staks with costly no of operations 
+// 1. dequeue remove the empty from the first queues 
+// 2. enqueue remove the empty from the second queues 
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -43,6 +47,8 @@ struct Queue
         return x;
     }
 };
+
+
 
 // Driver code
 int main()

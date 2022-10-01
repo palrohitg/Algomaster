@@ -1,5 +1,5 @@
 def minCoin(amount, t, coins, dp):  
-    print(amount)
+    # print(amount)
     if (amount == 0): return 0 
 
     if (dp[amount]):

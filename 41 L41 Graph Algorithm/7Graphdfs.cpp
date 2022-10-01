@@ -18,6 +18,7 @@ class Graph {
         void dfs_helper(int src, map<int, bool>  &visited) {
             // Traverse the graphs one by one using the recursion; 
             cout << src << " "; 
+            visited[src] = true; 
 
             // Visited all the neigbour of the sources 
             for (int nbr : l[src]) {
@@ -30,6 +31,7 @@ class Graph {
         void dfs(int src) {
 
             // created an arrays to check that the elements is visited or not 
+            // Mark all the nodes as visited. 
             map<int, bool> visited; 
             for (auto p : l) {
                 int node = p.first; 
