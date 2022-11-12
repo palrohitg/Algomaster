@@ -16,7 +16,6 @@ public:
 
 void insertAtTail(Node *&head, int data) {
     if (head == NULL) {
-        cout << "Testing ehre" << endl;
         head = new Node(data); 
         return; 
     }
@@ -24,17 +23,10 @@ void insertAtTail(Node *&head, int data) {
 }
 
 
-
 int main() {
 
     Node *head = NULL; 
     int data; cin >> data;
-    insertAtTail(head, data); 
-
-    while(head != NULL) {
-        cout << head->data << endl; 
-        head = head->next;
-    }
 
     return 0; 
 }
