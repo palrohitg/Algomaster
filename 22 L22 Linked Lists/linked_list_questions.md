@@ -41,6 +41,7 @@
 | 27 | linked list in binary tree |:x: | | 
 | 28 | delete node in a linked list | :heavy_check_mark:|  | 
 | 29 | sort list |  :heavy_check_mark: |  | 
+| 30 | kth node from the middle |  :heavy_check_mark: |  | 
 
 
 <!-- ## Linked list and Stack Queue 

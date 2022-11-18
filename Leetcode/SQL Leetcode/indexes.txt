@@ -1,0 +1,20 @@
+1. Primary Indexes : Inbuilt default index like primary_key which don't have any duplicates records. 
+2. Secondary Indexes : Part of primary indexes like which can have duplicate value name of the employee
+
+# Indexes creation: 
+CREATE TABLE t(
+   c1 INT PRIMARY KEY,
+   c2 INT NOT NULL,
+   c3 INT NOT NULL,
+   c4 VARCHAR(10),
+   INDEX (c2,c3) 
+);
+
+# Cmd to create indexes : 
+CREATE INDEX jobTitle ON employees(jobTitle);
+
+# Show Indexes from Tables: 
+SHOW INDEXES FROM employees;
+
+# B Tree Indexes: 
+1. 
