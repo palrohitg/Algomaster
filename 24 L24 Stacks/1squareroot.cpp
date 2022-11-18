@@ -13,7 +13,6 @@ int mySqrt(int x) {
 /*      m s   e                         e 
     1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 
     log(n) Binary Search Approach 
-
 */
 
 
@@ -36,3 +35,42 @@ public:
 };
 
 
+class Solution {
+    public int[] nextGreaterElement(int[] nums1, int[] nums2) {
+        Map<Integer, Integer> map = new HashMap<>();
+        Stack<Integer> stack = new Stack<>();
+
+        for (int n : nums2) {
+            while (!stack.isEmpty() && stack.peek() < n) {
+                map.put(stack.pop(), n);
+            }
+
+            stack.push(n);
+        }
+
+        for (int i = 0; i < nums1.length; i++) {
+            nums1[i] = map.getOrDefault(nums1[i], -1);
+        }
+
+        return nums1;
+    }
+}
+
+// TC: O(n + m), SC: O(n + m)
+ def nextGreaterElement(self, nums1: List[int], nums2: List[int]) -> List[int]:
+        res = []
+        stack = []
+        mapping = {}
+        
+        for n in nums2:
+            while stack and n > stack[-1]:
+                mapping[stack.pop()] = n
+            stack.append(n)
+            
+        while stack:
+            mapping[stack.pop()] = -1
+            
+        for n in nums1:
+            res.append(mapping[n])
+
+        return res

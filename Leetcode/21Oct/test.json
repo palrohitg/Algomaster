@@ -1,0 +1,296 @@
+{
+    "child_key": "card_items",
+    "cleanable": true,
+    "row_count": 1,
+    "card_h_max": 656,
+    "card_items": [
+        {
+            "id": "get_my_car",
+            "web_url": "https://m.parkplus.io/booking/new-valet?id=__VALET_BOOKING_ID__",
+            "cleanable": true,
+            "screen_id": 10,
+            "web_title": "show_get_my_car",
+            "card_image": {
+                "url": "https://parkplus-project-images-prod-ap-south-1.s3.ap-south-1.amazonaws.com/get_my_car_banner.jpg",
+                "max_h": 656,
+                "max_w": 1280,
+                "is_resizable_img": true,
+                "screen_w_percent": 0.88889
+            },
+            "is_clickable": true,
+            "card_sequence": 100,
+            "api_cache_type": "NO_CACHE",
+            "visibility_rules": {
+                "show_get_my_car": "true"
+            }
+        },
+        {
+            "id": "corporate_parking_1",
+            "web_url": "https://m.parkplus.io/parking/saved",
+            "cleanable": true,
+            "screen_id": 10,
+            "web_title": "corporate_project_1",
+            "card_image": {
+                "url": "https://parkplus-project-images-prod-ap-south-1.s3.ap-south-1.amazonaws.com/corporate_parking_chn_final.jpg",
+                "max_h": 656,
+                "max_w": 1280,
+                "is_resizable_img": true,
+                "screen_w_percent": 0.88889
+            },
+            "is_clickable": true,
+            "api_cache_type": "NO_CACHE",
+            "visibility_rules": {
+                "project_id__listin": [
+                    152
+                ]
+            }
+        },
+        {
+            "id": "corporate_parking_2",
+            "web_url": "https://m.parkplus.io/parking/saved",
+            "cleanable": true,
+            "screen_id": 10,
+            "web_title": "corporate_project_2",
+            "card_image": {
+                "url": "https://parkplus-project-images-prod-ap-south-1.s3.ap-south-1.amazonaws.com/corporate_parking_ggn_final.jpg",
+                "max_h": 656,
+                "max_w": 1280,
+                "is_resizable_img": true,
+                "screen_w_percent": 0.88889
+            },
+            "is_clickable": true,
+            "api_cache_type": "NO_CACHE",
+            "visibility_rules": {
+                "project_id__listin": [
+                    148
+                ]
+            }
+        },
+        {
+            "id": "corporate_parking_3",
+            "web_url": "https://m.parkplus.io/parking/saved",
+            "cleanable": true,
+            "screen_id": 10,
+            "web_title": "corporate_project_3",
+            "card_image": {
+                "url": "https://parkplus-project-images-prod-ap-south-1.s3.ap-south-1.amazonaws.com/corporate_parking_final_blr.jpg",
+                "max_h": 656,
+                "max_w": 1280,
+                "is_resizable_img": true,
+                "screen_w_percent": 0.88889
+            },
+            "is_clickable": true,
+            "api_cache_type": "NO_CACHE",
+            "visibility_rules": {
+                "project_id__listin": [
+                    155
+                ]
+            }
+        },
+        {
+            "id": "corporate_project_4",
+            "web_url": "https://m.parkplus.io/parking/saved",
+            "cleanable": true,
+            "screen_id": 10,
+            "web_title": "corporate_project_4",
+            "card_image": {
+                "url": "https://parkplus-project-images-prod-ap-south-1.s3.ap-south-1.amazonaws.com/corporate_parking_dlh_final.jpg",
+                "max_h": 656,
+                "max_w": 1280,
+                "is_resizable_img": true,
+                "screen_w_percent": 0.88889
+            },
+            "is_clickable": true,
+            "api_cache_type": "NO_CACHE",
+            "visibility_rules": {
+                "project_id__listin": [
+                    156
+                ]
+            }
+        },
+        {
+            "id": "corporate_project_5",
+            "web_url": "https://m.parkplus.io/parking/saved",
+            "cleanable": true,
+            "screen_id": 10,
+            "web_title": "corporate_project_5",
+            "card_image": {
+                "url": "https://parkplus-project-images-prod-ap-south-1.s3.ap-south-1.amazonaws.com/corporate_parking_razorpay_new.jpg",
+                "max_h": 656,
+                "max_w": 1280,
+                "is_resizable_img": true,
+                "screen_w_percent": 0.88889
+            },
+            "is_clickable": true,
+            "api_cache_type": "NO_CACHE",
+            "visibility_rules": {
+                "project_id__listin": [
+                    13464,
+                    13472
+                ]
+            }
+        },
+        {
+            "id": "retail_android",
+            "web_url": "https://m.parkplus.io/retail?project_id=__RETAIL_PROJECT_ID__&checked_in=__RETAIL_CHECKED_IN__",
+            "cleanable": true,
+            "screen_id": 10,
+            "web_title": "show_retail_true",
+            "card_image": {
+                "url": "https://parkplus-project-images-prod-ap-south-1.s3.ap-south-1.amazonaws.com/checked-in.jpg",
+                "max_h": 656,
+                "max_w": 1280,
+                "is_resizable_img": true,
+                "screen_w_percent": 0.88889
+            },
+            "is_clickable": true,
+            "card_sequence": 100,
+            "visibility_rules": {
+                "retail_banner_type": "true"
+            }
+        },
+        {
+            "id": "retail_android",
+            "web_url": "https://m.parkplus.io/retail?project_id=__RETAIL_PROJECT_ID__&checked_in=__RETAIL_CHECKED_IN__",
+            "cleanable": true,
+            "screen_id": 10,
+            "web_title": "show_retail_false",
+            "card_image": {
+                "url": "https://parkplus-project-images-prod-ap-south-1.s3.ap-south-1.amazonaws.com/new_retail_1.jpg",
+                "max_h": 656,
+                "max_w": 1280,
+                "is_resizable_img": true,
+                "screen_w_percent": 0.88889
+            },
+            "is_clickable": true,
+            "card_sequence": 100,
+            "visibility_rules": {
+                "retail_banner_type": "false"
+            }
+        },
+        {
+            "id": "carnival_ios",
+            "web_url": "https://m.parkplus.io/society-onboarding/home?id=__CARNIVAL_UUID__",
+            "cleanable": true,
+            "screen_id": 10,
+            "web_title": "",
+            "card_image": {
+                "url": "carnival_20211224_ios.png",
+                "max_h": 656,
+                "max_w": 1280,
+                "is_resizable_img": true,
+                "screen_w_percent": 0.88889
+            },
+            "is_clickable": true,
+            "card_sequence": 100,
+            "visibility_rules": {
+                "platform": "ios",
+                "show_carnival": true
+            }
+        },
+        {
+            "id": "carnival_android",
+            "type": "dynamic",
+            "web_url": "https://m.parkplus.io/society-onboarding/home?id=__CARNIVAL_UUID__",
+            "cleanable": true,
+            "screen_id": 10,
+            "web_title": "",
+            "card_image": "",
+            "html_string": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <title>Carnival</title>\n  <style>\n\n  </style>\n</head>\n<body>\n\n   <object id=\"homePageCarivalCardContainer\" type=\"image/svg+xml\" data=\"https://d2t87jru9na7c2.cloudfront.net/carnival_20211224_2.svg?societyName=__CARNIVAL_PROJECT_NAME__\" alt=\"carnival card\"></object> \n\n</body>\n</html>\n",
+            "is_clickable": true,
+            "card_sequence": 100,
+            "visibility_rules": {
+                "platform": "android",
+                "show_carnival": true
+            }
+        },
+        {
+            "id": "ppg_top_card",
+            "web_url": "https://m.parkplus.io/park-plus-go?from_source=radio",
+            "cleanable": true,
+            "screen_id": 10,
+            "web_title": "ppg_top_card",
+            "card_image": {
+                "url": "https://parkplus-project-images-prod-ap-south-1.s3.ap-south-1.amazonaws.com/park_go_top_banner.jpeg",
+                "max_h": 656,
+                "max_w": 1280,
+                "is_resizable_img": true,
+                "screen_w_percent": 0.88889
+            },
+            "is_clickable": true,
+            "card_sequence": 100,
+            "visibility_rules": {
+                "active": "false",
+                "city__in": [
+                    "delhi",
+                    "new-delhi",
+                    "central-delhi",
+                    "delhi-shahdara",
+                    "east-delhi",
+                    "north-delhi",
+                    "north-east-delhi",
+                    "north-west-delhi",
+                    "south-delhi",
+                    "south-east-delhi",
+                    "south-west-delhi",
+                    "west-delhi",
+                    "ncr",
+                    "faridabad",
+                    "gurgaon",
+                    "gurugram",
+                    "noida",
+                    "greater noida",
+                    "ghaziabad"
+                ],
+                "show_ppg_top": "false"
+            }
+        },
+        {
+            "id": "ft_recharge_get500",
+            "web_url": "",
+            "cleanable": true,
+            "screen_id": 23,
+            "web_title": "",
+            "card_image": {
+                "url": "get500_20220111.jpg",
+                "max_h": 656,
+                "max_w": 1280,
+                "is_resizable_img": true,
+                "screen_w_percent": 0.88889
+            },
+            "is_clickable": true,
+            "card_sequence": 100,
+            "visibility_rules": {
+                "USER_FT_RECHARGE_GROUP": "CHOSEN_BY_RECHARGE_SERVICE"
+            }
+        },
+        {
+            "id": "carwash_big_banner",
+            "web_url": "https://m.parkplus.io/new-carwash",
+            "cleanable": true,
+            "screen_id": 10,
+            "web_title": "",
+            "card_image": {
+                "url": "priority_carwash_2.jpg",
+                "max_h": 656,
+                "max_w": 1280,
+                "is_resizable_img": true,
+                "screen_w_percent": 0.88889
+            },
+            "is_clickable": true,
+            "card_sequence": 100,
+            "visibility_rules": {
+                "active": false
+            }
+        }
+    ],
+    "card_w_max": 1280,
+    "scroll_type": "horizontal",
+    "column_count": 1,
+    "priority_choice": true,
+    "max_card_to_show": 1,
+    "screen_w_percent": 0.88889,
+    "card_space_margin": 0,
+    "view_all_link_show": false,
+    "view_all_screen_id": 2
+}

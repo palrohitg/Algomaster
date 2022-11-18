@@ -1,25 +1,14 @@
-// Maximum subarray sum 
-/*
+app_icon_occussian = "default | diwali | cric " 
+1. Icon_url 
 
-Kadane Algorithm 
-    max_so_far 
-    max_ending_here
 
-    1. max_ending_here + a[i] 
-    max_so_far < max_ending_here
-    then will update max_so_far 
-    2. At any given point of time if maximum_so_far
-    is less thann zero then it should be zero 
-*/
-#include<bits/stdc++.h> 
-#include<algorithm> 
-using namespace std;
+2. title_text_color title_text_color Quick Fastag Recharge Widgets 
+3. card_image 
+3. card_image 
 
-int main() {
 
-    int arr[] = {-123,-1, -10, 0}; 
-    int max_num = *max_element(arr, arr + 4);
-    // if this is less than zero then simply return max_num
-    cout << max_num << endl; 
-    return 0;
-}
+"app_icon_occasion" : "diwali",
+"splash_lottie_url" : Constant.MobileAppDetails.HOME_PAGE.SPLASH_LOTTIE_URL, 
+"splash_image_url"  : Constant.MobileAppDetails.HOME_PAGE.SPLASH_IMAGE_URL,
+"homepage_lottie_url" : Constant.MobileAppDetails.HOME_PAGE.HOMEPAGE_LOTTIE_URL, 
+"homepage_background_url
