@@ -1,60 +1,41 @@
-# Python program to print level
-# order traversal using Queue
+# Zig Zag order Traversal 
+class TreeNode:
+    
+    def __init__(self, data):
+        self.data = data 
+        self.left = None 
+        self.right = None 
+        
 
-# A node structure
+def zigZagOrderTraversal(root):
+    if (root == None): return 
+    
+    queue = [] 
+    queue.append(root) 
+    results = [] 
+    flag = False  
+    
+    while len(queue) > 0: 
+        sz = len(queue)
+        cur_list = [None]*sz 
+        for i in range(sz):
+            data = queue[0].data
+            node = queue.pop(0)
+            if (not flag): 
+                cur_list[i] = data 
+            if (flag):
+                cur_list[sz - i - 1] = data
+            if (node.left):
+                queue.append(node.left) 
+            if (node.right):
+                queue.append(node.right) 
+            
+        results.append(cur_list)
+        flag = not flag  # Toggle Value in python 
+    
+    return results
 
-
-class Node:
-	# A utility function to create a new node
-	def __init__(self, key):
-		self.data = key
-		self.left = None
-		self.right = None
-
-# Iterative Method to print the
-# height of a binary tree
-# Basically list is used to implement the queue operations
-
-
-def printLevelOrder(root):
-	# Base Case
-	if root is None:
-		return
-
-	# Create an empty queue
-	# for level order traversal
-	queue = []
-	print(type(queue))
-	# Enqueue Root and initialize height
-	queue.append(root)
-
-	while(len(queue) > 0):
-
-		# Print front of queue and
-		# remove it from queue
-		print(queue[0].data)
-		node = queue.pop(0)  # always pop from the index at 0  front element elements always pop up 
-							 # node.left is not None:
-							 	# queue.append(node.left)
-
-		# Enqueue left child
-		if node.left is not None:
-			queue.append(node.left)
-
-		# Enqueue right child
-		if node.right is not None:
-			queue.append(node.right)
-
-		print(type(queue))
-
-
-# Driver Program to test above function
-root = Node(1)
-root.left = Node(2)
-root.right = Node(3)
-root.left.left = Node(4)
-root.left.right = Node(5)
-
-print("Level Order Traversal of binary tree is -")
-printLevelOrder(root)
-# This code is contributed by Nikhil Kumar Singh(nickzuck_007)
+root = TreeNode(10) 
+root.left = TreeNode(12) 
+root.left.left = TreeNode(14) 
+root.right = TreeNode(15) 
