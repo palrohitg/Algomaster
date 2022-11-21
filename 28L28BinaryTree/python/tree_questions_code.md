@@ -112,3 +112,43 @@ root.left.left = TreeNode(14)
 root.right = TreeNode(15) 
 print(zigZagOrderTraversal(root))
 ``` 
+
+## Left, Right, Bottom, Top View of Binary Tree 
+
+```python  
+"""
+
+""" 
+def leftViewBinaryTree(root):
+    if root is None:
+        return 
+    
+    queue = []
+    queue.append(root) 
+    ans = []
+    
+    while len(queue) > 0:
+        sz = len(queue) 
+        i = 0 
+        while i < sz:
+            i += 1 
+            data = queue[0].data
+            node = queue.pop(0)
+            
+            if (i == 1):
+                ans.append(data) 
+            if (node.left):
+                queue.append(node.left) 
+            if (node.right):
+                queue.append(node.right)
+    
+    return ans 
+
+root = TreeNode(10) 
+root.left = TreeNode(12) 
+root.left.left = TreeNode(14) 
+root.right = TreeNode(15) 
+
+
+
+``` 
