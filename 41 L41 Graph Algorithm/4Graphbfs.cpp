@@ -13,10 +13,10 @@ Algo :
 1. To find out the level off each nodes just maintain the level arrays and traverse like the bfs works
 2. Deque-> you can perform queue operations from both ends
 
+/*
+Time :
+Space :
 
-- compiling the list of files 
-- g++ test.cpp 
-- Run the Files: ./a.out 
 */
 
 
@@ -122,10 +122,3 @@ int main() {
 
     return 0;
 }
-
-
-/*
-Time :
-Space :
-
-*/
