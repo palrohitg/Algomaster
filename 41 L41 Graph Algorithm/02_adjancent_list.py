@@ -30,8 +30,11 @@ class Graph:
             print()
 
 if __name__ == "__main__":  
-    edges = [(0,1), (0,1), (0,1), (0,1), (0,1)]
-    n = 6 
-    graph = Graph(n, edges)
-    graph.printGraph()
+    n = 3
+    matrix_list = [[]for _ in range (n)]
+    print(matrix_list)
+    # edges = [(0,1), (0,1), (0,1), (0,1), (0,1)]
+    # n = 6 
+    # graph = Graph(n, edges)
+    # graph.printGraph()
     pass

@@ -28,7 +28,7 @@ vector<int> findMajorityElement(vector<int> v) {
 			count1--;
 			count2--;
 		}
-	}
+	};;;
 
 	// Iterate over the vec and find the n / 3 element which is greater
 	count1 = count2 = 0;
