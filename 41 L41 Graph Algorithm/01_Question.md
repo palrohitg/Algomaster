@@ -12,3 +12,15 @@
 11. Clone Graph 
 12. Max Area of Islands 
 13. Dependent Course II 
+
+
+## New Questions 2 April
+1. Find a whether a path exits
+2. BFS / DFS traversal Algorithms 
+3. Snake and ladders 
+4. No of islands 
+    a. No of islands II 
+    b. No of distinct Islands
+    c. Max Area of islands 
+    d. Count Sub islands
+5. Rotten Oranges

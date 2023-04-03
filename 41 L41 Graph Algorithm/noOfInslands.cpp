@@ -1,4 +1,16 @@
 // Tag : Amazon, Google
+/*
+
+	Islands Formed by leetcode
+	input : vector<vector<char>> matrix
+	elements : '1' or '0'
+	
+	Approach:
+	1. Solve this in matrix format.
+	2. Check the direction whether its a islands or not. 
+	3. Mark the collection is visited or not. 
+
+*/
 
 #include<bits/stdc++.h>
 using namespace std;
@@ -17,20 +29,16 @@ void bfs(vector<vector<char>> &mat, vector<vector<bool>> &visited, int sx, int s
 	q.push(make_pair(sx, sy));
 	visited[sx][sy] = true;
 
-	int dx[] = { -1, 0, 0, 1};
+	int dx[] = {-1, 0, 0, 1};
 	int dy[] = {0, -1, 1, 0};
 
 	while (!q.empty()) {
 		pair<int, int> p = q.front();
-		q.pop();
-
-		// check for the adjacent vertex
+		q.pop();	
+		// check in four direction to mark the attendances. 
 		for (int i = 0; i < 4; i++) {
 			int x = p.first + dx[i];
 			int y = p.second + dy[i];
-			// check if (x,y) is inside the grid
-			// Value of (x,y) = 1
-			// (x,y) is not visited
 			if (isInside(x, y, n, m) and mat[x][y] == '1' and visited[x][y] == false) {
 				q.push(make_pair(x, y));
 				visited[x][y] = true;
