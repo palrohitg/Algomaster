@@ -18,7 +18,7 @@
 1. Find a whether a path exits
 2. BFS / DFS traversal Algorithms 
 3. Snake and ladders 
-4. No of islands 
+4. No of islands (Query Problem to Solved) Disjoint Set Union.
     a. No of islands II 
     b. No of distinct Islands
     c. Max Area of islands 
