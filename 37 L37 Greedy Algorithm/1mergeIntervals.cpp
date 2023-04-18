@@ -39,6 +39,29 @@ public:
 
 
 /*
+
+Python Based Solution for the merge interval problems to solve here 
+Competitive Coding and space and accuratcy will be required to solve this 
+kind of fundanamental problems. 
+
+
+
+Approach: 
+1. Sort all the intervals based on their start time 
+2. Then Push the first intervals into stack. 
+3. Check the next intervals from the stack
+    a. If there are overlapping or not if overlapping then push new intervals after merging 
+    b. Ignore that and push the current intervals 
+4. Finally the last intervals which contains all the merge intervals. 
+
+
+TC : O(nlogn) + O(n) SC : :O(n)
+
+2nd Appraoch : 
+Which has the space optimized solution for the same. 
+https://www.geeksforgeeks.org/merging-intervals/
+
+
 class Solution:
     def merge(self, intervals: List[List[int]]) -> List[List[int]]:
 		# sort the intervals based on the start 
@@ -56,4 +79,6 @@ class Solution:
         ret.append([start,end])
         return ret;
 """
+
+
 */
