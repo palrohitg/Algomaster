@@ -30,7 +30,6 @@ using namespace std;
 
 class Node {
 
-
 public :
 
 	int data;
@@ -90,7 +89,7 @@ void insertAtEnd(Node *&head, int data) {
 	}
 
 	Node *temp = head;
-	while (temp->next != NULL) {
+	while (temp->next != NULL) {	
 		temp = temp->next;
 	}
 
@@ -132,7 +131,7 @@ void reverseList(Node *&head) {
 	Node *prev = NULL;
 
 	while (cur != NULL) {
-		nextNode = cur->next; insert at middle in linked list  in cpp
+		nextNode = cur->next;
 		cur->next = prev;
 		prev = cur;
 		cur = nextNode;
@@ -179,7 +178,7 @@ int main() {
 	freopen("output.txt", "w", stdout);
 #endif
 
-
+	// Predefined the linked list here 
 	Node *head = buildLinkedList();
 	cout << "Before Reverse list" << endl;
 	print(head);

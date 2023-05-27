@@ -26,3 +26,24 @@ public:
         return prev;
     }
 };
+
+
+/*
+
+ - Simply Performs the reverse operation on the linked lists 
+ - Then do the recursive call where 
+    
+    while(count < k && current != NULL) {
+        Do the reverse linked list stuff here 
+        finally increase the counts the variables.
+    }
+    
+    
+    head->next = reverse(next, k) 
+
+    return prev 
+
+    TC : O(N) Traversal of elements of linked lits only once 
+    SC : O(N/K) recursive call that we making in the each steps 
+
+*/

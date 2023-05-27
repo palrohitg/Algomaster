@@ -42,3 +42,11 @@ heap based questions
 4. Find the kth smallest element in an arrays 
 5. Convert max heaps to min heaps in linear times  
 6. Merge "M" sorted lists of variable length  
+5. Build Heaps using the Zero based or One Based Indexing : Build Heapify Operations.
+6. Use the IPad using the Marker changes.   
+
+
+
+## Love Babber Questions : 
+1. Kth largest sub arrays optimized solution using the heaps. 
+2. 

@@ -1,4 +1,7 @@
 /*
+    - Sort the activities based on the End Time
+    - Then try to finish the activities which is going to end soon. 
+
     Given time par person ek activities he kar sakta hais
 
     Consider the following 6 activities.

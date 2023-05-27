@@ -40,8 +40,8 @@ int main() {
 	// cout << (index - coins)<< endl; 
 	// return 0; 
 
-  vector<int> vec = {1, 2, 5, 10, 20, 50, 100, 500, 2000};
-  auto it = upper_bound(vec.begin(), vec.end(), 100);
+  vector<int> vec{1, 2, 5, 10, 20, 50, 100, 500, 2000};
+  auto it = upper_bound(vec.begin(), vec.end(), 100); // iterator as a parameter he accept kiya hai 
   cout << "The index is " << (it - vec.begin());
   return 0;
 

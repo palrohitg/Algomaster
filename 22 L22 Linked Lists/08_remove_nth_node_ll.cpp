@@ -8,6 +8,8 @@
  *     ListNode(int x, ListNode *next) : val(x), next(next) {}
  * };
  */
+
+// Remove the Nth Node in the linked list here 
 class Solution {
 public:
     
