@@ -49,4 +49,4 @@ heap based questions
 
 ## Love Babber Questions : 
 1. Kth largest sub arrays optimized solution using the heaps. 
-2. 
+2. Prefix subarray sums ke approach used for constant time solutions. 
