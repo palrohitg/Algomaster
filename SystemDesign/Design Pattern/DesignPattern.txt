@@ -1,0 +1,21 @@
+## Lists of Design Pattern Lectures 
+https://www.interviewbit.com/design-patterns-interview-questions/
+
+
+
+1. Design Pattern: Reuseable solution that solve common problems.
+2. Types of Design Pattern: 
+    a. Creational Patterns : Singleton, Abstract Factory , Builder , Prototype. 
+    b. Structural Patterns : Adaptor Design, Facade design, Decorator Pattern etc. 
+    c. Behivaioural Patterns : Command Pattern, Iterator Pattern, Observer Pattern, Strategy Pattern etc. 
+3. IOC : Intervsion of Control  Patterns
+4. Gang of Four: 4 Superheroes who invented the concepts of design patterns. 
+5. SOLID Principles : Robert 
+    a. S : Single Responsibility 
+    b. O : Open Closed Principle 
+    c. L : Liskov Substitution
+    d. I : Interface Segratation 
+    e. D : Depenency Inversion 
+6. Difference between the design Pattern vs Desgin Principle in OOP:
+    a. Design Pattern provides the high level overviews of any kind of solutions. 
+7. 

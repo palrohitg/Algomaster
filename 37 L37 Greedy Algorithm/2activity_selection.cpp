@@ -1,4 +1,7 @@
 /*
+    - Sort the activities based on the End Time
+    - Then try to finish the activities which is going to end soon. 
+
     Given time par person ek activities he kar sakta hais
 
     Consider the following 6 activities.
@@ -18,6 +21,8 @@ Sorted the activity Based on three factors
 #include<algorithm>
 using namespace std;
 
+
+// Inbuilt comparator function to find out ke which activities will be performed first
 bool compare(pair<int, int> p1, pair<int, int> p2) {
     return p1.second < p2.second;
 }
@@ -41,11 +46,11 @@ int main() {
 
 
         // Pick the activities one by one
-        int res = 1;
+        int res = 1; // currently we are sorting only one activities 
         int fin = v[0].second;
 
-        for (int i = 1; i < n; i++) {
-            if (v[i].first >= fin) {
+        for (int i = 1; i < n; i++) { // iterate over the arrays to find the activities from 1 to n-1 
+            if (v[i].first >= fin) {  // first activities >= than finish then assigne the new values
                 // Must Do activity
                 res++;
                 fin = v[i].second;

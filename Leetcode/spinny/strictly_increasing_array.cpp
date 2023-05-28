@@ -1,3 +1,12 @@
+/*
+
+    Base Problem Are: 
+        a. Longest Increasing Subsequence 
+        b. Longest Common Subsequence
+        
+
+*/
+
 #include<bits/stdc++.h>
 using namespace std; 
 

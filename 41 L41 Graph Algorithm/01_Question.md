@@ -12,3 +12,26 @@
 11. Clone Graph 
 12. Max Area of Islands 
 13. Dependent Course II 
+
+
+## New Questions 2 April
+1. Find a whether a path exits
+2. BFS / DFS traversal Algorithms 
+3. Snake and ladders 
+4. No of islands (Query Problem to Solved) Disjoint Set Union.
+    a. No of islands II 
+    b. No of distinct Islands
+    c. Max Area of islands 
+    d. Count Sub islands
+5. Rotten Oranges
+
+
+
+
+========================= 
+Notes : For Graphs 
+1. Steps of Knight Postions: BFS Approach
+    - Create Target = (tx, ty) , Start = (x1, y1) 
+    - Create queue<pair<int,int>> q; and push the current elements{x1, y1}; 
+    - vector<vector<bool>>visited(n, vector<bool>(n, false)); 
+    - 
