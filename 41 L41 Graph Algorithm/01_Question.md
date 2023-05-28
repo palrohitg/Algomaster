@@ -24,3 +24,14 @@
     c. Max Area of islands 
     d. Count Sub islands
 5. Rotten Oranges
+
+
+
+
+========================= 
+Notes : For Graphs 
+1. Steps of Knight Postions: BFS Approach
+    - Create Target = (tx, ty) , Start = (x1, y1) 
+    - Create queue<pair<int,int>> q; and push the current elements{x1, y1}; 
+    - vector<vector<bool>>visited(n, vector<bool>(n, false)); 
+    - 
