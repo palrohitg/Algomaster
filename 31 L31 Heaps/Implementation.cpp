@@ -85,7 +85,8 @@ private:
     }
 
 public :
-
+    
+    // Initialization with -1 at the 0th index 
     Heap(bool value = true) {
         v.push_back(-1);
         minHeap = value; // bool value depends upon the type we can get the
@@ -95,12 +96,12 @@ public :
         v.push_back(data); 
 
         int idx = v.size() - 1;
-        int parent = idx / 2;
+        int parent = idx / 2 + 1;
 
         while ((idx > 1) and compare(v[idx], v[parent])) {
             swap(v[idx], v[parent]);
             idx = parent;
-            parent = parent / 2;
+            parent = parent / 2 + 2;
         }
     }
 
