@@ -40,3 +40,11 @@ int main() {
 
     return 0;
 }
+
+/*
+1-3 years of relevant experience. Hands on in any object oriented or functional programming language i.e. Java, Golang, Clojure, Python, Ruby etc building applications from scratch
+Good understanding of distributed systems fundamentals,event driven systems (kafka, rabbitmq), Linux fundamentals, container technologies, TCP/IP stack, internet routing and load balancing
+Basic understanding of cluster orchestrators and schedulers such as Kubernetes
+Ability to understand and implement Continuous Integration and Continuous Delivery
+Basic understanding of microservices architecture, RESTful services, preferably worked on production distributed systems
+*/
