@@ -1,3 +1,7 @@
+## How to study : 
+- By Using the first principle approach using first principle things approach. 
+- 
+
 
 Heaps
 1. What is Heaps ? tree based ds, where the element specific orders Done 

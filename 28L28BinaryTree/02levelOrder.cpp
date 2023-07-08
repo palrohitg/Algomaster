@@ -26,12 +26,11 @@ public:
 void levelOrderPrint(node *root)
 {
 
-	if (root == NULL)
-	{
+	if (root == NULL){
 		return;
 	}
 	// creating queue in cpp
-	queue<node *> q;
+	queue<node *> q; // Create the queue in the CPP Program here 
 
 	q.push(root);
 

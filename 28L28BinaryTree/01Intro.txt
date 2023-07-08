@@ -110,3 +110,21 @@ Left View and Right View (Iterative): https://youtu.be/ruT7rVIveqA
 Top View and Bottom View (Recursive): https://youtu.be/zoagmWU1yD8
 Top View and Bottom View (Iterative): https://youtu.be/=-Cr4I8ZTXgc
 Boundary Traversal: https://youtu.be/0nx-t0PcccA
+
+
+
+## Level Order 
+
+
+
+
+## Diameter of the Tree: 
+
+diameter : 
+ - lheight 
+ - rheight 
+ - ldiamter 
+ - r diameter 
+
+ max(lhe+reh+1 max(ldiameter, rdiameter)) 
+ 
