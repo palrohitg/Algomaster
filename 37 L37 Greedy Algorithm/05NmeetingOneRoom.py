@@ -17,6 +17,7 @@ class Solution:
     # Here Specify the list Data structures 
     def maxMeetings(self, s: List[int], e: List[int], n: int) -> None:
         meet = [meeting(s[i], e[i], i + 1) for i in range(n)]
+        print(meet)
         sorted(meet, key=lambda x: (x.end, x.pos))
         answer = []
         limit = meet[0].end

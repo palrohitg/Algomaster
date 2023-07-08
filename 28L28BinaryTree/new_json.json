@@ -1,0 +1,30 @@
+{
+    "child_key": "widget_items",
+    "widget_items": [
+        {
+            "title": "My orders",
+            "icon_url": "https://d2t87jru9na7c2.cloudfront.net/my_orders.png",
+            "screen_id": 47,
+            "sub_title": "View your complete order list",
+            "badge_count": 0
+        },
+        {
+            "title": "My Rewards",
+            "web_url": "https://parkplus.io/app/my-rewards",
+            "icon_url": "https://d2t87jru9na7c2.cloudfront.net/referandearn3.png",
+            "screen_id": 10,
+            "sub_title": "Reveal your rewards and earn cashback",
+            "badge_count": 0,
+            "visibility_rules": {
+                "app_version_name__gte": "5.8.9"
+            }
+        },
+        {
+            "title": "Park+ wallet",
+            "icon_url": "https://d2t87jru9na7c2.cloudfront.net/wallet.png",
+            "screen_id": 28,
+            "sub_title": "Your digital wallet for seamless transactions",
+            "badge_count": 0
+        }
+    ]
+}

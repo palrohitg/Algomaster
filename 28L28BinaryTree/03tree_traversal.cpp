@@ -19,9 +19,9 @@ public :
 
 /*
 	Three Most Important Traversal of Tree :
-	-PreOrder
-	-PostOrder
-	-Inorders
+	-PreOrder : Root, left, right 
+	-PostOrder : left, right , root 
+	-Inorders: left, root, right 
 
 */
 

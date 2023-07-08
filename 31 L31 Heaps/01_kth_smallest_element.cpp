@@ -12,7 +12,7 @@
 using namespace std;
 
 int findKLargestElement(vector<int> &nums, int k) {
-    priority_queue<int, vector<int> , greater<int> > minh; 
+    priority_queue<int, vector<int> , greater<int> > minh;  // greater<int> minheaps 
     for (int i = 0; i < nums.size(); i++) {
         minh.push(nums[i]);
         if (minh.size() > k) {
@@ -20,6 +20,14 @@ int findKLargestElement(vector<int> &nums, int k) {
         }
     }
     return minh.top();
+}
+
+int findKSmallestElements(vector<int> &nums, int k) {
+    priority_queue<int, vector<int>> maxh; 
+    max.push() // first k elements 
+
+    // k to n nums[i] < pq.top() ; 
+    // 
 }
 
 

@@ -14,6 +14,11 @@ int main() {
 	cout << pq.size();
 	cout << pq.top().first << " " << pq.top().second << endl;
 
+	vector<int> v1{12, 121, 1231}; 
+	for (auto no: v1) {
+		cout << no << endl; 
+	}
+
 
 	return 0;
-}
+}	

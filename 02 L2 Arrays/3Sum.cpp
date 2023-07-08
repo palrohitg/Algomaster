@@ -6,15 +6,9 @@
 using namespace std;
 
 int main() {
+	cout << "Taking Input from the User" << endl; 
+	string input; cin >> input; 
+	cout << input << endl; 
 
-	cout << "testing the values" << endl; 
 	return 0;
-}
-
-
-#include<iostream>
-using namespace std; 
-int main() {
-
-	return 0; 
 }

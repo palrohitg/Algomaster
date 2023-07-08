@@ -1,36 +1,60 @@
-class LRUCache
-{
-    public:
-        list<pair<int,int>> l;
-        unordered_map<int,list<pair<int, int>>::iterator> m;
-        int size;
-        LRUCache(int capacity)
-        {
-            size=capacity;
+
+/*
+doubly linked list functions here 
+- erase()
+- back()
+- push_front()
+- pop_back() 
+*/
+
+
+class LRUCache {
+    // address, actual values in values parameter here 
+    unordered_map<int, pair<list<int>:: iterator, int>> hm;
+    // doubly linked lists  
+    list<int> dll; 
+    int cap; 
+    
+public:
+    LRUCache(int capacity) {
+      cap = capacity;   
+    }
+
+    void moveToFirst(int key) {
+        dll.erase(hm[key].first); // delete the node from the double linked list  
+        dll.push_front(key);  // insert at double linked list 
+        hm[key].first = dll.begin(); 
+        return; 
+    }
+    
+    int get(int key) {
+        if (hm.find(key) == hm.end()) return -1; 
+        moveToFirst(key); 
+        return hm[key].second; 
+        
+    }
+    
+    void put(int key, int value) {
+        if (hm.find(key) != hm.end()) {
+            hm[key].second = value; // value ko change kardiya hai and also 
+            moveToFirst(key); 
+            
+        } else {
+            dll.push_front(key); 
+            hm[key] = {dll.begin(), value}; 
+            cap--; 
         }
-        int get(int key)
-        {
-            if(m.find(key)==m.end())
-                return -1;
-            l.splice(l.begin(),l,m[key]);
-            return m[key]->second;
+        if (cap < 0) {
+            hm.erase(dll.back()); 
+            dll.pop_back(); 
+            cap++; 
         }
-        void put(int key, int value)
-        {
-            if(m.find(key)!=m.end())
-            {   
-                // update opeat
-                l.splice(l.begin(),l,m[key]);
-                m[key]->second=value;
-                return;
-            }
-            if(l.size()==size)
-            {
-                auto d_key=l.back().first;
-                l.pop_back();
-                m.erase(d_key);
-            }
-            l.push_front({key,value});
-            m[key]=l.begin();
-        }
+    }
 };
+
+/**
+ * Your LRUCache object will be instantiated and called as such:
+ * LRUCache* obj = new LRUCache(capacity);
+ * int param_1 = obj->get(key);
+ * obj->put(key,value);
+ */
