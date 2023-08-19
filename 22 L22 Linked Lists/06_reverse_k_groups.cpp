@@ -1,3 +1,20 @@
+// 1 2 3 4 5 6 7 
+// 7 1 2 3 4 5 6 
+// 6 7 1 2 3 4 5  
+
+
+// Trapping Rain Water Most Important Questions 
+/*
+    Trapping Rain Water In the Arrays: 
+    
+
+
+    Reverse Node in K Groups: 
+    1. 
+    
+
+*/
+
 class Solution {
 public:
     ListNode* reverseKGroup(ListNode* head, int k) 
@@ -28,7 +45,43 @@ public:
 };
 
 
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode() : val(0), next(nullptr) {}
+ *     ListNode(int x) : val(x), next(nullptr) {}
+ *     ListNode(int x, ListNode *next) : val(x), next(next) {}
+ * };
+ */
+class Solution {
+public:
+    ListNode* reverseKGroup(ListNode* head, int k) {
+        ListNode* cursor = head;
+        // Base case to handle when we don't want to reverse the nodes  
+        // Condition when recursive functions calls happens to solve the problems
+        for(int i = 0; i < k; i++){
+            if(cursor == nullptr) return head;
+            cursor = cursor->next;
+        }
+        ListNode* curr = head;
+        ListNode* prev = nullptr;
+        ListNode* nxt = nullptr;
+        for(int i = 0; i < k; i++){
+            nxt = curr->next;
+            curr->next = prev;
+            prev = curr;
+            curr = nxt;
+        }
+        head->next = reverseKGroup(curr, k);
+        return prev;
+    }
+};
+
 /*
+ Recursion function will be called again to solve this problems agains. 
+
 
  - Simply Performs the reverse operation on the linked lists 
  - Then do the recursive call where 
