@@ -11,29 +11,33 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-int findKLargestElement(vector<int> &nums, int k) {
-    priority_queue<int, vector<int> , greater<int> > minh;  // greater<int> minheaps 
-    for (int i = 0; i < nums.size(); i++) {
-        minh.push(nums[i]);
-        if (minh.size() > k) {
-            minh.pop(); 
+// MinHeaps : 10, 20, 1, 50, 30 
+// Firstly Put the k elements in the min heaps 
+// If the minh.top() is < then the current elements then pop and insert. 
+
+class Solution {
+public:
+    int findKthLargest(vector<int>& nums, int k) {
+        priority_queue<int, vector<int>, greater<int>> minh; 
+
+        for (int i = 0; i < k; i++) {
+            minh.push(nums[i]); 
         }
+
+        for (int i = k; i < nums.size(); i++) {
+            int topElement = minh.top(); 
+            if (topElement < nums[i]) {
+                minh.pop();
+                minh.push(nums[i]); 
+            }
+        }
+
+        return minh.top(); 
     }
-    return minh.top();
-}
-
-int findKSmallestElements(vector<int> &nums, int k) {
-    priority_queue<int, vector<int>> maxh; 
-    max.push() // first k elements 
-
-    // k to n nums[i] < pq.top() ; 
-    // 
-}
-
-
+};
 /*
 
- -> Sorted Matrix : Find the elements find kth smallest element in rowwise and columnwise sorted 
+ -> Sorted Matrix : Find the elements find   kth smallest element in rowwise and columnwise sorted 
     Matrix .
  -> Create an MaxHeap and find out, insert the element upto kth element. 
  -> Find the top elment will store the kth smallest element in the array. 
@@ -47,9 +51,10 @@ int findKSmallestElements(vector<int> &nums, int k) {
 
 int main() {
 
+    // sort the vector in the descending orders 
     vector<int> v {10, 20, 5}; 
 
-    // Descending order 
+    // sort(v.begin(), v.end(), greater<>()) // comparator functions to sort the elements 
     sort(v.begin(), v.end(), greater<>());
 
     for (auto n : v) {

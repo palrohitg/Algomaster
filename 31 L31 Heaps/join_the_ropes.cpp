@@ -30,11 +30,6 @@
 using namespace std;
 
 
-
-
-
-
-
 void joinRopes(priority_queue<int, vector<int>, greater<int> > pq) {
 
     int min_cost = 0;
