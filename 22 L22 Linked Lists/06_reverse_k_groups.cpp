@@ -99,4 +99,33 @@ public:
     TC : O(N) Traversal of elements of linked lits only once 
     SC : O(N/K) recursive call that we making in the each steps 
 
+
+
+Find the Nth Node from End of the linked Lists: 
+    1. 
+    2. 
+
 */
+
+class Solution {
+public:
+    ListNode* removeNthFromEnd(ListNode* head, int n) {
+        ListNode * start = new ListNode();
+        start -> next = head;
+        ListNode* fast = start;
+        ListNode* slow = start;     
+
+        for(int i = 1; i <= n; ++i)
+            fast = fast->next;
+    
+        while(fast->next != NULL)
+        {
+            fast = fast->next;
+            slow = slow->next;
+        }
+        
+        slow->next = slow->next->next;
+        
+        return start->next;
+    }
+};

@@ -26,7 +26,7 @@ public:
             // check whether
             if (i <= amount) {
                 int sub_res = minCoinChange(coins, amount-i, type, dp);
-                // min coins changes 
+                // min coins changes  this is the minimum checks that we need to add for the sames 
                 if (sub_res != INT_MAX && sub_res + 1 < res) {
                     res = sub_res + 1; 
                 }

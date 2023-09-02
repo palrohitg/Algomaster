@@ -660,6 +660,9 @@
             "view_all_link_show": false,
             "view_all_placeholder": "",
             "view_all_screen_id": -1,
+            "visibility_rules": {
+                "active": false
+            },
             "web_title": "",
             "web_url": ""
         },
@@ -6298,6 +6301,11 @@
                     "view_all_link_show": false,
                     "view_all_placeholder": "",
                     "view_all_screen_id": 0,
+                    "visibility_rules": {
+                        "city__in": [
+                            "Gurgaon"
+                        ]
+                    },
                     "web_title": "servicing",
                     "web_url": "https://parkplus.io/app/dealer-services"
                 },
