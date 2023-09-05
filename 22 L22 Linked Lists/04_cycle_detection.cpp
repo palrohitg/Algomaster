@@ -4,7 +4,11 @@
  *     int val;
  *     ListNode *next;
  *     ListNode(int x) : val(x), next(NULL) {}
- * };
+ * }; 
+ * 
+ * 
+ * 
+ * Floy'd Cycle detection Algorithms 
  */
 class Solution {
 public:

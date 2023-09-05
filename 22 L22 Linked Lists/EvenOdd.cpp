@@ -93,7 +93,7 @@ class Solution {
 public:
     ListNode* oddEvenList(ListNode* head) {
         if (head == NULL || head->next == NULL || head->next->next == NULL) return head; 
-        ListNode*odd = head;
+        ListNode* odd = head;
         ListNode* even = head->next; 
         ListNode* evenHead = head->next;
         

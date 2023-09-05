@@ -1,11 +1,11 @@
 package main
 
-// TreeNode Structures for the users we have the nothing
+import "fmt"
 
 type TreeNode struct {
-	Val   int
-	Left  *TreeNode
-	Right *TreeNode
+	val   int
+	left  *TreeNode
+	right *TreeNode
 }
 
 type queue struct {
@@ -13,54 +13,49 @@ type queue struct {
 }
 
 func (q *queue) push(item *TreeNode) {
-	q.items = append(q.items, item) // listName and Final response
+	q.items = append(q.items, item)
+}
+
+func (q *queue) pop() *TreeNode {
+	popItem := q.items[0]
+	q.items = q.items[1:]
+	return popItem
 }
 
 func (q *queue) isEmpty() bool {
 	return len(q.items) == 0
 }
 
-func (q *queue) pop() *TreeNode {
-	deleted := q.items[0]
-	q.items = q.items[1:] // rest of the elements
-	return deleted
-}
-
-// First elements Need to be removed then
-func (q *queue) peek() *TreeNode {
-	if q.isEmpty() {
-		return nil
-	}
-	return q.items[0]
+func (q *queue) size() int {
+	return len(q.items)
 }
 
 func levelOrder(root *TreeNode) [][]int {
 	if root == nil {
 		return nil
 	}
-
 	queue := &queue{}
 	queue.push(root)
 	queue.push(nil)
-
-	arr := make([]int, 0)
 	results := [][]int{}
+	arr := make([]int, 0)
 
 	for !queue.isEmpty() {
 		temp := queue.pop()
-
 		if temp == nil {
 			results = append(results, arr)
-			queue.push(nil)
-			arr = []int{}
-
-		} else {
-			arr = append(arr, temp.Val)
-			if temp.Left != nil {
-				queue.push(temp.Left)
+			if queue.size() == 0 {
+				return results
 			}
-			if temp.Right != nil {
-				queue.push(temp.Right)
+			queue.push(nil)
+			arr = []int{} // reinitialized with the nil maps arrays
+		} else {
+			arr = append(arr, temp.val)
+			if temp.left != nil {
+				queue.push(temp.left)
+			}
+			if temp.right != nil {
+				queue.push(temp.right)
 			}
 		}
 	}
@@ -68,6 +63,39 @@ func levelOrder(root *TreeNode) [][]int {
 }
 
 func main() {
+	root := &TreeNode{
+		val:   1,
+		left:  nil,
+		right: nil,
+	}
+	n1 := &TreeNode{
+		val:   11,
+		left:  nil,
+		right: nil,
+	}
+	n2 := &TreeNode{
+		val:   12,
+		left:  nil,
+		right: nil,
+	}
+	n3 := &TreeNode{
+		val:   23,
+		left:  nil,
+		right: nil,
+	}
+	n4 := &TreeNode{
+		val:   33,
+		left:  nil,
+		right: nil,
+	}
 
+	root.left = n1
+	root.right = n2
+	root.left.left = n3
+	root.left.right = n4
+
+	results := levelOrder(root)
+	fmt.Println(results)
+	// fmt.Println(root.left.right.val)
 	return
 }

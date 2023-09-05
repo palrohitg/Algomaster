@@ -22,6 +22,19 @@ class node {
 }; 
 
 
+// This is the current we have to do  the new return values 
+void top_view(TreeNode *node, map<int, pair<char,int>>& m, int dist, int level)
+{
+    if (node == NULL)
+       return;
+    if (m.count(dist) == 0 || m[dist].second > level)
+        m[dist] = make_pair(node->val, level);
+
+    top_view(node->left, m, dist-1, level + 1);
+    top_view(node->right, m, dist+1, level + 1);
+}
+
+
 
 node *buildTree() {
 

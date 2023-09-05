@@ -9,7 +9,10 @@ struct ListNode
     ListNode(int x) : val(x), next(nullptr) {}
     ListNode(int x, ListNode *next) : val(x), next(next) {}
 };
-
+ 
+// Carry = sum / 10 
+// Digit = sum % 10; 
+// Create the new node with the above digits we have
 ListNode *addTwoNumbers(ListNode *l1, ListNode *l2)
 {
     ListNode *cur = new ListNode(0); 

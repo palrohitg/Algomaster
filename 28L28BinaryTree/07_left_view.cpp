@@ -44,6 +44,7 @@ void leftView(node *root) {
 		int sz = q.size();
 		int i = 0;
 
+		// Post Increment Operator in C++ we have in the Code
 		while (i++ < sz) {
 			// pick up the front elements from queue
 			node *t = q.front();
