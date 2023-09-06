@@ -68,7 +68,6 @@ int noOfIsland(vector<vector<char>> mat, int n, int m) {
 }
 
 int main() {
-
 // inputs is given as vector of strings
 
 // #ifndef ONLINE_JUDGE
