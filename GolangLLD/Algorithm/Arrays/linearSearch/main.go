@@ -39,6 +39,25 @@ func ProductCountSubarrayCount() int {
 
 func main() {
 	dataList := []int{109, 11, 22, 221} // slice where we don't have any specific numbers currently
+
+	// Particular sized arrays is
+	dataListParticularSize := [10]int{}
+	fmt.Println(dataListParticularSize)
+
+	dataList2 := []int{}
+	dataList2 = append(dataList2, 10)
+	dataList2 = append(dataList2, 10)
+	dataList2 = append(dataList2, 10)
+	fmt.Println(dataList2)
+
+	// Find the No of elements in the list
+	start := 0
+	end := len(dataList) - 1
+
+	mid := start + (end-start)/2 // here the middle element would be one
+	fmt.Println(mid)
+
+	fmt.Println(len(dataList))
 	// key := 11
 	// fmt.Println(linearSearchAlgorithm(dataList, key))
 

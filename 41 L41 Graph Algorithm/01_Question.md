@@ -271,4 +271,45 @@ class Solution:
 ## 12. Rotate the matrix by the 90* 
 ```cpp
 // Inplace algorithms should be solved by the data here 
+``` 
+
+
+
+## 13. Generate All UseCases:
+```python
+# Use the yields statements when you want to read the data in the 
+# In the large files, it not feasible to load the whole files in the memory 
+# Itself. 
+
+import random
+import time
+
+def sensor_data_generator():
+    while True:
+        # Simulate sensor data
+        yield random.randint(0, 100)
+        time.sleep(1)
+
+# Usage
+sensor = sensor_data_generator()
+for _ in range(5):
+    print(next(sensor))
+``` 
+
+
+## 14. Maximum Path Sum 
+```cpp
+1. If node == NULL : return 0 
+2. leftSum = max(0, maxPathSum(root->left, maxi)) // Path Sum handle the negative score for the elements 
+2. rightSum = max(0, maxPathSum(root->right, maxi)) // Path Sum handle the negative score for the elements 
+3. max_sum = max(max_sum, root->val + leftSum + rightSum) // Path Sum handle the positive score for the elements
+4. root->val + max(left sum, rightsum) 
+``` 
+
+## Find the Boundary Traversal of the Tree
+```cpp
+// find the Boundary Traversal of the binary tree we have 
+
+
+
 ```
