@@ -34,10 +34,10 @@ func levelOrder(root *TreeNode) [][]int {
 	if root == nil {
 		return nil
 	}
-	queue := &queue{}
+	queue := &queue{} // getting the address
 	queue.push(root)
 	queue.push(nil)
-	results := [][]int{}
+	results := [][]int{} // Resultant arrays
 	arr := make([]int, 0)
 
 	for !queue.isEmpty() {

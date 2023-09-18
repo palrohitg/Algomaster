@@ -27,6 +27,7 @@ public:
         return; 
     }
     
+    // find functions 
     int get(int key) {
         if (hm.find(key) == hm.end()) return -1; 
         moveToFirst(key); 

@@ -40,6 +40,10 @@ public:
         int type = coins.size(); 
         vector<int> dp(amount+1, 0);
         int ans = minCoinChange(coins, amount, type, dp); 
+        // if the ans is maximum then return, then return the no itself 
+        // otherwise the candidates will other candidates will be hire 
+        // to build the solutions. 
+        
         return ans == INT_MAX ? -1: ans; 
     }
 };

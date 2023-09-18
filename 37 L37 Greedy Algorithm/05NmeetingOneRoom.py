@@ -36,6 +36,8 @@ class Solution:
 if __name__ == "__main__":
     obj = Solution()
     n = 6
-    start = [1, 3, 0, 5, 8, 5]
+    start = [1, 3, 0, 5, 8, 5] # we have the nth mettings, finally need to find the meetings 
+    # Given the start and End time for each meetings. we need to figure out the
+    # how often the maxmeetting we can have
     end = [2, 4, 5, 7, 9, 9]
     obj.maxMeetings(start, end, n)

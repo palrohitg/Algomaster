@@ -13,6 +13,8 @@ int main() {
     freopen("../input.txt", "r", stdin);
     freopen("../output.txt", "w", stdout);
 #endif
+
+    // Order maps 
     map <string, int> m;
 
     // 1. insert 
@@ -33,8 +35,8 @@ int main() {
     // search 
     string key; cin >> key; 
     
-    auto it = m.find(key); 
-
+    auto it = m.find(key);  // Check for the count here 
+ 
     if(it != m.end()) {
         cout << "Price of " << key << "is" << m[key] << endl; 
     }
