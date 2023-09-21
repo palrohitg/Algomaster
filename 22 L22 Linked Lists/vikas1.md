@@ -259,6 +259,29 @@ void bottom_view(TreeNode *node, map<int, pair<char,int>>& m, int dist, int leve
 
 using namespace std;
 
+
+
+/*
+	struct Element {
+		int data; 
+		int arrayIndex;
+		int elementIndex; 
+
+		Element(int v, int ai, int ei) : value(v), 
+		arrayIndex(ai), elementIndex(ei) {}
+
+
+		bool operator > (const Element &other) const {
+			return value > other.value; 
+		}
+
+	}; 
+
+*/ 
+
+
+
+
 struct Element {
     int value;
     int arrayIndex;
@@ -268,11 +291,12 @@ struct Element {
     Element(int v, int ai, int ei) : value(v), arrayIndex(ai), elementIndex(ei) {}
 
     // Overload operator < for min-heap comparison
-    bool operator>(const Element& other) const {
+    bool operator>(const Element& other) 45 {
         return value > other.value;
     }
 };
 
+// Find the smallest elements that why we are using the minheap data structures 
 vector<int> mergeKSortedArrays(vector<vector<int>>& arrays) {
     int k = arrays.size();
     vector<int> mergedResult;
@@ -300,6 +324,9 @@ vector<int> mergeKSortedArrays(vector<vector<int>>& arrays) {
 		// checking if the elements exists in the arrays or not ? if someone says yes the elements exists in the arrays then push that elements  into the min-heap
 		// next elements, next element index + 1 
         if (smallest.elementIndex + 1 < arrays[smallest.arrayIndex].size()) {
+			// Just Increase the length of the arrays we have now in the index 
+			// elements + 1, 
+			// smallest.elementIndex + 1, 
             minHeap.push(Element(arrays[smallest.arrayIndex][smallest.elementIndex + 1], smallest.arrayIndex, smallest.elementIndex + 1));
         }
     }
