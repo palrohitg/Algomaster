@@ -107,7 +107,10 @@
     "source_location": "cpp",
     "stop_token": "cpp",
     "syncstream": "cpp",
-    "stacktrace": "cpp"
+    "stacktrace": "cpp",
+    "__memory": "cpp",
+    "__functional_base": "cpp",
+    "expected": "cpp"
   },
   "C_Cpp_Runner.cCompilerPath": "clang",
   "C_Cpp_Runner.cppCompilerPath": "clang++",

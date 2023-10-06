@@ -16,7 +16,5 @@ void solve(string digit, string output, int index, vector<string> &ans, string m
         output.pop_back(); 
     }
 
-    return; 
-    cout << ans << endl; 
-    
+    return;
 }
