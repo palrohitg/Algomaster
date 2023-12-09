@@ -1,7 +1,13 @@
 /*
 	Find min steps to reach one:
 		a.
-		b.
+		b. 
+
+
+		Post Save methods 
+		Pre Save  methods are
+	
+		dispatch module we have the receiver modules that we can calls // decators for the sames.
 
 Time Complexity: O(n), as there will be n unique calls.
 Space Complexity: O(n)
@@ -13,16 +19,19 @@ using namespace std;
 // Recursive approach :
 int minStep(int n, int dp[]) {
 
+	// Base Case 
 	if (n == 1) return 0;
 
-	// check if exists in cache
+	// check if exists in cache and if that exists in the dp arrays 
 	if (dp[n] > 0) {
 		return dp[n];
 	}
 
+	// option 1 
 	int op1 = minStep(n - 1, dp);
 	int min_step = op1;
 
+	// option 2
 	if (n % 2 == 0) {
 		int op2 = minStep( n / 2, dp);
 		if (op2 < min_step) {
@@ -30,6 +39,7 @@ int minStep(int n, int dp[]) {
 		}
 	}
 
+	// option 3 
 	if (n % 3 == 0) {
 		int op3 = minStep( n / 3, dp);
 		if (op3 < min_step) {
@@ -37,6 +47,7 @@ int minStep(int n, int dp[]) {
 		}
 	}
 
+	// then add 1 to its 
 	dp[n] = 1 + min_step;
 	return dp[n];
 }
@@ -66,9 +77,10 @@ int minStepToOneRec(int n) {
     return ans + 1; 
 }
 
+// this is questions user wants to solved
 // Overlapping problem is currently have existing
 int main() {
-	int n = 10;
+	int n = 3;
 	int dp[n + 1];
 
 	// Ensure that doesn't contains the garbage values

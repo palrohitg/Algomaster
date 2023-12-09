@@ -5,6 +5,10 @@ import (
 	"sort"
 )
 
+/*
+Are the main data structures in the golangs
+Arrays, channels, slices, maps, structures, sync data structures
+*/
 func linearSearchAlgorithm(data []int, key int) bool {
 	for _, item := range data {
 		if item == key {

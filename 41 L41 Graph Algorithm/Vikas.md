@@ -49,6 +49,7 @@ Notes : For Graphs
 #include<bits/stdc++.h>
 using namespace std;
 
+// currently this is the dfs call
 void markCurrentIslands(vector<vector<char>> &mat, int x, int y, int rows, int col) {
     if (x < 0 || x >= rows || y < 0 || y >= col || mat[x][y] == '0') {
         return; 

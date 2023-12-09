@@ -1,5 +1,7 @@
 #include <iostream>
-using namespace std;
+using namespace std; 
+
+// Using the kadane Algorithms 
 
 int maxSubArraySum(int a[], int size)
 {

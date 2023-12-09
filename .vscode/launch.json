@@ -32,8 +32,8 @@
       "type": "lldb",
       "request": "launch",
       "args": [],
-      "cwd": "/Users/mipl/Desktop/Work/Vikaspal/AlgoMaster/GolangLLD/ObserverPattern",
-      "program": "/Users/mipl/Desktop/Work/Vikaspal/AlgoMaster/GolangLLD/ObserverPattern/build/Debug/outDebug"
+      "cwd": ".",
+      "program": "build/Debug/outDebug"
     },
     {
       "name": "C/C++: clang build and debug active file",
