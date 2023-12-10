@@ -43,19 +43,27 @@ bool compare(pair <int, int> v1, pair <int, int> v2) // Accepting the pair which
 
 int main() {
   // five x,y corrdinates of that car
-  vector<pair<int, int>> P1;
-  int n;
-  cin >> n;
-  for (int i = 0; i < n; i++) {
-    int x, y;
-    cin >> x >> y;
-    P1.push_back(make_pair(x, y));
-  }
-  sort(P1.begin(), P1.end(), compare);
-  //for each loopb
-  for (auto x : P1) {
-    cout << x.first << " " << x.second << endl;
-  }
+  // vector<pair<int, int>> P1;
+  // int n;
+  // cin >> n;
+  // for (int i = 0; i < n; i++) {
+  //   int x, y;
+  //   cin >> x >> y;
+  //   P1.push_back(make_pair(x, y));
+  // }
+  // sort(P1.begin(), P1.end(), compare);
+  // //for each loopb
+  // for (auto x : P1) {
+  //   cout << x.first << " " << x.second << endl;
+  // } 
 
+  vector<int> v {1, 1, 2, 4, 4, 5, 5, 6, 6}; 
+  // sort(v.begin(), v.end()); 
+  int ans = 0; 
+  // this is the first elements we are trying to incomplete once
+  for(int i = 0; i < v.size(); i++) {
+      ans = ans ^ v[i]; 
+  } 
+  cout << ans; 
   return 0;
 }
