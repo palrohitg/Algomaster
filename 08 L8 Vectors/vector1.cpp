@@ -63,7 +63,21 @@ int main() {
   // this is the first elements we are trying to incomplete once
   for(int i = 0; i < v.size(); i++) {
       ans = ans ^ v[i]; 
-  } 
+  }  
+
+  // Important solution using the binary search approach 
+
   cout << ans; 
   return 0;
+}
+
+void removeChar(char* s, char c)
+{
+ 
+    int j, n = strlen(s);
+    for (int i = j = 0; i < n; i++)
+        if (s[i] != c)
+            s[j++] = s[i];
+ 
+    s[j] = '\0'; // end of the string representation of the string here. 
 }
