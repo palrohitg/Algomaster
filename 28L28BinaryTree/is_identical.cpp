@@ -19,7 +19,16 @@ int isIdentical(node *root1, node*root2) {
         }
     }
 }
+ 
 
+ /*
+ 
+    Two Tree are identical or Not.
+
+    1. If both are null return 0.
+    2. 
+ 
+ */
 
 def is_identical(root1, root2): 
     if (root1 == None and root == None):

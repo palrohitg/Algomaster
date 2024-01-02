@@ -1,0 +1,180 @@
+{
+    "kind": "calendar#events",
+    "etag": "\"p32gf1mtnhmqvc0g\"",
+    "summary": "devendra@avoma.app",
+    "updated": "2022-03-07T23:01:07.796Z",
+    "timeZone": "America/Los_Angeles",
+    "accessRole": "owner",
+    "defaultReminders": [
+     {
+      "method": "popup",
+      "minutes": 10
+     }
+    ],
+    "items": [
+     {
+      "kind": "calendar#event",
+      "etag": "\"3293387587830000\"",
+      "id": "6pq5k89l71cihuhh1em96dnciu_20220103T163000Z",
+      "status": "confirmed",
+      "htmlLink": "https://www.google.com/calendar/event?eid=NnBxNWs4OWw3MWNpaHVoaDFlbTk2ZG5jaXVfMjAyMjAxMDNUMTYzMDAwWiBkZXZlbmRyYUBhdm9tYS5hcHA",
+      "created": "2021-06-04T06:43:35.000Z",
+      "updated": "2022-03-07T22:56:33.915Z",
+      "summary": "Daily Standup",
+      "creator": {
+       "email": "aditya@avoma.app"
+      },
+      "organizer": {
+       "email": "aditya@avoma.app"
+      },
+      "start": {
+       "dateTime": "2022-01-03T08:30:00-08:00",
+       "timeZone": "America/Los_Angeles"
+      },
+      "end": {
+       "dateTime": "2022-01-03T08:45:00-08:00",
+       "timeZone": "America/Los_Angeles"
+      },
+      "recurringEventId": "6pq5k89l71cihuhh1em96dnciu_R20220103T163000",
+      "originalStartTime": {
+       "dateTime": "2022-01-03T08:30:00-08:00",
+       "timeZone": "America/Los_Angeles"
+      },
+      "iCalUID": "6pq5k89l71cihuhh1em96dnciu_R20220103T163000@google.com",
+      "sequence": 0,
+      "attendees": [
+       {
+        "email": "aditya@avoma.app",
+        "organizer": true,
+        "responseStatus": "accepted"
+       },
+       {
+        "email": "devendra@avoma.app",
+        "self": true,
+        "responseStatus": "accepted"
+       },
+       {
+        "email": "olivia@avoma.app",
+        "responseStatus": "needsAction"
+       }
+      ],
+      "hangoutLink": "https://meet.google.com/hck-ofyd-zwr",
+      "conferenceData": {
+       "entryPoints": [
+        {
+         "entryPointType": "video",
+         "uri": "https://meet.google.com/hck-ofyd-zwr",
+         "label": "meet.google.com/hck-ofyd-zwr"
+        },
+        {
+         "entryPointType": "more",
+         "uri": "https://tel.meet/hck-ofyd-zwr?pin=7812088800164",
+         "pin": "7812088800164"
+        },
+        {
+         "regionCode": "US",
+         "entryPointType": "phone",
+         "uri": "tel:+1-402-789-6398",
+         "label": "+1 402-789-6398",
+         "pin": "299563835"
+        }
+       ],
+       "conferenceSolution": {
+        "key": {
+         "type": "hangoutsMeet"
+        },
+        "name": "Google Meet",
+        "iconUri": "https://fonts.gstatic.com/s/i/productlogos/meet_2020q4/v6/web-512dp/logo_meet_2020q4_color_2x_web_512dp.png"
+       },
+       "conferenceId": "hck-ofyd-zwr",
+       "signature": "AKpSKUvrw9dEdl2O9QTn20Ivy5eV"
+      },
+      "reminders": {
+       "useDefault": true
+      },
+      "eventType": "default"
+     },
+     {
+      "kind": "calendar#event",
+      "etag": "\"3293387600776000\"",
+      "id": "3lovokchh8cri6omer3qnro74u_20220103T170000Z",
+      "status": "confirmed",
+      "htmlLink": "https://www.google.com/calendar/event?eid=M2xvdm9rY2hoOGNyaTZvbWVyM3Fucm83NHVfMjAyMjAxMDNUMTcwMDAwWiBkZXZlbmRyYUBhdm9tYS5hcHA",
+      "created": "2021-06-01T20:06:29.000Z",
+      "updated": "2022-03-07T22:56:40.388Z",
+      "summary": "Sprint planning",
+      "creator": {
+       "email": "aditya@avoma.app"
+      },
+      "organizer": {
+       "email": "aditya@avoma.app"
+      },
+      "start": {
+       "dateTime": "2022-01-03T09:00:00-08:00",
+       "timeZone": "America/Los_Angeles"
+      },
+      "end": {
+       "dateTime": "2022-01-03T10:00:00-08:00",
+       "timeZone": "America/Los_Angeles"
+      },
+      "recurringEventId": "3lovokchh8cri6omer3qnro74u_R20220103T170000",
+      "originalStartTime": {
+       "dateTime": "2022-01-03T09:00:00-08:00",
+       "timeZone": "America/Los_Angeles"
+      },
+      "iCalUID": "3lovokchh8cri6omer3qnro74u_R20220103T170000@google.com",
+      "sequence": 2,
+      "attendees": [
+       {
+        "email": "aditya@avoma.app",
+        "organizer": true,
+        "responseStatus": "accepted"
+       },
+       {
+        "email": "devendra@avoma.app",
+        "self": true,
+        "responseStatus": "accepted"
+       },
+       {
+        "email": "olivia@avoma.app",
+        "responseStatus": "needsAction"
+       }
+      ],
+      "hangoutLink": "https://meet.google.com/mpc-sqrw-xvy",
+      "conferenceData": {
+       "entryPoints": [
+        {
+         "entryPointType": "video",
+         "uri": "https://meet.google.com/mpc-sqrw-xvy",
+         "label": "meet.google.com/mpc-sqrw-xvy"
+        },
+        {
+         "entryPointType": "more",
+         "uri": "https://tel.meet/mpc-sqrw-xvy?pin=2879735575756",
+         "pin": "2879735575756"
+        },
+        {
+         "regionCode": "US",
+         "entryPointType": "phone",
+         "uri": "tel:+1-402-295-5337",
+         "label": "+1 402-295-5337",
+         "pin": "842002454"
+        }
+       ],
+       "conferenceSolution": {
+        "key": {
+         "type": "hangoutsMeet"
+        },
+        "name": "Google Meet",
+        "iconUri": "https://fonts.gstatic.com/s/i/productlogos/meet_2020q4/v6/web-512dp/logo_meet_2020q4_color_2x_web_512dp.png"
+       },
+       "conferenceId": "mpc-sqrw-xvy",
+       "signature": "AKpSKUvLC/n31gxQpnLTX5ZP7nIJ"
+      },
+      "reminders": {
+       "useDefault": true
+      },
+      "eventType": "default"
+     }
+    ]
+}

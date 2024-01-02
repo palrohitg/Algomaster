@@ -88,6 +88,8 @@ void printTree(node*root) {
 // Breadth first search
 void bfs(node *root) {
 
+
+	// BFS Algorithms to Print the data 
 	queue <node *> q;
 	q.push(root);
 

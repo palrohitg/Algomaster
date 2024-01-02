@@ -1,6 +1,7 @@
 // 328. Odd Even Linked Lists
 /*
-	* Easy to think but hard to code problems
+	* Easy to think but hard to code problems 
+	* Even nodes after that odd nodes 
 */
 
 

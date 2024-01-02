@@ -75,16 +75,19 @@ void printLL(node *head) {
 
 
 int main() {
-	int N, K;
-	cin >> N >> K;
+	// int N, K;
+	// cin >> N >> K;
 
-	node *head = NULL;
-	cout << "Enter the list elements :" << endl;
+	// node *head = NULL;
+	// cout << "Enter the list elements :" << endl;
 
-	builtInInput(head, N);
-	cout << endl;
-	node * result_head = reverseLL(head, K);
-	cout << result_head->data;
+	// builtInInput(head, N);
+	// cout << endl;
+	// node * result_head = reverseLL(head, K);
+	// cout << result_head->data; 
+
+	cout << 1 / 2 << endl; 
+	cout << 1 % 2 << endl; 
 
 	return 0;
 }

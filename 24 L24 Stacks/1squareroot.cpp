@@ -63,7 +63,7 @@ class Solution {
         mapping = {}
         
         for n in nums2:
-            while stack and n > stack[-1]:
+            while stack and n > stack[-1]: 
                 mapping[stack.pop()] = n
             stack.append(n)
             
@@ -73,4 +73,14 @@ class Solution {
         for n in nums1:
             res.append(mapping[n])
 
-        return res
+        return res 
+
+
+
+void findTheNextGreaterElements() {
+    // For each of the arrays 
+    // need to find the greater elements that elements 
+    // find the positions of the arrays 
+    // Find the latest versions of the that versioning in the gates itselfs 
+
+}

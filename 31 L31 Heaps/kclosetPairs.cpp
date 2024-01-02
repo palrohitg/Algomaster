@@ -1,4 +1,6 @@
 /*
+
+
 3 Apriils l
 1. top k frequent elements Done
 2. k closest pairs Done
@@ -20,6 +22,7 @@ public:
 		int n = points.size();
 		// traverse the arrays
 		for (int i = 0; i < n; i++) {
+			// Calcuate the Distace from the Origin
 			int dist = points[i][0] * points[i][0] + points[i][1] * points[i][1];
 
 			//insert dist, and corrdintates
@@ -27,6 +30,8 @@ public:
 				pq.push({dist, {points[i][0], points[i][1]}});
 			}
 			else {
+				// If I'm getting the less distances then also we can 
+				// Remove the elements and push the new elements 
 				if (dist < pq.top().first) {
 					// remove the top pair
 					pq.pop();
@@ -38,6 +43,8 @@ public:
 
 		// shift heaps elements to ans
 		while (!pq.empty()) {
+			// The first second.first 
+			// The first elements 
 			int x = pq.top().second.first;
 			int y = pq.top().second.second;
 

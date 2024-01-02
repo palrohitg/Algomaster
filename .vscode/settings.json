@@ -106,7 +106,11 @@
     "stack": "cpp",
     "source_location": "cpp",
     "stop_token": "cpp",
-    "syncstream": "cpp"
+    "syncstream": "cpp",
+    "stacktrace": "cpp",
+    "__memory": "cpp",
+    "__functional_base": "cpp",
+    "expected": "cpp"
   },
   "C_Cpp_Runner.cCompilerPath": "clang",
   "C_Cpp_Runner.cppCompilerPath": "clang++",
@@ -163,5 +167,6 @@
   "C_Cpp_Runner.useUndefinedSanitizer": false,
   "C_Cpp_Runner.useLeakSanitizer": false,
   "C_Cpp_Runner.showCompilationTime": false,
-  "C_Cpp_Runner.useLinkTimeOptimization": false
+  "C_Cpp_Runner.useLinkTimeOptimization": false,
+  "C_Cpp_Runner.msvcSecureNoWarnings": false
 }

@@ -21,6 +21,10 @@
  *
  *
  */
+
+// Find the LCA in the by iterating over the whole stuffs. 
+// This is the best of the use case we can have in the our systems. 
+
 class Solution {
 public:
     TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {

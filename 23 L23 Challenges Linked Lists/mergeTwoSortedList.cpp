@@ -1,5 +1,7 @@
 #include<iostream>
 using namespace std; 
+
+// Create the Node in the Linked List Data structure
 class node {
 
 	public :

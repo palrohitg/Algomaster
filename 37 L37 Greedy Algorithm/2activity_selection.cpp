@@ -22,6 +22,9 @@ Sorted the activity Based on three factors
 using namespace std;
 
 
+// In build comparater to sort the activity. This
+
+
 // Inbuilt comparator function to find out ke which activities will be performed first
 bool compare(pair<int, int> p1, pair<int, int> p2) {
     return p1.second < p2.second;

@@ -19,6 +19,7 @@ void findMin(int V)
 	for (int i = n - 1; i >= 0; i--) {
 
 		// Find denominations take that coin untill we have this coins 
+		// If last money is then greater than we will be going to insert each times. 
 		while (V >= deno[i]) {
 			V -= deno[i];
 			ans.push_back(deno[i]);
