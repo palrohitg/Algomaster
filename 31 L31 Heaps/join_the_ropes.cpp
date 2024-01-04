@@ -55,7 +55,8 @@ int main() {
         v.push_back(data);
     }
 
-    priority_queue<int, vector<int>, greater<int>> pq;
+    priority_queue<int, vector<int>, greater<int>> pq; // min heaps create krdiya 
+    // priority_queue<int> maxh; // max heaps create krdiya 
 
     for (int i = 0; i < v.size(); i++) {
         pq.push(v[i]);
