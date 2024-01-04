@@ -30,7 +30,8 @@ using namespace std;
 
 // 	return -1; 
 // }
-
+ 
+ // lower_bound --> equal for less elements if equal is present then the equal elements we are getting 
 int main() {
 	// int coins[] = {1, 2, 5, 10, 20, 50, 100, 500, 2000}; 
 	// int money; cin >> money;
