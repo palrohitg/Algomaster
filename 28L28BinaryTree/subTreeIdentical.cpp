@@ -55,7 +55,7 @@ public:
 	//Leetcode 100
 	bool isSameTree(TreeNode* p, TreeNode* q) {
 		if (p == NULL && q == NULL)
-			return true;
+			return true;		
 		if (p == NULL || q == NULL)
 			return false;
 		if (p->val == q->val)
