@@ -20,7 +20,8 @@ public:
 };
 
 
-// Right View of Binary Tree
+// Right View of Binary Tree 
+// right view kaise chal raha hai when we are looking h
 void rightView(Node *root) {
 
 	if (root == NULL) return;

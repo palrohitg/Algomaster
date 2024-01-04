@@ -314,3 +314,36 @@ for _ in range(5):
 
 
 ```
+
+## Dyanmic Programming Problem Statement: 
+```cpp
+
+/*
+    Similar to fibonnacci series 
+    return ways(n-1) + ways(n-2); 
+
+    int countWays(int n, int dp[])
+    {
+        if (n <= 1)
+            return dp[n] = 1;
+    
+        if (dp[n] != -1) {
+            return dp[n];
+        }
+        dp[n] = countWays(n - 1, dp) + countWays(n - 2, dp);
+        return dp[n];
+    }
+ 
+// Driver Code
+int main()
+{
+    int n = 4;
+    int dp[n + 1];
+    memset(dp, -1, sizeof dp);
+    cout << "Number of ways = " << countWays(n, dp);
+    return 0;
+}
+
+*/ 
+
+```

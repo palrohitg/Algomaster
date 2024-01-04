@@ -35,7 +35,7 @@ void leftView(node *root) {
 		return;
 	}
 
-	queue<node*> q;
+	queue<node*> q; // creating the queue here 
 	// push the root node in the queue
 	q.push(root);
 
@@ -45,12 +45,12 @@ void leftView(node *root) {
 		int i = 0;
 
 		// Post Increment Operator in C++ we have in the Code
-		while (i++ < sz) {
+		while (i++ < sz) { // 0 to 1 will be changes need to print the first elements for the email queue here 
 			// pick up the front elements from queue
 			node *t = q.front();
 			q.pop();
 
-			if (i == 1) {
+			if (i == 1) { // if i == size ke ele
 				cout << t->data << " ";
 			}
 
