@@ -22,6 +22,6 @@ Many to Many RelationShip is begin used here.
 2. @receiver(post_save, sender=User): passing the verify the data in the entry of the point of entry.
 
 
-# ACID Properities 
+# ACID Properities      
 Isolation will be happens 
 This property ensures that multiple transactions can occur concurrently without leading to the inconsistency of the database state
