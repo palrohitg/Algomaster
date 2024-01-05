@@ -15,6 +15,7 @@ using namespace std;
 // Firstly Put the k elements in the min heaps 
 // If the minh.top() is < then the current elements then pop and insert. 
 
+// here is the kth largest elements what's why using the minimum heap properities 
 class Solution {
 public:
     int findKthLargest(vector<int>& nums, int k) {

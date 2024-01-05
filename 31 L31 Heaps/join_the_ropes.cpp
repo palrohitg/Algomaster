@@ -29,6 +29,10 @@
 #include<vector>
 using namespace std;
 
+/*
+    Final costs need to add here: 
+    1. Now the cost of the elements we are going to calculate the normal onces 
+*/
 
 void joinRopes(priority_queue<int, vector<int>, greater<int> > pq) {
 

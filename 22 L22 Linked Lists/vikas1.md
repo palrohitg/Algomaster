@@ -281,6 +281,7 @@ using namespace std;
 
 
 
+// value, arrayIndex, ElementIndex 
 
 struct Element {
     int value;
