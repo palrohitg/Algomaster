@@ -125,7 +125,10 @@ Node* cloneLinkedList(Node* head)
 ```
 
 ## 2. Detect Cycle in a LL 
-```cpp
+```cpp 
+	/*
+		Simple slow and fast pointer appraoch and fast pointer appraoch se slow kardena hai esse hai. 
+	*/
 ```
 
 ## 3. Merge two Sorted Linked List Using Recursions here 

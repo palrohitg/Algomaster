@@ -13,4 +13,4 @@ class Game:
 game = Game() 
 game.initialize()
 print(game)
-print(game.Board)
+print(game.Board)w
